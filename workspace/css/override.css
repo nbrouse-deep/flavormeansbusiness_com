@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cboxClose {
+    top: 0;   
+}
+#cboxContent{
+border:1px solid;
+}
+#cboxTopCenter{
+	background: none;
+}
+#cboxMiddleRight {
+	background:none;
+}
+#cboxTopRight {
+	background:none;
+}
+#cboxMiddleLeft {
+	background:none;
+}
+#cboxTopLeft {
+	background:none;
+}
+#cboxBottomCenter{
+	background:none;
+}
+#cboxBottomLeft{
+	background:none;
+}
+#cboxBottomRight{
+	background:none;
+}
+#cboxLoadedContent {
+    height: 165px !important;
+    width: 450px !important;
+}
+#cboxContent {
+    float: none !important;
+    height: 163px !important;
+    width: 440px !important;
+}
+#colorbox{
+	width: 470px !important;
+}
+#cboxWrapper {
+    width: 470px !important;
+}
+#cboxOverlay {
+opacity: 0.75 !important;
+background: none #000 !important;
+}

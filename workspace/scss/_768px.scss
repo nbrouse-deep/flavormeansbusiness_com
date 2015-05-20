@@ -1,0 +1,502 @@
+@media (max-width: 767px) {
+    .content {
+        padding-bottom: 0;
+        top: auto;
+
+
+        .contact {
+            img {
+                margin: 0 auto;
+                position: static;
+                width: 90%;
+            }
+
+            h2 { 
+                font-size: 20px;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 20px auto;
+                text-align: center;
+                width: 80%;
+            }
+
+            dl {
+                padding: 10px 0;
+
+                dt {
+                    font-size: 18px;
+                    width: 25%;
+                }
+
+                dd {
+                    font-size: 14px;
+                    width: 70%;
+                }
+            }
+
+
+            .left {
+                float: none;
+                width: auto;
+            }
+        }
+    }
+
+
+    .home {
+        .content {
+
+            .products-cta {
+                height: 300px;
+
+                > div { height: 100px; }
+
+                h1 { 
+                    font-size: 19px;
+                    top: 20px;
+                }
+
+                h2 { margin-top: 10px; }
+
+                a { line-height: 24px; }
+            }
+
+
+            .too-short { display: none; }
+
+            .chefs,
+            .calls-to-action { display: none; }
+
+            .featured {
+                section {
+                    .image { height: 150px; }
+                }
+            }
+        }
+    }
+
+
+    //
+    // blog/menu concepts
+    .blog,
+    .menu-concepts {
+        .content {
+            .featured-image { width: 96%; }
+
+            // single post
+            .single {
+                .image { display: none; }
+
+                .details {
+                    float: none;
+                    width: auto;
+
+                    a { text-decoration: underline; }
+                }
+
+                .social { margin-bottom: 30px; }
+
+                .older,
+                .newer {
+                    border-left: 0;
+                    padding: 0;
+                    width: 48%;
+
+                    a {
+                        @include hidetext;
+                        background: $color-accent;
+                        height: 35px;
+                        position: relative;
+
+                        &:after {
+                            color: white;
+                            display: block;
+                            font: 16px/35px helvetica, sans-serif;
+                            height: 100%;
+                            left: 0px;
+                            top: 0px;
+                            position: absolute;
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .older a:after { content: "< Older"; }
+
+                .newer a:after { content: "Newer >"; }
+            }
+        }
+    }
+
+
+    //
+    // products
+    #products .content {
+        .landing .buttons li {
+            margin: 0 0 30px 55px;
+        }
+    }
+
+
+    //
+    // latin flavors
+    #latin-flavors .content {
+        h1 { font-size: 1.3em; }
+
+        > * { 
+            margin: 0 auto;
+            width: 96%;
+        }
+
+        .flavor-is-essential {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 0 15px;
+
+            img { display: none; }
+
+            p { padding: 30px 0; }
+        }
+
+        .step {
+            padding-right: 0;
+
+            p,
+            select { 
+                float: none !important;
+                margin: 0 0 15px 0;
+                width: auto; 
+            }
+
+            p { padding-left: 40px; }
+
+            select { 
+                margin: 0 auto 15px;
+                width: 90%; 
+            }
+        }
+
+
+        .facts,
+        .endless-possibilities { display: none; }
+
+
+        .categories { width: auto; }
+
+
+        .recipes {
+            .left,
+            .right {
+                float: none;
+                width: auto;
+            }
+
+            width: auto;
+        }
+
+
+        .flavors {
+            border-top: 1px solid #e5e5e5;
+
+            h2 { font-size: 16px; }
+
+            table {
+                thead { display: none; }
+
+
+                tr,
+                td {
+                    border: 0;
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .product-facts,
+                .desc-row {
+                    float: none;
+                }
+
+                .upc,
+                .size,
+                .allergens,
+                .extra { display: none; }
+
+                .image {
+                    clear: left;
+                    width: 20%;
+
+                    img { 
+                        height: auto;
+                        width: 100%; 
+                    }
+                }
+
+
+                .description { 
+                    background: none;
+                    font-size: 14px;
+                    margin: -20% 0 0 19%;
+                    width: 73%;
+
+                    p { font-style: normal; }
+                }
+            }
+        }
+    }
+
+
+
+    #gluten-free .content {
+        h1 { font-size: 1.3em; }
+
+        > * { 
+            margin: 0 auto;
+            width: 96%;
+        }
+
+        .intro {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 30px 15px;
+
+            img { display: none; }
+
+            p { 
+                float: none;
+                font-size: 15px;
+                padding: 0;
+                width: auto;
+            }
+        }
+
+
+        .bullets {
+            > div > div { 
+                float: none;
+                width: auto;
+            }
+
+            .footnote { margin-bottom: 0; }
+        }
+
+
+
+        .step {
+            padding-right: 0;
+
+            label,
+            select { 
+                float: none !important;
+                margin: 0 0 15px 0;
+                width: auto; 
+            }
+
+            label { padding-left: 40px; }
+
+            select { 
+                margin: 0 auto 15px;
+                width: 90%; 
+            }
+        }
+
+        .recipes {
+            width: auto;
+
+            .left,
+            .right {
+                float: none;
+                width: auto;
+            }
+        }
+
+
+        .trusted-celiac,
+        .facts { display: none; }
+
+
+        .all-products {
+        }
+    }
+
+
+
+    #gluten-free .content,
+    #latin-flavors .content {
+        .sidebar a { font-size: 13px; }
+
+
+        .product-info {
+            border: none;
+            width: auto;
+
+            .product {
+                p {
+                    font-size: 14px;
+                    float: left;
+                    width: 60%;
+                }
+
+                img {
+                    margin: 0 15px 0 0;
+                    width: 25%;
+                }
+
+                h2 { 
+                    clear: right;
+                    float: left; 
+                    font-size: 18px;
+                    line-height: 1.2em;
+                    margin-top: 20px;
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+
+    .offers .content {
+        .form {
+            background: none;
+            padding: 10px;
+            width: auto;
+
+            h2 { display: none; }
+
+            form {
+                width: auto;
+
+                label {
+                    float: none;
+                    margin: 0 0 10px 0;
+                    width: auto !important;
+                }
+
+                input[type=text],
+                input[type=email],
+                input[type=tel],
+                textarea {
+                    padding: 4px 2% !important;
+                    width: 95% !important;
+                }
+
+                select { width: 100% !important; }
+
+                input[type=submit] {
+                    background: $color-accent !important;
+                    color: white !important;
+                    font: 18px/40px helvetica, sans-serif !important;
+                    height: auto !important;
+                    padding: 0 !important;
+                    text-transform: none;
+                    width: 96% !important;
+                }
+            }
+        }
+    }
+
+
+    //
+    // power of flavor
+    #powerofflavor .content {
+        .narrow {
+            width: auto;
+
+            > img { 
+                margin-bottom: 0;
+                width: 100%; 
+            }
+
+            h1 { 
+                font-size: 24px; 
+                margin-top: 0;
+            }
+
+            > div {
+                width: auto;
+                float: none;
+                margin: 0 auto;
+                overflow: visible;
+                padding: 30px 0;
+                width: 96%;
+
+                p,
+                img,
+                blockquote,
+                div {
+                    float: none;
+                    width: auto;
+                }
+
+                img { 
+                    display: block;
+                    margin: 0 auto; 
+                }
+
+                blockquote {
+                    background: #fbfaf7;
+                    font: italic 18px/1.5 $serif;
+                    margin: 0 0 0 -2%;
+                    padding: 30px 2% 15px;
+                    width: 100%;
+
+                    p { margin-bottom: 0; }
+                }
+
+                cite {
+                    background: #fbfaf7;
+                    display: block;
+                    padding: 5px 0 15px;
+                }
+
+            }
+
+
+            .power-of-flavor { padding-top: 0; }
+
+
+            .food-cost { 
+                img { display: none; }
+
+                .mobile-only { display: block; }
+            }
+
+            .quote { padding: 0; }
+
+            .profit {
+                img { 
+                    display: none;
+                    margin: 30px auto; 
+                }
+
+                .mobile-only { display: block; }
+            }
+
+            .learn-more,
+            .footnotes { display: none; }
+        }
+    }
+
+
+
+    .offers#flavor-expedition {
+        .content {
+            .form {
+                .comments {
+                    span,
+                    textarea { float: none; }
+
+                    span { width: auto; }
+                }
+            }
+        }
+    }
+}

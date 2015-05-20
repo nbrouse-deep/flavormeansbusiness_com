@@ -1,0 +1,121 @@
+header {
+    padding-top: 20px;
+    position: relative;
+    z-index: 200;
+
+    .logo {
+        display: block;
+        float: left;
+
+        img { height: 55px; }
+    }
+
+    .show-nav { display: none; }
+
+
+    .center {
+        margin: 0 auto;
+        position: relative;
+        width: 1080px;
+    }
+
+    // primary navigation
+    .primary {
+        float: right;
+        font: 24px/1.5 $sorts;
+
+        li {
+            float: left;
+            height: 70px;
+            padding: 15px 15px 0;
+
+            &.active a { background: #ddd; }
+
+        }
+
+        a { 
+            @include border-radius(5px);
+            color: #635f60; 
+            display: block;
+            padding: 5px 15px;
+        }
+
+        .videos { padding-right: 0; }
+    }
+
+
+    // secondary navigation
+    .secondary {
+        bottom: -4px;
+        clear: both;
+        background: url(../img/red-streak.png);
+        height: 50px;
+        padding: 0 100px 0 0;
+
+        ul { float: right; }
+
+        li {
+            float: left;
+            height: 50px;
+            padding: 5px 5px;
+            position: relative;
+
+            &:before {
+                border-left: 1px solid #82201d;
+                content: " ";
+                height: 20px;
+                left: 0px;
+                position: absolute;
+                top: 16px;
+            }
+
+            &:first-child:before { display: none; }
+
+            &.active a { text-decoration: underline; }
+
+            a {
+                color: white;
+                display: block;
+                font-size: 15px;
+                line-height: 41px;
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+
+
+
+.site-search {
+    height: 30px;
+    margin: 0 auto;
+    padding: 6px 0;
+    width: 1080px;
+
+
+    .see-how-fmb {
+        float: left;
+        font: 100 18px/1.5 $sorts;
+        margin: 0;
+
+        a { color: white; }
+    }
+
+
+    form {
+        float: right;
+
+        input { float: left; }
+
+        input[type=submit] { 
+            -moz-box-sizing: content-box; 
+            -webkit-box-sizing: content-box; 
+            box-sizing: content-box;
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+
+

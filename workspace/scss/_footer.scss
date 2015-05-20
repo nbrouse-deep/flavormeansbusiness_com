@@ -1,0 +1,149 @@
+footer {
+    background: #b32017 url(../img/red-streak2.jpg) no-repeat center top;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 200;
+
+    // copyright/legalese
+    small {
+        clear: both;
+        color: white;
+        display: block;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    // nav elements
+    li { display: inline; }
+
+    a { color: white; }
+
+    // large navigation
+    .primary {
+        ul { 
+            padding: 40px 0 0 0;
+            text-align: center; 
+        }
+
+        li {
+            a {
+                font: 24px/1.5 $sorts;
+                margin: 0 30px;
+            }
+        }
+    }
+
+    // smaller navigation
+    .secondary {
+        ul {
+            margin: 20px 0 0 0;
+            text-align: center;
+        }
+
+        li {
+            font-size: 18px;
+            padding: 0 20px;
+            position: relative;
+
+            &:before {
+                border-left: 1px solid #82201d;
+                content: " ";
+                height: 12px;
+                left: 0px;
+                position: absolute;
+                top: 5px;
+            }
+
+            &:first-child:before { display: none; }
+
+            a:hover { text-decoration: underline; }
+        }
+    }
+
+
+    // 'back to top' for mobile only
+    .top { 
+        display: none;
+        font-weight: bold;
+        margin: 30px 0;
+        text-align: center;
+        text-transform: uppercase;
+
+        a { color: white; }
+    }
+}
+
+
+
+
+// contact our chefs shared by all pages
+.content {
+    .contact {
+        border-top: 1px solid #e5e5e5;
+        clear: both;
+        overflow: hidden;
+        padding: 30px 0;
+        position: relative;
+
+        h2 {
+            color: #888;
+            font: normal 26px/1.4 trajan-pro-3, $serif;
+            margin: 0 0 30px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .left { 
+            float: left;
+            width: 50%;
+        }
+
+        h3 {
+            color: #777;
+            font: italic 22px/1.5 $serif;
+            margin: 5px 0 0 0;
+        }
+
+        img { 
+            bottom: 30px;
+            display: block;
+            position: absolute;
+            right: 0px;
+            width: 48%;
+        }
+
+        dl {
+            background: #fbfaf8;
+            margin: 0;
+            overflow: hidden;
+            padding: 20px 0;
+            width: 100%;
+
+            dt,
+            dd {
+                line-height: 33px;
+                margin: 0 0 10px 0;
+            }
+
+            dt {
+                clear: left;
+                color: #888;
+                font: italic 22px/33px $serif;
+                float: left;
+                text-align: center;
+                width: 30%;
+            }
+
+            dd {
+                color: #b32017;
+                float: left;
+                font-size: 16px;
+                font-weight: bold;
+                text-decoration: underline;
+                width: 70%;
+
+                a { color: #b32017; }
+            }
+        }
+    }
+}

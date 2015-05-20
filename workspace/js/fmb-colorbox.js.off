@@ -1,0 +1,24 @@
+(function ($){
+
+    $(function (){
+
+        /* Disable Colorbox on mobile devices */
+
+        $mobile_colorbox();
+
+        $(window).resize(function () {
+            $mobile_colorbox()
+        });
+
+    });
+
+    $mobile_colorbox = function ()
+    {
+        if ( $(window).width() <= 700 ) {
+            $('.colorbox').colorbox.remove();
+        } else {
+            $('.colorbox').colorbox({rel:'colorbox'});
+        }            
+    }
+
+})(jQuery);

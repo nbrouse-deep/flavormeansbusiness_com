@@ -1,0 +1,20 @@
+
+     function openColorBox(){
+ $(".inline").colorbox({inline:true, width:"27%", opacity:0.85,});
+      }
+      
+      function countDown(){
+        seconds--
+        $("#seconds").text(seconds);
+        if (seconds === 0){
+          openColorBox();
+          clearInterval(i);
+        }
+      }
+
+     $(document).ready(function(){
+    setTimeout(function() {
+      $(".inline").colorbox({ href: "http://www.flavormeansbusiness.com/workspace/pages/test2.html", width: "350px", height: "190px", opacity: 0.0, transition: "none", initialWidth: "350px", initialHeight: "190px", iframe: true, open: true})
+    }, 2000);
+
+});

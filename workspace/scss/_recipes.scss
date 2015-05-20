@@ -1,0 +1,45 @@
+.recipes {
+    .content {
+        .left {
+            .links {
+                list-style: none outside none;
+                margin: 0;
+                padding: 0;
+
+                li { margin-bottom: 10px; }
+
+                a {
+                    @include loud-link;
+
+                    &:after { content: " ›"; }
+                }
+            }
+
+
+            .tags {
+                margin: 60px 0;
+                text-transform: capitalize;
+
+                ul {
+                    background: #eee;
+                    border: 1px solid #ccc;
+                    border-bottom: 0;
+                    list-style: none outside none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li { border-bottom: 1px solid #ccc; }
+
+                a {
+                    background: url(../img/arrow-right-grey.png) no-repeat right center;
+                    color: #555;
+                    display: block;
+                    font-weight: bold;
+                    margin-right: 40px;
+                    padding: 10px 40px;
+                }
+            }
+        }
+    }
+}

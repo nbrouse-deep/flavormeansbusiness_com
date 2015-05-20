@@ -1,0 +1,22 @@
+.videos {
+    .content {
+        .sidebar { @include sidebar-tree; }
+
+        article {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 30px 0;
+
+            &:last-child { border-bottom: 0; }
+
+            h1 { margin-bottom: 0; }
+
+            .byline {
+                font-size: 12px;
+                font-style: italic;
+                margin-bottom: 15px;
+            }
+
+            p { margin-bottom: 0; }
+        }
+    }
+}

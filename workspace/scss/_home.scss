@@ -1,0 +1,591 @@
+.home {
+    .content {
+        padding-top: 0;
+        width: auto;
+
+
+        .center,
+        .contact {
+            margin: 0 auto;
+            position: relative;
+            width: 1080px;
+        }
+
+        .products-cta {
+            background: url(../img/chef.jpg) right top;
+            background-size: cover;
+            height: 445px;
+            margin-top: -5px;
+            position: relative;
+
+            > div {
+                @include border-radius(5px);
+                background: white;
+                background: rgba(255, 255, 255, 0.8);
+                bottom: 10px;
+                cursor: pointer;
+                height: 170px;
+                position: absolute;
+                width: 48.5%;
+            }
+
+            h1 {
+                color: white;
+                letter-spacing: 1px;
+                position: absolute;
+                right: 10px;
+                text-align: right;
+                top: 30px;
+            }
+
+            h2 {
+                float: left;
+                font: bold 20px/1.2 'trajan-pro-3';
+                margin: 40px 0 10px 2%;
+                letter-spacing: 1px;
+                width: 45%;
+            }
+
+            img {
+                float: left;
+                position: relative;
+                top: -25px;
+                width: 50%;
+            }
+
+            a {
+                @include border-radius(5px);
+                border: 1px solid $color-text;
+                display: block;
+                float: left;
+                font: normal 16px/50px $serif;
+                margin-left: 2%;
+                text-align: center;
+                width: 45%;
+
+                &:after { 
+                    content: " »"; 
+                    font-size: 28px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+
+            .latin-flavors { left: 1%; }
+
+            .gluten-free { right: 1%; }
+        }
+
+
+
+        .too-short {
+            bottom: 0px;
+            display: none;
+            margin: 0 auto;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+
+            a {
+                @include hidetext;
+                background: url(../img/explore-more-content.png) no-repeat center center;
+                height: 39px;
+                width: 100%;
+            }
+        }
+
+
+
+        .featured,
+        .chefs,
+        .featured-video,
+        .calls-to-action {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 30px 0;
+
+            h2 {
+                color: #888;
+                font: normal 26px/1.4 'trajan-pro-3';
+                margin: 0 0 30px 0;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+
+
+
+
+
+        //
+        // calls to action
+        .featured {
+            @include clearfix;
+
+            section {
+                cursor: pointer;
+                float: left;
+                width: 31.4815%;
+
+                &:hover a { color: #8a8788; }
+
+                h2 {
+                    color: #555;
+                    border-bottom: 1px solid #edece8;
+                    border-top: 1px solid #edece8;
+                    font: normal 20px/1.4 $sorts;
+                    letter-spacing: 0px;
+                    padding: 3px 0 0 0;
+                    text-align: center;
+                    text-transform: none;
+                }
+
+                h3 {
+                    font: bold 22px/1.2 helvetica, arial, sans-serif;
+                    margin: 0;
+
+                    a { color: #555; }
+                }
+
+                h4 {
+                    color: #666;
+                    font: 13px/1.4 $serif;
+                    margin: 5px 0 15px 0;
+                }
+
+                .image {
+                    height: 225px;
+                    overflow: hidden;
+                    position: relative;
+                    text-align: center;
+                    width: 100%;
+
+                    &:hover {
+                        span { 
+                            @include transition(opacity 300ms);
+                            opacity: 1;
+                        }
+                        
+                        img {
+                            @include transition(all 250ms);
+                            opacity: 0.4;
+                        }
+                    }
+
+                    span {
+                        background: url(../img/black-50.png);
+                        color: white;
+                        display: block; 
+                        font: italic 22px/225px $serif;
+                        height: 100%;
+                        left: 0px;
+                        opacity: 0;
+                        position: absolute;
+                        text-align: center;
+                        top: 0px;
+                        width: 100%;
+                        z-index: 100;
+                    }
+
+                    img { 
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .blog,
+            .offer { margin-left: 2.77778%; }
+        }
+
+        
+
+
+        //
+        // meet our chefs
+        .chefs {
+            clear: both;
+
+            .center { overflow: hidden; }
+
+            .slides {
+                height: 290px;
+                overflow: hidden;
+                position: relative;
+                width: 2000em;
+            }
+
+            .see-all {
+                color: #888;
+                display: block;
+                float: left;
+                font: 100 16px/1.5 $serif;
+                right: 0px;
+                text-indent: 20px;
+                position: absolute;
+                top: 15px;
+
+                &:hover { text-decoration: underline; }
+            }
+
+            .chef {
+                float: left;
+                height: 290px;
+                margin: 0 32px 0 0;
+                position: relative;
+
+                &:hover .show-hide { background-position: -30px; }
+
+                &.open {
+                    .show-hide { background-position: -60px; }
+
+                    .show-hide:hover { background-position: -90px; }
+
+                    .left a { display: none; }
+                }
+
+                .show-hide {
+                    @include hidetext;
+                    background: url(../img/pluses-minuses.png);
+                    height: 30px;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    width: 30px;
+                }
+
+                .left {
+                    float: left;
+                    height: 100%;
+                    width: 190px;
+                    position: relative;
+
+                    .image {
+                        background: #fee;
+                        height: 100%;
+                        overflow: hidden;
+                        position: relative;
+
+                        img { 
+                            height: 100%; 
+                            left: -50px;
+                            position: relative;
+                        }
+                    }
+
+                    a {
+                        background: url(../img/red-50.png);
+                        color: white;
+                        display: block;
+                        font: italic 28px/1.5 $sorts;
+                        height: 100%;
+                        left: 0px;
+                        opacity: 0;
+                        padding: 100px 0 0 0;
+                        position: absolute;
+                        text-align: center;
+                        top: 0px;
+                        width: 100%;
+                        z-index: 100;
+
+                        &:hover {
+                            @include transition(opacity 200ms);
+                            opacity: 1;
+                        }
+
+                        .name { 
+                            display: block;
+                            font: normal 18px/1.5 $sorts; 
+                            font-weight: 100;
+                        }
+                    }
+                }
+
+
+                .right {
+                    float: left;
+                    background: #e6e5e5;
+                    display: none;
+                    height: 270px;
+                    padding: 20px 10px 0 20px;
+                    width: 416px;
+
+                    h3 {
+                        color: #b22116;
+                        font: normal 24px/1.4 $sorts;
+                        margin: 0 0 15px 0;
+                    }
+
+                    .short-bio { 
+                        float: left;
+                        height: 170px;
+                        overflow: hidden;
+                        width: 220px; 
+
+                        &.expand { width: 400px; }
+                    }
+
+                    .full-bio {
+                        float: left;
+                        width: 220px;
+
+                        a {
+                            color: inherit;
+                            font: 13px/1.4 $sorts;
+
+                            &:after { content: " »"; }
+                        }
+                    }
+
+                    .latest-menu-concept {
+                        float: right;
+                        width: 185px;
+
+                        h4 {
+                            font-size: 18px;
+                            margin: 5px 0;
+
+                            a { 
+                                color: #666; 
+
+                                &:after { content: " ›"; }
+                            }
+                        }
+
+                        .image {
+                            height: 100px;
+                            overflow: hidden;
+                            width: 100%;
+
+                            img { 
+                                width: 100%; 
+                            }
+                        }
+
+                        .date {
+                            color: #999;
+                            display: block;
+                            font-size: 12px;
+                            margin: 5px 0;
+                        }
+
+                        .tags {
+                            height: 26px;
+                            list-style: none;
+                            margin: 0;
+                            overflow: hidden;
+                            padding: 0;
+
+                            li {
+                                float: left;
+
+                                a {
+                                    background: #cfcece;
+                                    color: #717172;
+                                    display: block;
+                                    font-size: 11px;
+                                    margin: 0 5px 5px 0;
+                                    padding: 5px;
+                                    text-transform: uppercase;
+
+                                    &:hover { 
+                                        background: #d9d9d9;
+                                        color: #555; 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .filmstrip {
+                a { 
+                    @include hidetext;
+                    background: #eee;
+                    border: 1px solid #eee;
+                    display: block;
+                    float: left;
+                    height: 18px;
+                    margin: 20px 13.4px;
+                    width: 18px;
+
+                    &:hover { border: 1px solid #a7a4a4; }
+
+                    &.active { 
+                        background: #a7a4a4; 
+                        border: 1px solid #a7a4a4; 
+                    }
+                }
+            }
+
+            .mobile-nav {
+                display: none;
+
+                .next,
+                .prev {
+                    @include hidetext;
+                    background-size: contain;
+                    height: 60px;
+                    width: 38px;
+                }
+
+                .next {
+                    background-image: url(../img/mobile/arrow-right.png);
+                    float: right;
+                }
+
+                .prev {
+                    background-image: url(../img/mobile/arrow-left.png);
+                    float: left;
+                }
+            }
+        }
+
+
+
+
+
+        //
+        // featured video
+        .featured-video { 
+            background: #fbfaf7;
+            clear: both; 
+            overflow: hidden;
+
+            .left {
+                float: left;
+                width: 49%;
+
+                iframe { 
+                    background: black; 
+                    width: 100%;
+                }
+            }
+
+            .right {
+                float: right;
+                width: 49%;
+
+                h3 {
+                    color: #777;
+                    font: italic 22px/1.5 $sorts;
+                    margin: 0 0 20px 0;
+                }
+
+                .details {
+                    background: #eceae7;
+                    padding: 15px 20px;
+
+                    h4 {
+                        color: #b22015;
+                        font: 22px/1.2 $serif;
+                        margin: 0;
+                    }
+
+                    h5 {
+                        color: #393d3e;
+                        font: 16px/1.2 $serif;
+                        margin: 0 0 15px 0;
+                    }
+
+                    p {
+                        color: #8a8586;
+                        font: italic 14px/1.5 $serif;
+                        margin: 0;
+                    }
+                }
+
+                .description { padding: 15px 20px; }
+
+                .see-all {
+                    color: #888;
+                    display: block;
+                    float: left;
+                    font: 100 16px/1.2 $serif;
+                    text-indent: 20px;
+
+                    &:hover { text-decoration: underline; }
+                }
+            }
+        }
+
+
+
+
+
+        //
+        // calls to action
+        .calls-to-action {
+            background: #d8d7d7;
+            border-bottom: 0;
+
+            .center { background: #e6e5e5; }
+
+            .active {
+                h2,
+                h2:hover {
+                    background: #e6e5e5;
+                    color: #ad1e19;
+                }
+
+                .more { display: block; }
+            }
+
+            h2 {
+                background: #d8d7d7;
+                color: #333;
+                cursor: pointer;
+                height: 70px;
+                font: normal 20px/70px $serif;
+                letter-spacing: 0px;
+                margin: 0;
+                text-align: center;
+                text-transform: none;
+                width: 24%;
+
+                &:hover { color: #ad1e19; }
+            }
+
+            .more {
+                color: #888;
+                display: none;
+                font: 16px/1.5 $serif;
+                padding: 30px;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 70%;
+
+                .copy {
+                    float: right;
+                    width: 75%;
+                }
+
+                img {
+                    float: left;
+                    max-width: 23%;
+                }
+
+
+                a {
+                    color: #333;
+                    font: 16px/1.4 $serif;
+
+                    &:after { content: " »"; }
+
+                    &:hover { text-decoration: underline; }
+                }
+            }
+        }
+
+
+        .contact { border-top: 0; }
+    }
+}
+
+
+
+@media (max-height: 650px) {
+    .home .content .too-short { display: block; }
+}

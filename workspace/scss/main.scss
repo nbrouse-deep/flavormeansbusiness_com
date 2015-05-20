@@ -1,0 +1,121 @@
+@import 'normalize'; // cross-browser style normalization
+
+@import 'mixins'; // various css3 mixins
+
+@import 'fonts'; // custom @font-faces go here
+
+@import 'global'; // common elements, classes, variables, mixins, etc
+
+@import 'carousel';
+
+@import 'addtohomescreen';
+
+
+// layout elements
+.main {
+    @include border-radius(22px 22px 0 0);
+    background: white;
+}
+
+
+
+.content {
+    @include clearfix;
+    margin: 0 auto;
+    padding: 30px 0;
+    z-index: 100;
+    width: 1080px;
+
+    > .left {
+        border-right: 1px solid #e5e5e5;
+        float: left;
+        padding-bottom: 30px;
+        width: 72.12963%;
+
+        > * { width: 96.5%; }
+
+        > img { 
+            display: block;
+            width: 100%; 
+        }
+    }
+
+}
+
+
+@import 'header';
+
+
+@import 'footer';
+
+
+@import 'sidebar';
+
+
+@import 'home';
+
+
+@import 'products';
+
+
+@import 'latin-flavors';
+
+
+@import 'gluten-free';
+
+
+@import 'brochures';
+
+
+@import 'blog';
+
+
+@import 'chefs';
+
+
+@import 'videos';
+
+
+@import 'offers';
+
+
+@import 'powerofflavor';
+
+
+@import 'heritage';
+
+
+@import 'contact';
+
+
+@import 'recipes';
+
+
+@import 'recipe-videos';
+
+
+@import 'flavormeansbusiness';
+
+
+@import 'search';
+
+
+@import 'ie';
+
+
+@import '1280px';
+
+
+@import '1080px';
+
+
+@import '1024px';
+
+
+@import '768px';
+
+
+@import '640px';
+
+
+@import '480px';

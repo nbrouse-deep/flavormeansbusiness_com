@@ -1,0 +1,146 @@
+// smaller monitors
+@media (max-width: 1079px) {
+    .site-search { 
+        margin: 0 3%;
+        width: auto; 
+    }
+
+    header {
+        .center { width: auto; }
+
+        .logo { margin-left: 30px; }
+
+        .primary { 
+            margin-right: 30px;
+            font-size: 20px; 
+        }
+    }
+
+    footer {
+        padding: 0 30px;
+
+        .primary { font-size: 20px; }
+
+        li { 
+            display: inline-block; 
+
+            &:before { display: none; }
+        }
+    }
+
+
+    .content { 
+        // overflow: hidden;
+        width: auto; 
+        
+        > .left {
+            > * { 
+                margin-left: auto !important;
+                margin-right: auto !important;
+                width: 96%; 
+            }
+        }
+    }
+
+
+    .home {
+        .content {
+            padding-top: 0;
+
+            .products-cta {
+                > div { height: 150px; }
+
+                h1 { font-size: 26px; }
+
+                h2 { font-size: 16px; }
+
+                a { 
+                    font-size: 14px; 
+                    line-height: 36px;
+                }
+            }
+
+
+            .center,
+            .contact { width: 96%; }
+        }
+    }
+
+
+
+    #powerofflavor .content {
+        .narrow {
+            width: auto;
+
+            > div {
+                width: 96%;
+            }
+        }
+    }
+
+
+    .content .contact {
+        margin: 0 auto;
+        width: 96%;
+    }
+
+
+
+    #latin-flavors,
+    #gluten-free {
+        .content {
+            > h1,
+            > section {
+                padding: 30px 2%;
+                width: auto;
+            }
+
+
+            .recipes { padding-top: 0; }
+
+            .contact { width: 96%; }
+
+            .trusted-celiac .celiac-disease p { margin-top: 10px; }
+        }
+    }
+
+
+
+    #meet-the-chefs .content {
+        .chefs { 
+            width: 96%;
+
+            > div { margin: 0 27px 27px 0; }
+        }
+    }
+
+
+    .offers .content {
+        .form {
+            margin: 0 auto;
+            padding: 10px;
+            width: 720px;
+
+            h2 { margin-left: -10px; }
+        }
+    }
+
+
+    .offers#videos .content {
+        h1,
+        .left .experience { 
+            margin: 0 auto;
+            width: 96%; 
+        }
+    }
+
+
+
+    .brochures .content {
+        h1 { 
+            margin: 0 auto;
+            width: 96%; 
+        }
+    }
+}
+

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:import href="../utilities/masterfull.xsl" />
+<xsl:import href="../utilities/featured-sidebar.xsl" />
+
+
+<xsl:template match="/data"><link rel="stylesheet" href="{$workspace}/css/custom.css" />
+<link rel="stylesheet" href="{$workspace}/css/style.css" />
+<script type="text/javascript" src="{$workspace}/js/ajax_poll.js"></script>
+<script>
+  $(document).ready(function() {
+  $(".various").fancybox({
+    maxWidth  : 800,
+    maxHeight : 600,
+    fitToView : false,
+    width   : '70%',
+    height    : '70%',
+    autoSize  : false,
+    closeClick  : false,
+    openEffect  : 'none',
+    closeEffect : 'none'
+  });
+});</script>
+
+   <!--Desktop Layout -->
+   <div class="desktop-only">
+   
+   <div class="battle-for-bocuse">
+   <h1>Battle for bocuse d'or with chef steve</h1>
+   <img class="floatleft" src="{$workspace}/img/battle-for-bocuse.jpg" />
+   <div class="floatleft bocuse-right"><p>Vote for the winning soup! <br /><span style="color:#555555; font-style: normal; margin-top:5px;position:absolute;font-size:14px; font-weight:lighter;">Voting is open until 10/31/14</span></p>
+   <ul>
+   	 <a href="#enter"><li>Vote Now</li></a>
+   <a href="#details"><li>Contest Details</li></a>
+   <a href="#details"><li>Prize Overview</li></a>
+   <a target="_blank" href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf"><li>Official Rules</li></a>
+   </ul>
+  
+   </div>
+   </div>
+   <div class="thebattle"><img src="{$workspace}/img/thebattle.jpg" />
+   <h1 class="textcenter"><span style="font-size:22px;">The final battle is underway. </span><span style="font-size:22px;text-transform:uppercase; color:#B73129;">Who gets your vote?</span></h1>
+   <img src="{$workspace}/img/thebattle.jpg" />
+   </div>
+   <div class="challengerprofile"><img class="floatleft" src="{$workspace}/img/chef-steve.jpg" />
+   <div style="max-width:100%;"><h2>Winner Selection - The MINOR'S&#174; Bocuse d’Or Soup Recipe Contest</h2>
+   <p>The MINOR’S judging panel had the difficulty of narrowing down all of the wonderful entries to these top finalists. Now, it’s your turn.</p>
+   <p>Select the one finalist you think deserves to be the champion and the winner of <a style="color:#B32122;" href="#details">the grand prize.</a> Voting will only be open through 10/31/14, so cast your vote today!</p></div>
+   </div>
+   <div class="contest-pieces">
+   <a name="enter"></a>
+   <div class="letsbattle">
+   <p>Who deserves to win a trip to Lyon, France to watch the prestigious Bocuse d’Or competition? It’s up to you.</p>
+   <p>Please vote for your favorite finalist by 10/31/14. We encourage you to try the recipes for yourself. Be sure to visit again on 11/1/14 to see if your finalist is the grand prize winner!
+   </p>
+   </div>
+   <!-- [BEGIN] Ajax Poll -->
+<form class='ajax-poll-form' tid='demo1' action='{$workspace}/ajax_poll.php'>
+
+	<!-- [BEGIN] Title -->
+	<div class='ajax-poll-title'>
+	The entry period is now closed. Who do you think should win the battle?<br />
+	Come back 10/1/14 through 10/31/14 to vote for your favorite recipe.
+	</div>
+	<!-- [END] Title -->
+
+	<!-- [BEGIN] Item 1 -->
+	<div class='ajax-poll-item' tid='recipe1'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Chicken Noodle
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Daigneault's Duck Dashi Noodle Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Duck Dashi Noodle Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 1 -->
+
+	<!-- [BEGIN] Item 2 -->
+	<div class='ajax-poll-item' tid='recipe2'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Chowder (Excluding Clam)
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Kiatkowski's Catalan Seafood Stew
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Catalan Seafood Stew.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 2 -->
+
+	<!-- [BEGIN] Item 3 -->
+	<div class='ajax-poll-item' tid='recipe3'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Chowder
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Herbert's Bacon Dashi Broth with Clams and Potatoes
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Bacon Dashi with Clams and Potatoes.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 3 -->
+
+	<!-- [BEGIN] Item 4 -->
+	<div class='ajax-poll-item' tid='recipe4'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			French Onion
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Jaye's Beef Short Rib French Onion Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Beef Short Rib French Onion Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 4 -->
+
+	<!-- [BEGIN] Item 6 -->
+	<div class='ajax-poll-item' tid='recipe6'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Potato Soup
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Brown's Potato Tomatillo Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Potato Tomatillo Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 6 -->
+
+	<!-- [BEGIN] Item 7 -->
+	<div class='ajax-poll-item' tid='recipe7'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Seafood Bisque
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Sockrider's Crab and Brie Bisque Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Crab and Brie Bisque.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 7 -->
+
+	<!-- [BEGIN] Item 8 -->
+	<div class='ajax-poll-item' tid='recipe8'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Tortilla Soup
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Connolly's Essence of Tomato Roasted Fennel Tortilla Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Essence of Tomato with Roast Fennel and Tortilla Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 8 -->
+
+	<!-- [BEGIN] Item 9 -->
+	<div class='ajax-poll-item' tid='recipe9'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Vegetable Bisque
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Berry's Roasted Mango Sweet Potato Bisque
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Roasted Mango Sweet Potato Bisque.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 9 -->
+
+	<!-- [BEGIN] Item 10 -->
+	<div class='ajax-poll-item' tid='recipe10'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Vegetable Soup
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Durkee's Grilled Portabella Barley Soup with Parmesan Crackers
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Grilled Portabella and Barley Soup with Parmesan Crackers.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 10 -->
+
+	<!-- [BEGIN] Vote Box -->
+	<div class='ajax-poll-vote-box'>
+		<input class='ajax-poll-btn-vote' />
+	</div>
+	<!-- [END] Vote Box -->
+
+	<!-- [BEGIN] Back Box 
+	<div class='ajax-poll-back-box'>
+		<input class='ajax-poll-btn-back' type='button' value="Back" />
+		<div class='ajax-poll-total-box'>
+			<span class='ajax-poll-total-caption'>Total:</span>
+			<span class='ajax-poll-total-value'></span>
+		</div>
+	</div>-->
+	<!-- [END] Back Box -->
+
+</form>
+<!-- [END] Ajax Poll -->
+   </div>
+   <div class="celebrate"><img src="{$workspace}/img/chef-celebrate.jpg" />
+   </div>
+   <a name="details"></a>
+   <h1 class="textcenter souprecipe">The MINOR’S&#174; Bocuse d’Or Soup Recipe Contest</h1>
+    <!-- Tabrules start -->
+  <div class="tabrules">
+  <div class="howtoenter"><img class="floatleft" src="{$workspace}/img/how-to-enter.png" />
+  <h2>Contest Status</h2>
+  <p>The MINOR’S judging panel has selected the top finalists from the many talented participants who shared their creative soup recipes.</p>
+   </div>
+   <div class="voting"><img class="floatleft" src="{$workspace}/img/voting.png" />
+   <h2>Voting and Winner Selection</h2>
+  <p>The category finalists’ names and recipes will appear on flavormeansbusiness.com/battleforbocuse from 10/1/14 through 10/31/14 for a voting session open to the general public. The category finalist with the most votes will be designated the grand prize winner and will be featured on flavormeansbusiness.com/battleforbocuse on 11/1/14.</p>
+   </div>
+   <div class="prizes"><img class="floatleft" src="{$workspace}/img/prizes.png" />
+   <h2>Prizes</h2>
+  <p>Category Finalists</p> 
+<p>Each of the category finalists will receive a professionally styled and photographed canvas print of their submitted recipe.
+</p>
+   </div>
+   <div class="grandprize"><img class="floatleft" src="{$workspace}/img/grandprize.png" />
+   <h2>Grand Prize Winner</h2>
+  <p>The grand prize winner will receive a four-night trip for two (2) to watch the Bocuse d’Or culinary competition in Lyon, France, January 2015. Prize includes economy airfare for two, a four-night hotel stay, tickets to the Bocuse d’Or competition and a $400 gift card for expenses.</p>
+<p>For complete contest rules, <a href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf">click here.</a></p>
+   </div>
+</div>
+<!-- End Tabrules -->
+   </div>
+  <!-- End Desktop Layout -->
+  
+  <!--Mobile Layout -->
+  <div class="mobile-only">
+   <ul>
+   	<a href="#mobileenter"><li>Vote Now</li></a>
+   <a href="#mobiledetails"><li>Contest Details</li></a>
+   <a href="#mobiledetails"><li>Prize Overview</li></a>
+   <a target="_blank" href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf"><li>Official Rules</li></a>
+   </ul>
+    
+   <!--Start Mobile Battle for Bocuse -->
+   <div class="mobile-battleforbocuse">
+   <h1>Battle for bocuse d'or with chef steve</h1>
+   <img src="{$workspace}/img/battle-for-bocuse.jpg" />
+  </div>
+  <!--End Mobile Battle for Bocuse -->
+  <div class="mobile-trip">
+  <p>Vote for the winning soup! <br /><span class="mobile-entries">Voting is open until 10/31/14</span></p>
+ </div>
+ <div class="thebattle"><img src="{$workspace}/img/thebattle.jpg" />
+   <h1 class="textcenter"><span style="font-size:19px;">The final battle is underway. </span><br /><span style="padding:0 3px;font-size:18px;text-transform:uppercase; color:#B73129;"> Who gets your vote?</span></h1>
+   <img src="{$workspace}/img/thebattle.jpg" />
+   </div>
+   <div class="challengerprofile tablet-only"><img src="{$workspace}/img/chef-steve.jpg" /><h2>Winner Selection - The MINOR'S Soup Recipe Contest</h2>
+   <p>The MINOR’S judging panel had the difficulty of narrowing down all of the wonderful entries to these top finalists. Now, it’s your turn.</p>
+   <p>Select the one finalist you think deserves to be the champion and the winner of <a href="#mobiledetails">the grand prize.</a> Voting will only be open through 10/31/14, so cast your vote today!</p></div>
+   <div class="challengerprofile hidden-tablet"><img src="{$workspace}/img/chef-steve-prof-bio.png" />
+   <h2>Winner Selection - The MINOR'S Soup Recipe Contest</h2>
+   <p>The MINOR’S judging panel had the difficulty of narrowing down all of the wonderful entries to these top finalists. Now, it’s your turn.</p>
+   <p>Select the one finalist you think deserves to be the champion and the winner of <a href="#mobiledetails">the grand prize.</a> Voting will only be open through 10/31/14, so cast your vote today!</p></div>
+   <a name="mobileenter"></a>
+   <div class="letsbattle">
+   <p>Who deserves to win a trip to Lyon, France to watch the prestigious Bocuse d’Or competition? It’s up to you.</p>
+   <p>Please vote for your favorite finalist by 10/31/14. We encourage you to try the recipes for yourself. Be sure to visit again on 11/1/14 to see if your finalist is the grand prize winner!</p>
+   <p><a target="_blank" href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf" style="color:#B32317; text-decoration:underline;">See Official Rules.</a><br /><span style="font-size:13px;">Click recipe images below to download Chef Steve's recipes.</span>
+   </p>
+   </div>
+<div class="contest-pieces">
+  <!-- [BEGIN] Ajax Poll -->
+<form class='ajax-poll-form' tid='demo1' action='{$workspace}/ajax_poll.php'>
+
+	<!-- [BEGIN] Title -->
+	<div class='ajax-poll-title'>
+	Who deserves to win a trip to Lyon, France to watch the prestigious Bocuse d’Or competition? It’s up to you.<br />
+	Please vote for your favorite finalist by 10/31/14. We encourage you to try the recipes for yourself. Be sure to visit again on 11/1/14 to see if your finalist is the grand prize winner!
+	</div>
+	<!-- [END] Title -->
+
+	<!-- [BEGIN] Item 1 -->
+	<div class='ajax-poll-item' tid='recipe1'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Chicken Noodle
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Daigneault's Duck Dashi Noodle Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Duck Dashi Noodle Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 1 -->
+
+	<!-- [BEGIN] Item 2 -->
+	<div class='ajax-poll-item' tid='recipe2'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Chowder (Excluding Clam)
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Kiatkowski's Catalan Seafood Stew
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Catalan Seafood Stew.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 2 -->
+
+	<!-- [BEGIN] Item 3 -->
+	<div class='ajax-poll-item' tid='recipe3'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Chowder
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Herbert's Bacon Dashi Broth with Clams and Potatoes
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Bacon Dashi with Clams and Potatoes.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 3 -->
+
+	<!-- [BEGIN] Item 4 -->
+	<div class='ajax-poll-item' tid='recipe4'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			French Onion
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Jaye's Beef Short Rib French Onion Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Beef Short Rib French Onion Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 4 -->
+
+	<!-- [BEGIN] Item 6 -->
+	<div class='ajax-poll-item' tid='recipe6'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Potato Soup
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Brown's Potato Tomatillo Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Potato Tomatillo Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 6 -->
+
+	<!-- [BEGIN] Item 7 -->
+	<div class='ajax-poll-item' tid='recipe7'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Seafood Bisque
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Sockrider's Crab and Brie Bisque Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Crab and Brie Bisque.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 7 -->
+
+	<!-- [BEGIN] Item 8 -->
+	<div class='ajax-poll-item' tid='recipe8'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Tortilla Soup
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Connolly's Essence of Tomato Roasted Fennel Tortilla Soup
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Essence of Tomato with Roast Fennel and Tortilla Soup.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 8 -->
+
+	<!-- [BEGIN] Item 9 -->
+	<div class='ajax-poll-item' tid='recipe9'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Vegetable Bisque
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Berry's Roasted Mango Sweet Potato Bisque
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Roasted Mango Sweet Potato Bisque.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 9 -->
+
+	<!-- [BEGIN] Item 10 -->
+	<div class='ajax-poll-item' tid='recipe10'>
+		<div class='ajax-poll-item-caption'>
+			<input class='ajax-poll-item-radio' type='radio' name='_' />
+			Vegetable Soup
+		</div>
+		<div class='ajax-poll-item-desc-box'>
+			Chef Durkee's Grilled Portabella Barley Soup with Parmesan Crackers
+		</div>
+		<div class='ajax-poll-item-stats-box'>
+			<div class='ajax-poll-item-bar'></div>
+			<span class='ajax-poll-item-count'></span>
+			<span class='ajax-poll-item-perc'></span>
+		</div>
+		<p><a class="recipe" href="{$workspace}/pdf/Grilled Portabella and Barley Soup with Parmesan Crackers.pdf">Download Recipe</a></p>
+	</div>
+	<!-- [END] Item 10 -->
+
+	<!-- [BEGIN] Vote Box -->
+	<div class='ajax-poll-vote-box'>
+		<input class='ajax-poll-btn-vote' />
+		<input class='ajax-poll-btn-view'  value=" View results" />
+	</div>
+	<!-- [END] Vote Box -->
+
+	<!-- [BEGIN] Back Box -->
+	<div class='ajax-poll-back-box'>
+		<input class='ajax-poll-btn-back' type='button' value="Back" />
+		<div class='ajax-poll-total-box'>
+			<span class='ajax-poll-total-caption'>Total:</span>
+			<span class='ajax-poll-total-value'></span>
+		</div>
+	</div>
+	<!-- [END] Back Box -->
+
+</form>
+<!-- [END] Ajax Poll -->
+</div>
+  <!-- Tabrules start -->
+  <a name="mobiledetails"></a>
+  <h1 class="textcenter souprecipe">The MINOR’S&#174; Bocuse d’Or Soup Recipe Contest</h1>
+  <div class="tabrules">
+  <div class="howtoenter">
+  <h2>Contest Status</h2>
+  <p>The MINOR’S judging panel has selected the top finalists from the many talented participants who shared their creative soup recipes.</p>
+   </div>
+   <div class="voting">
+   <h2>Voting and Winner Selection</h2>
+  <p>The category finalists’ names and recipes will appear on flavormeansbusiness.com/battleforbocuse from 10/1/14 through 10/31/14 for a voting session open to the general public. The category finalist with the most votes will be designated the grand prize winner and will be featured on flavormeansbusiness.com/battleforbocuse on 11/1/14.</p>
+   </div>
+   <div class="prizes">
+   <h2>Prizes</h2>
+  <p>Category Finalists</p> 
+<p>Each of the category finalists will receive a professionally styled and photographed canvas print of their submitted recipe.
+</p>
+   </div>
+   <div class="grandprize">
+   <h2>Grand Prize Winner</h2>
+  <p>The grand prize winner will receive a four-night trip for two (2) to watch the Bocuse d’Or culinary competition in Lyon, France, January 2015. Prize includes economy airfare for two, a four-night hotel stay, tickets to the Bocuse d’Or competition and a $400 gift card for expenses.</p>
+<p>For complete contest rules, <a href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf" style="text-decoration:underline;">click here.</a></p>
+   </div>
+</div>
+<!-- End Tabrules -->
+ <!-- End Mobile Layout -->
+  </div>
+</xsl:template>
+
+</xsl:stylesheet>

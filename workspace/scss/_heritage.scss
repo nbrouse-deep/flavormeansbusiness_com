@@ -1,0 +1,30 @@
+.heritage {
+    .content {
+        .left {
+            .chicken-base { 
+                float: right;
+                margin: 0 0 15px 15px;
+            }
+
+            .plaque {
+                float: left;
+                margin: 0 15px 15px 0;
+            }
+
+            .caption { 
+                font-size: 10px; 
+                font-style: italic;
+                line-height: 1.2;
+            }
+            
+        }
+
+
+        .history {
+            font: 13px/1.4 helvetica, sans-serif;
+            padding: 0 15px;
+
+            strong { color: $color-accent; }
+        }
+    }
+}

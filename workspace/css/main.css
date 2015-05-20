@@ -1,0 +1,5166 @@
+@charset "UTF-8";
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {.therules {
+    padding: 0 10px;
+}
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0; }
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+p,
+pre {
+  margin: 1em 0; }
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+q {
+  quotes: none; }
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'DesyrelRegular';
+  src: url("../fonts/desyrel-webfont.eot");
+  src: url("../fonts/desyrel-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/desyrel-webfont.woff") format("woff"), url("../fonts/desyrel-webfont.ttf") format("truetype"), url("../fonts/desyrel-webfont.svg#DesyrelRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body, html {
+  height: 100%; }
+
+body {
+  color: #333;
+  background: #231f20;
+  font: 14px/1.5 helvetica, arial, sans-serif; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+p {
+  margin: 0 0 30px 0; }
+
+sup,
+sub {
+  bottom: auto;
+  font-size: 60%;
+  top: -0.6em;
+  vertical-align: text-bottom; }
+
+h1 {
+  color: #555;
+  font: normal 28px/1.5 'trajan-pro-3', serif;
+  text-transform: uppercase; }
+  h1 sup,
+  h1 sub {
+    top: -0.6em; }
+  h1 a {
+    color: #555; }
+
+h2 {
+  color: #555;
+  font: bold 18px/1.5 helvetica, sans-serif;
+  text-transform: uppercase; }
+  h2 a {
+    color: #555; }
+
+nav > ul {
+  margin: 0;
+  padding: 0; }
+
+form input {
+  border: 0;
+  display: block; }
+form input[type=search] {
+  height: 20px;
+  font: 16px/30px "Sorts Mill Goudy", georgia, serif;
+  padding: 5px; }
+form input[type=submit] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #dfdfdf;
+  box-sizing: content-box;
+  font: 18px/24px "Sorts Mill Goudy", georgia, serif;
+  height: 20px;
+  padding: 5px 20px;
+  text-transform: uppercase; }
+form .missing,
+form .invalid {
+  color: #b00;
+  font-style: italic; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px; }
+
+.lightbox {
+  background: url(../img/black-50.png);
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5000; }
+  .lightbox .window {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #b31b1d;
+    border: 6px solid white;
+    color: white;
+    margin: 300px auto 0;
+    padding: 30px;
+    position: relative;
+    width: 600px; }
+    .lightbox .window:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    .lightbox .window a {
+      color: white; }
+    .lightbox .window h2 {
+      color: white;
+      font-size: 28px;
+      font-weight: normal;
+      margin-top: 0;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase; }
+    .lightbox .window .close {
+      border: 0;
+      background: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      right: 10px;
+      top: 10px; }
+
+.caption {
+  color: #999;
+  display: block;
+  font: italic 14px/1.5 "Sorts Mill Goudy", georgia, serif;
+  margin: 5px 15px 30px 0;
+  text-align: right; }
+
+.error {
+  color: #b00;
+  color: #b00;
+  font-weight: bold;
+  font-style: italic;
+  margin: 15px 0; }
+
+.button {
+  background: url(../img/button-grey.png);
+  border: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  padding: 15px 10px;
+  text-align: center;
+  width: 167px; }
+  .button.lengthy {
+    height: 40px;
+    padding: 5px 10px; }
+
+.mobile-only {
+  display: none; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000; }
+  
+  
+
+/*
+ * jquery.rs.carousel.css 1.0.2
+ * https://github.com/richardscarrott/jquery-ui-carousel
+ *
+ * Copyright (c) 2013 Richard Scarrott
+ * http://www.richardscarrott.co.uk
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ * Depends:
+ *  a basic reset + items must have width & height
+ */
+.rs-carousel-mask {
+  overflow: hidden; }
+
+.rs-carousel-runner {
+  position: relative; }
+
+.rs-carousel-horizontal .rs-carousel-item {
+  float: left; }
+
+.rs-carousel-mask {
+  position: relative; }
+
+.rs-carousel-runner {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.rs-carousel-transition .rs-carousel-runner {
+  -moz-transition: -moz-transform .400s ease;
+  -webkit-transition: -webkit-transform .400s ease;
+  -o-transition: -o-transform .400s ease;
+  -ms-transition: -ms-transform .400s ease;
+  transition: transform .400s ease; }
+
+.ath-viewport * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.ath-viewport {
+  position: relative;
+  z-index: 2147483641;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none; }
+
+.ath-modal {
+  background: rgba(0, 0, 0, 0.6); }
+
+.ath-mandatory {
+  background: #000; }
+
+.ath-container {
+  position: absolute;
+  z-index: 2147483641;
+  padding: 0.7em 0.6em;
+  width: 18em;
+  background: #eee;
+  background-size: 100% auto;
+  box-shadow: 0 0.2em 0 #d1d1d1;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  text-align: center; }
+
+.ath-ios.ath-phone {
+  bottom: 1.8em;
+  left: 50%;
+  margin-left: -9em; }
+
+.ath-ios7.ath-tablet {
+  left: 0.7em;
+  top: 1.8em; }
+
+.ath-ios6.ath-tablet {
+  left: 5em;
+  top: 1.8em; }
+
+.ath-android {
+  right: 1.5em;
+  top: 1.8em; }
+
+/* close icon */
+.ath-container:before {
+  content: '×';
+  position: relative;
+  display: block;
+  float: right;
+  margin: -0.3em -0.25em 0 0.1em;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  overflow: hidden;
+  font-size: 2.3em;
+  color: #a33;
+  z-index: 2147483642; }
+
+.ath-container.ath-icon:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  float: none; }
+
+.ath-mandatory .ath-container:before {
+  display: none; }
+
+.ath-android:before {
+  line-height: 1.2em; }
+
+.ath-ios:before {
+  line-height: 1em; }
+
+.ath-container.ath-android:before {
+  float: left;
+  margin: -0.3em 0.1em 0 -0.2em; }
+
+.ath-container.ath-android.ath-icon:before {
+  position: absolute;
+  right: auto;
+  left: 0;
+  margin: 0;
+  float: none; }
+
+/* applied only if the application icon is shown */
+.ath-action-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  text-indent: -9999em;
+  overflow: hidden; }
+
+.ath-android .ath-action-icon {
+  width: 1.2em;
+  height: 1.8em;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAADcBAMAAAAig/QJAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAFtDAABbQwH5xg68AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAB5QTFRFAAAA////cXFxaWlp////ZmZmnJycoaGhpqam////1D9b6wAAAAV0Uk5TAAgJERExZxYzAAAAYklEQVRYw+3WoQ2AUBAE0SsBOiBUQEIDCArA4FFoHBaJxNItFYz/x5+xz282VmwJTdM0rRzbsS1e7Pm9zdgUVn491rkFmqZpSezEjqo/Sos1HoAEjdjgFmiapiWxG7tq/igfnYteFlnOWZEAAAAASUVORK5CYII=);
+  background-size: auto 100%; }
+
+.ath-ios7 .ath-action-icon {
+  width: 1.6em;
+  height: 1.6em;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAACtCAYAAAB7l7tOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAABa5AAAWuQBuyxkRwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAZoSURBVHja7d1ZbFRlGIfxzxVwl809goLgghrRoEaNSzQagrsRt8QYgzEG443SOQNSA0QTXHALcY2KMe7EuCB6YbxwiUtwA0VwQRSxqMimUNt5vOg5OEPL9Ew705m2zz95L5rOvOfr+8s3nZ6TOQ2hNyXiyhDxQpjADr3q5+4VyTIhRORCBCHijTCRPg6lZ+3c5hg3qZfdyT0D9/IQ0bQFblIvhnq2d0jdF3d8Edyknhe5O6aOs0PExnZwk3ooBLZxaN0lWcaFiE0pcVsqy+Ohnm0dXq0nYmzJuP8jPypyLSfDySFifYdwk8ow00HWYiZzeojY0Cnc/2uWA60t3FPLiJvU3Q62FpLl2BCxusy4SU1xwNVMhjEhYk2FcJOqd9DVSB3HhYi/KozrTq4S7ui0L8v9ppYJOUPk4LsiUxgVIlalQRl5D4x+oPhjrniuJOQ6ASqZiCNCREMajIPuhOV/wfGziz/uuz9gwtySdvPNQlQiGQ4LGX5LgzB0JixbDdA+8Pd/QnMOrnw+NXAuRNwgSDkzmUNDxMo0AENmwo8xLsCY2Zsv8m8VGKCpGS5/rgTkDNcLUx7cg0PE8jSD3/cOWPI7+fnj6PuLnwBZ1MCnyYObmmH8syUhXydQ53CHhoif0uIuXlWA+ydwzJH3sa7Y825/l7OAd5InNTbBeXNSIzeHDFcJ1ZHUMSRELEsz6L1vh28KcdcCJ4QQQnvAk+ZzCrAz8G7y5E1NMO6p1MhNIcsVgpWSLPuFiCVpBjxwOnyxshXuiUmrNMAhhADsBnyYjzz2yZKQLxMuTW5h3xDxbZrBDpgOn60owF0HnJTfLi1wjLw78FHS7O9GOOOxkpAvFbBYIvYJEYvTDLT/NFhQiLseOHnLlqUAx8h7AB8nTTc0wmmPpkZuDBnOFbKt3MzeIeLrNIPccxp8+ksB7j/AmW21LRU4D/mTfORTH0mNvClkGSdofjIMCBGfpxngrrfB+8ta4Z61tdYdAY6RBwFfbn552ASnPFwCcsRYYUMIoZ7+IWJBmsHtUg/vFeJuBM4u1r6jwDHyYOCr5GBrNsKY2amR/w6TOV3giKlpBtbnVnjz2wLcRuD89tp3BjgPeWFy0FUbYNS9qZEXhkvYrrfv4G1Dlsfbu+T39tJWuBemad9Z4Bh5L2BRcvDV/8DoB9vFXRKyHOAODiEsX06/8c+2fcaq760wv3Dn/gtcnLZ3OYBj5P2BpWl28oh7aHpmQdtv+npdgL7A/FwOJr7a+mV53uJWuJeU0r9cwPFaDwC+SxbTsB4On1XY7/BZsHJdy7eBIwSGqcnAcjm46bWWQe0wBeYuLMDNARNK7V9O4Hi9w4HNf6T9th4Oi5FH3dvydV4WQS//HQz0A97KR574Kjz9WcGgmoGrO9K/3MDxmg8EfkgWt2w1nPMErFhbsOZVwNG9fgfHA+sDvELbaQau6WjvSgDHax6Wv5O3yK/AocoWDmxHYO4Wg8oB13amb6WA4zUf0gbyL8BIRbeO/FIe7o2d7VlJ4HjNI4DkrPjPwAgliw9sO+Bp4KZy9Ks0cLzmkfEFiuEKphtY2T7C2RXA5V6zqUFgI7AR2AhsBBZYYIGNwEZgI3DFk+X1blX1DK4acD2Du928uugmJuWrOoZUDbjlA3Hda14CCyywwF1XF8zhqGoBXzCHowSucE2aV/jx0K4EnjSPkwQWWGCBawS4/7SW2yPUUi1tYFi1gJc2MKzW5tF/WieAB82gFlO1d9HAkFobxqAZAgsscC8FHjiDHHBRjdVOVQTeqdbmMXBG8Vs1FgUeMJ3m0M3T068mDZje6n8yCiywwAILLLDAAgsssMACCyywwAILLLDAAgsssMACCyywwAILLLDAAgsssMACCyywwAILLLDAAgsssMACCyywwAILLLDAAgsssMACCyywwAILLLDAAgsssMACCyywwAILLLDAHc+KtXz88xrYWjWsKe3+0wLXWIAP2rlh61CBBRZYYIGrBXwMcFqR6iuwEdgIbAQ2AhuBBRZYYIEFNgIbgY3ARmCBBRZYYIGNwEZgI7AR2AgssMACG4GNwEZgI7ARWGCBBRZYYCOwEdgIbAQWWGCBBRbYCGwENgIbgY3AAgsssMACG4GNwEZgI7DAHQGup69Vu9UpYKsHlEMQ2BLYEtgS2BLYKrWG3wVWz62A6dERWGAjsKnZ/Af2wMWISv7RmgAAAABJRU5ErkJggg==);
+  margin-top: -0.3em;
+  background-size: auto 100%; }
+
+.ath-ios6 .ath-action-icon {
+  width: 1.8em;
+  height: 1.8em;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAB0CAQAAADAmnOnAAAAAnNCSVQICFXsRgQAAAAJcEhZcwAAWwEAAFsBAXkZiFwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAGaklEQVR42u3cfUxVZRwH8O8FRERRfNfKt4zM2UzNMszZFPMPW5KWzizJ0JJWitOU3mYs54ZuNRk6zblSaebUnKllSpopaRorJiqmtjRNK4sNEBR5+fbH45ELwrnn5Tnn3gPP7/cv9/7O/eyc5zyvAF6PrlgAFTrRHcQmtFIQekDEYXRRFA3GzP4gCOI39FcaDcQ7g24BEUUYrTz0gIhKvKZE9IAIIhNhSkUPiNiGaOWiB0Tko4eS0QMi/sQQZaMHRJRivNLRAyKqkKZ89IAIYg1aKCDq5l60U0D6WYDeCkg/r2KEAtLPG5iqgPSzBukKKFB+ikgFpJ+56KyA9PMcHjBXYYwjGRmyQMR/GGWmAqVnNV4N4TuIICowPXhA1ZgR0o+Y6Yk1uTyVeD7E26Da3GpsYk0iTwQ3kSS5nbLboAj0wnBMwGwsRhaysRO5yEMe8iJP2bjig+joIlALbhE86xguCWUgXkYmduMMbjrQVhLEWfRzCagldwmelfTZhOmM8ViGXJQ7hFI3iwK906SUieLXgifTFs9DeA/HUOMKjP87LdlhoFb8RvB8ZJHHhxHIxEWXYfzzY0Q4BtSG3wueDyzhxCAFvwSRJuA7zeYXx/CQ4LEy/3sPlqMkBHBEHkN36UBt+YPgWWgapzfWoiJkcERewECpQB2YR5I1nG/6PbUcN0IMR2QJxhkEWsi0gPkjSVYzxRROS6SjLCRxGplYa+QPq2goqjnTFM8wFIQwjpZZCJcDVMmppu6dTNf7OFbzEDoFAKrcx5yA+ZIJnh444hEckcfRUxcoXe5wMwH/eIqHIK7gUbeAklHlOR4xCElyA2iWR3mIGixyHijDoziMqRw8xflH7H2v8vTjKfIyhzoLNNurPM+xVHRksp0EesabbU84M1hDklVMo885oMdcmhGUnO25W9w7xUx0sh8Ui/Ne5InjCcFTwL4BetI2gbZ5kedZreXZwjYBx2K2gKZ7DydMa3mqRcvjJFAcrnmNJ5ZfiXunlBMNzgfZAPrSazx9eVzwnOB9hmcULQM96TWeCSwRPFv9Wx6ngMKQ3zRaHqeAXvQSTzttNfgaJ5leOLQE5EOhd3j6MF/wnGSchZVVS0Bj5f6ELhzKiZzLdC7nOm7nAebzPIvqZKHF7x7DfwXPNsZYWpu3BLTD/iptPFO4mnt5muWGVg0uW6ozj5UBWh4ngPpYHZxG8nGmcTPPsJpmwzxQK34mPlrGKTY2UFkAWmJ+y8wopnM/y/QEilnAQ9zJbGZxMedzBif559EF5mr24s/ie3/nIFtb8CwAnTV+md04hzm83hBIFQu5mUv5Op/mQMbK3YKXyGJR5Vt2NPqzZAH1N3aJrTmNu1lRn6WUOVzGJA5hlHN7FFNFy0N+yAjbu1xNA70duFOWwPXaeFmLIu7gmxxm5oKtAUVxvahYzhfMVZAFdES/GU7m6bo0Z7mMw2n7jLsxoB78SVQ9T9OHfeUARfluNv5QzeNFf5pCvssBbm4DHsm/ReXvaOGkhhyg+MbeU3N4pZamhGs53O190m/wprZ/0tKDLAdo7p3f4GMSL9Ti/MpZbO32RvIofiKqX2eS1QpSgMI+r//5+7mvFucgE+nQf9TQA7qbR0X9PzjUegUpQG1O1F04eau2j3OAw4JzFGGE9nDvYQc7FaQARRf7rwwc1nDOcbLtbeUWgVK0vtYK2jw5LwMo2nf7c8navVPORWY7fbKAorlRXMMNJtuvIAMoTusKLhXzc2QO74UrcSfQXdodfEnOwy0D6GGxY3qPNj+XBNeiPlCCNs+TY3y05ThQ7EiwK4+JCztjdJTsBFCaNtpaJe9AlgSgsVN6aQOJzWwLBAcokqu1lucVmRUkAC2eeElsKE+F66EBdWOuyXkeF4EYT7LCzZanPtBoXtXmeTrJriAD6AmW8SkgWEC3W541bCm/ggygRxiPIMWSB1cInAqTRyJcnw8KUrD7rXmewY5VaAJA++W3PE0JKMPUPE8MEpoXkLnBcBL+wqpmBWQiemIXCCqghiIcadoxvvYbFFD9GIDDtb9s3EkF5B9RyKj7jy0UkH+MvnNBXAFp0QEbGjoCqoC0mNPwL1NACshYhKUqIN2YvFEB6ca0LxSQAlJACkgBKSAFpICsADXdVEAKSAEpIAWkgBSQAlJACkgBKaDgA41hc8vUXHM3UPOLVQpIAbkH9D87oz0rvnJrOgAAAABJRU5ErkJggg==);
+  margin-bottom: 0.4em;
+  background-size: 100% auto; }
+
+.ath-container p {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2147483642;
+  text-shadow: 0 0.1em 0 #fff;
+  font-size: 1.1em; }
+
+.ath-ios.ath-phone:after {
+  content: '';
+  background: #eee;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  bottom: -0.9em;
+  left: 50%;
+  margin-left: -1em;
+  -webkit-transform: scaleX(0.9) rotate(45deg);
+  transform: scaleX(0.9) rotate(45deg);
+  box-shadow: 0.2em 0.2em 0 #d1d1d1; }
+
+.ath-ios.ath-tablet:after {
+  content: '';
+  background: #eee;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: -0.9em;
+  left: 50%;
+  margin-left: -1em;
+  -webkit-transform: scaleX(0.9) rotate(45deg);
+  transform: scaleX(0.9) rotate(45deg);
+  z-index: 2147483641; }
+
+.ath-android:after {
+  content: '';
+  background: #eee;
+  background: -webkit-linear-gradient(-45deg, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0) 50%, #eeeeee 50%, #eeeeee 100%);
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: -1.5em;
+  right: 0; }
+
+.ath-application-icon {
+  position: relative;
+  padding: 0;
+  border: 0;
+  margin: 0 auto 0.2em auto;
+  height: 6em;
+  width: 6em;
+  z-index: 2147483642; }
+
+/* OS specific classes */
+.ath-container.ath-ios .ath-application-icon {
+  border-radius: 1em;
+  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.3), inset 0 0.07em 0 rgba(255, 255, 255, 0.5);
+  margin: 0 auto 0.4em auto; }
+
+@media only screen and (orientation: landscape) {
+  .ath-container.ath-phone {
+    width: 24em; }
+
+  .ath-ios.ath-phone {
+    margin-left: -12em; }
+
+  .ath-ios6:after {
+    left: 39%; } }
+.main {
+  -moz-border-radius: 22px 22px 0 0;
+  -webkit-border-radius: 22px 22px 0 0;
+  border-radius: 22px 22px 0 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: white; }
+
+.content {
+  margin: 0 auto;
+  padding: 30px 0;
+  z-index: 100;
+  width: 1080px; }
+  .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .content > .left {
+    border-right: 1px solid #e5e5e5;
+    float: left;
+    padding-bottom: 30px;
+    width: 72.12963%; }
+    .content > .left > * {
+      width: 96.5%; }
+    .content > .left > img {
+      display: block;
+      width: 100%; }
+
+header {
+  padding-top: 20px;
+  position: relative;
+  z-index: 200; }
+  header .logo {
+    display: block;
+    float: left; }
+    header .logo img {
+      height: 55px; }
+  header .show-nav {
+    display: none; }
+  header .center {
+    margin: 0 auto;
+    position: relative;
+    width: 1080px; }
+  header .primary {
+    float: right;
+    font: 24px/1.5 "Sorts Mill Goudy", georgia, serif; }
+    header .primary li {
+      float: left;
+      height: 70px;
+      padding: 15px 15px 0; }
+      header .primary li.active a {
+        background: #ddd; }
+    header .primary a {
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      color: #635f60;
+      display: block;
+      padding: 5px 15px; }
+    header .primary .videos {
+      padding-right: 0; }
+  header .secondary {
+    bottom: -4px;
+    clear: both;
+    background: url(../img/red-streak.png);
+    height: 50px;
+    padding: 0 100px 0 0; }
+    header .secondary ul {
+      float: right; }
+    header .secondary li {
+      float: left;
+      height: 50px;
+      padding: 5px 5px;
+      position: relative; }
+      header .secondary li:before {
+        border-left: 1px solid #82201d;
+        content: " ";
+        height: 20px;
+        left: 0px;
+        position: absolute;
+        top: 16px; }
+      header .secondary li:first-child:before {
+        display: none; }
+      header .secondary li.active a {
+        text-decoration: underline; }
+      header .secondary li a {
+        color: white;
+        display: block;
+        font-size: 15px;
+        line-height: 41px;
+        padding: 0 15px; }
+
+.site-search {
+  height: 30px;
+  margin: 0 auto;
+  padding: 6px 0;
+  width: 1080px; }
+  .site-search .see-how-fmb {
+    float: left;
+    font: 100 18px/1.5 "Sorts Mill Goudy", georgia, serif;
+    margin: 0; }
+    .site-search .see-how-fmb a {
+      color: white; }
+  .site-search form {
+    float: right; }
+    .site-search form input {
+      float: left; }
+    .site-search form input[type=submit] {
+      -moz-box-sizing: content-box;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      margin: 0 0 0 10px; }
+
+footer {
+  background: #b32017 url(../img/red-streak2.jpg) no-repeat center top;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 200; }
+  footer small {
+    clear: both;
+    color: white;
+    display: block;
+    margin: 30px 0;
+    text-align: center; }
+  footer li {
+    display: inline; }
+  footer a {
+    color: white; }
+  footer .primary ul {
+    padding: 40px 0 0 0;
+    text-align: center; }
+  footer .primary li a {
+    font: 24px/1.5 "Sorts Mill Goudy", georgia, serif;
+    margin: 0 30px; }
+  footer .secondary ul {
+    margin: 20px 0 0 0;
+    text-align: center; }
+  footer .secondary li {
+    font-size: 18px;
+    padding: 0 20px;
+    position: relative; }
+    footer .secondary li:before {
+      border-left: 1px solid #82201d;
+      content: " ";
+      height: 12px;
+      left: 0px;
+      position: absolute;
+      top: 5px; }
+    footer .secondary li:first-child:before {
+      display: none; }
+    footer .secondary li a:hover {
+      text-decoration: underline; }
+  footer .top {
+    display: none;
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase; }
+    footer .top a {
+      color: white; }
+
+.content .contact {
+  border-top: 1px solid #e5e5e5;
+  clear: both;
+  overflow: hidden;
+  padding: 30px 0;
+  position: relative; }
+  .content .contact h2 {
+    color: #888;
+    font: normal 26px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+    margin: 0 0 30px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .content .contact .left {
+    float: left;
+    width: 50%; }
+  .content .contact h3 {
+    color: #777;
+    font: italic 22px/1.5 "Sorts Mill Goudy", georgia, serif;
+    margin: 5px 0 0 0; }
+  .content .contact img {
+    bottom: 30px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 48%; }
+  .content .contact dl {
+    background: #fbfaf8;
+    margin: 0;
+    overflow: hidden;
+    padding: 20px 0;
+    width: 100%; }
+    .content .contact dl dt,
+    .content .contact dl dd {
+      line-height: 33px;
+      margin: 0 0 10px 0; }
+    .content .contact dl dt {
+      clear: left;
+      color: #888;
+      font: italic 22px/33px "Sorts Mill Goudy", georgia, serif;
+      float: left;
+      text-align: center;
+      width: 30%; }
+    .content .contact dl dd {
+      color: #b32017;
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: underline;
+      width: 70%; }
+      .content .contact dl dd a {
+        color: #b32017; }
+
+.sidebar {
+  float: right;
+  font: 20px/1.4 "Sorts Mill Goudy", georgia, serif;
+  left: -1px;
+  margin: 0 0 30px 0;
+  position: relative;
+  width: 27.6%; }
+  .sidebar > h2 {
+    border-bottom: 1px solid #e5e5e5;
+    font: 1em/1 "Sorts Mill Goudy", georgia, serif;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-indent: 40px;
+    text-transform: none; }
+  .sidebar.featured section {
+    cursor: pointer; }
+    .sidebar.featured section:hover a {
+      color: #8a8788; }
+    .sidebar.featured section h3,
+    .sidebar.featured section h4,
+    .sidebar.featured section .image {
+      margin: 5px 0 5px 15px; }
+    .sidebar.featured section h2 {
+      color: #555;
+      border-bottom: 1px solid #edece8;
+      border-top: 1px solid #edece8;
+      font: normal 20px/1.4 "Sorts Mill Goudy", georgia, serif;
+      letter-spacing: 0px;
+      padding: 3px 0 0 0;
+      text-align: center;
+      text-transform: none; }
+    .sidebar.featured section h3 {
+      font: bold 20px/1.2 helvetica, arial, sans-serif; }
+      .sidebar.featured section h3 a {
+        color: #555; }
+        .sidebar.featured section h3 a:after {
+          content: " ›";
+          font-size: 26px;
+          line-height: 0; }
+    .sidebar.featured section h4 {
+      color: #999;
+      font: 13px/1.4 "Sorts Mill Goudy", georgia, serif; }
+    .sidebar.featured section .image {
+      background: black;
+      margin-bottom: 10px;
+      overflow: hidden;
+      position: relative;
+      text-align: center; }
+      .sidebar.featured section .image:hover span {
+        -moz-transition: opacity 300ms;
+        -o-transition: opacity 300ms;
+        -ms-transition: opacity 300ms;
+        -webkit-transition: opacity 300ms;
+        transition: opacity 300ms;
+        opacity: 1; }
+      .sidebar.featured section .image:hover img {
+        -moz-transition: all 250ms;
+        -o-transition: all 250ms;
+        -ms-transition: all 250ms;
+        -webkit-transition: all 250ms;
+        transition: all 250ms;
+        opacity: 0.4; }
+      .sidebar.featured section .image span {
+        color: white;
+        display: block;
+        font: italic 22px/200px "Sorts Mill Goudy", georgia, serif;
+        height: 100%;
+        left: 0px;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 0px;
+        width: 100%;
+        z-index: 100; }
+      .sidebar.featured section .image img {
+        display: block;
+        position: relative;
+        width: 100%; }
+  .sidebar.featured .menu-concept h2 {
+    margin-top: 0; }
+
+.home .content {
+  padding-top: 0;
+  width: auto; }
+  .home .content .center,
+  .home .content .contact {
+    margin: 0 auto;
+    position: relative;
+    width: 1080px; }
+  .home .content .products-cta {
+    background: url(../img/chef.jpg) right top;
+    background-size: cover;
+    height: 445px;
+    margin-top: -5px;
+    position: relative; }
+    .home .content .products-cta > div {
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      background: white;
+      background: rgba(255, 255, 255, 0.8);
+      bottom: 10px;
+      cursor: pointer;
+      height: 170px;
+      position: absolute;
+      width: 48.5%; }
+    .home .content .products-cta h1 {
+      color: white;
+      letter-spacing: 1px;
+      position: absolute;
+      right: 10px;
+      text-align: right;
+      top: 30px; }
+    .home .content .products-cta h2 {
+      float: left;
+      font: 600 20px/1.2 'trajan-pro-3';
+      margin: 40px 0 10px 2%;
+      letter-spacing: 1px;
+      width: 45%; }
+    .home .content .products-cta img {
+      float: left;
+      position: relative;
+      top: -25px;
+      width: 50%; }
+    .home .content .products-cta a {
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid #333333;
+      display: block;
+      float: left;
+      font: normal 16px/50px "Sorts Mill Goudy", georgia, serif;
+      margin-left: 2%;
+      text-align: center;
+      width: 45%; }
+      .home .content .products-cta a:after {
+        content: " »";
+        font-size: 28px;
+        position: relative;
+        top: 2px; }
+    .home .content .products-cta .latin-flavors {
+      left: 1%; }
+    .home .content .products-cta .gluten-free {
+      right: 1%; }
+  .home .content .too-short {
+    bottom: 0px;
+    display: none;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+    width: 100%; }
+    .home .content .too-short a {
+      background-color: transprent;
+      border: 0;
+      color: transparent;
+      display: block;
+      font: 0/0 a;
+      text-shadow: none;
+      background: url(../img/explore-more-content.png) no-repeat center center;
+      height: 39px;
+      width: 100%; }
+  .home .content .featured,
+  .home .content .chefs,
+  .home .content .featured-video,
+  .home .content .calls-to-action {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 30px 0; }
+    .home .content .featured h2,
+    .home .content .chefs h2,
+    .home .content .featured-video h2,
+    .home .content .calls-to-action h2 {
+      color: #888;
+      font: normal 26px/1.4 'trajan-pro-3';
+      margin: 0 0 30px 0;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+  .home .content .featured:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .home .content .featured section {
+    cursor: pointer;
+    float: left;
+    width: 31.4815%; }
+    .home .content .featured section:hover a {
+      color: #8a8788; }
+    .home .content .featured section h2 {
+      color: #555;
+      border-bottom: 1px solid #edece8;
+      border-top: 1px solid #edece8;
+      font: normal 20px/1.4 "Sorts Mill Goudy", georgia, serif;
+      letter-spacing: 0px;
+      padding: 3px 0 0 0;
+      text-align: center;
+      text-transform: none; }
+    .home .content .featured section h3 {
+      font: bold 22px/1.2 helvetica, arial, sans-serif;
+      margin: 0; }
+      .home .content .featured section h3 a {
+        color: #555; }
+    .home .content .featured section h4 {
+      color: #666;
+      font: 13px/1.4 "Sorts Mill Goudy", georgia, serif;
+      margin: 5px 0 15px 0; }
+    .home .content .featured section .image {
+      height: 225px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      width: 100%; }
+      .home .content .featured section .image:hover span {
+        -moz-transition: opacity 300ms;
+        -o-transition: opacity 300ms;
+        -ms-transition: opacity 300ms;
+        -webkit-transition: opacity 300ms;
+        transition: opacity 300ms;
+        opacity: 1; }
+      .home .content .featured section .image:hover img {
+        -moz-transition: all 250ms;
+        -o-transition: all 250ms;
+        -ms-transition: all 250ms;
+        -webkit-transition: all 250ms;
+        transition: all 250ms;
+        opacity: 0.4; }
+      .home .content .featured section .image span {
+        background: url(../img/black-50.png);
+        color: white;
+        display: block;
+        font: italic 22px/225px "Sorts Mill Goudy", georgia, serif;
+        height: 100%;
+        left: 0px;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 0px;
+        width: 100%;
+        z-index: 100; }
+      .home .content .featured section .image img {
+        display: block;
+        position: relative;
+        width: 100%; }
+  .home .content .featured .blog,
+  .home .content .featured .offer {
+    margin-left: 2.77778%; }
+  .home .content .chefs {
+    clear: both; }
+    .home .content .chefs .center {
+      overflow: hidden; }
+    .home .content .chefs .slides {
+      height: 290px;
+      overflow: hidden;
+      position: relative;
+      width: 2000em; }
+    .home .content .chefs .see-all {
+      color: #888;
+      display: block;
+      float: left;
+      font: 100 16px/1.5 "Sorts Mill Goudy", georgia, serif;
+      right: 0px;
+      text-indent: 20px;
+      position: absolute;
+      top: 15px; }
+      .home .content .chefs .see-all:hover {
+        text-decoration: underline; }
+    .home .content .chefs .chef {
+      float: left;
+      height: 290px;
+      margin: 0 32px 0 0;
+      position: relative; }
+      .home .content .chefs .chef:hover .show-hide {
+        background-position: -30px; }
+      .home .content .chefs .chef.open .show-hide {
+        background-position: -60px; }
+      .home .content .chefs .chef.open .show-hide:hover {
+        background-position: -90px; }
+      .home .content .chefs .chef.open .left a {
+        display: none; }
+      .home .content .chefs .chef .show-hide {
+        background-color: transprent;
+        border: 0;
+        color: transparent;
+        display: block;
+        font: 0/0 a;
+        text-shadow: none;
+        background: url(../img/pluses-minuses.png);
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px; }
+      .home .content .chefs .chef .left {
+        float: left;
+        height: 100%;
+        width: 190px;
+        position: relative; }
+        .home .content .chefs .chef .left .image {
+          background: #fee;
+          height: 100%;
+          overflow: hidden;
+          position: relative; }
+          .home .content .chefs .chef .left .image img {
+            height: 100%;
+            left: -50px;
+            position: relative; }
+        .home .content .chefs .chef .left a {
+          background: url(../img/red-50.png);
+          color: white;
+          display: block;
+          font: italic 28px/1.5 "Sorts Mill Goudy", georgia, serif;
+          height: 100%;
+          left: 0px;
+          opacity: 0;
+          padding: 100px 0 0 0;
+          position: absolute;
+          text-align: center;
+          top: 0px;
+          width: 100%;
+          z-index: 100; }
+          .home .content .chefs .chef .left a:hover {
+            -moz-transition: opacity 200ms;
+            -o-transition: opacity 200ms;
+            -ms-transition: opacity 200ms;
+            -webkit-transition: opacity 200ms;
+            transition: opacity 200ms;
+            opacity: 1; }
+          .home .content .chefs .chef .left a .name {
+            display: block;
+            font: normal 18px/1.5 "Sorts Mill Goudy", georgia, serif;
+            font-weight: 100; }
+      .home .content .chefs .chef .right {
+        float: left;
+        background: #e6e5e5;
+        display: none;
+        height: 270px;
+        padding: 20px 10px 0 20px;
+        width: 416px; }
+        .home .content .chefs .chef .right h3 {
+          color: #b22116;
+          font: normal 24px/1.4 "Sorts Mill Goudy", georgia, serif;
+          margin: 0 0 15px 0; }
+        .home .content .chefs .chef .right .short-bio {
+          float: left;
+          height: 170px;
+          overflow: hidden;
+          width: 220px; }
+          .home .content .chefs .chef .right .short-bio.expand {
+            width: 400px; }
+        .home .content .chefs .chef .right .full-bio {
+          float: left;
+          width: 220px; }
+          .home .content .chefs .chef .right .full-bio a {
+            color: inherit;
+            font: 13px/1.4 "Sorts Mill Goudy", georgia, serif; }
+            .home .content .chefs .chef .right .full-bio a:after {
+              content: " »"; }
+        .home .content .chefs .chef .right .latest-menu-concept {
+          float: right;
+          width: 185px; }
+          .home .content .chefs .chef .right .latest-menu-concept h4 {
+            font-size: 18px;
+            margin: 5px 0; }
+            .home .content .chefs .chef .right .latest-menu-concept h4 a {
+              color: #666; }
+              .home .content .chefs .chef .right .latest-menu-concept h4 a:after {
+                content: " ›"; }
+          .home .content .chefs .chef .right .latest-menu-concept .image {
+            height: 100px;
+            overflow: hidden;
+            width: 100%; }
+            .home .content .chefs .chef .right .latest-menu-concept .image img {
+              width: 100%; }
+          .home .content .chefs .chef .right .latest-menu-concept .date {
+            color: #999;
+            display: block;
+            font-size: 12px;
+            margin: 5px 0; }
+          .home .content .chefs .chef .right .latest-menu-concept .tags {
+            height: 26px;
+            list-style: none;
+            margin: 0;
+            overflow: hidden;
+            padding: 0; }
+            .home .content .chefs .chef .right .latest-menu-concept .tags li {
+              float: left; }
+              .home .content .chefs .chef .right .latest-menu-concept .tags li a {
+                background: #cfcece;
+                color: #717172;
+                display: block;
+                font-size: 11px;
+                margin: 0 5px 5px 0;
+                padding: 5px;
+                text-transform: uppercase; }
+                .home .content .chefs .chef .right .latest-menu-concept .tags li a:hover {
+                  background: #d9d9d9;
+                  color: #555; }
+    .home .content .chefs .filmstrip a {
+      background-color: transprent;
+      border: 0;
+      color: transparent;
+      display: block;
+      font: 0/0 a;
+      text-shadow: none;
+      background: #eee;
+      border: 1px solid #eee;
+      display: block;
+      float: left;
+      height: 18px;
+      margin: 20px 13.4px;
+      width: 18px; }
+      .home .content .chefs .filmstrip a:hover {
+        border: 1px solid #a7a4a4; }
+      .home .content .chefs .filmstrip a.active {
+        background: #a7a4a4;
+        border: 1px solid #a7a4a4; }
+    .home .content .chefs .mobile-nav {
+      display: none; }
+      .home .content .chefs .mobile-nav .next,
+      .home .content .chefs .mobile-nav .prev {
+        background-color: transprent;
+        border: 0;
+        color: transparent;
+        display: block;
+        font: 0/0 a;
+        text-shadow: none;
+        background-size: contain;
+        height: 60px;
+        width: 38px; }
+      .home .content .chefs .mobile-nav .next {
+        background-image: url(../img/mobile/arrow-right.png);
+        float: right; }
+      .home .content .chefs .mobile-nav .prev {
+        background-image: url(../img/mobile/arrow-left.png);
+        float: left; }
+  .home .content .featured-video {
+    background: #fbfaf7;
+    clear: both;
+    overflow: hidden; }
+    .home .content .featured-video .left {
+      float: left;
+      width: 49%; }
+      .home .content .featured-video .left iframe {
+        background: black;
+        width: 100%; }
+    .home .content .featured-video .right {
+      float: right;
+      width: 49%; }
+      .home .content .featured-video .right h3 {
+        color: #777;
+        font: italic 22px/1.5 "Sorts Mill Goudy", georgia, serif;
+        margin: 0 0 20px 0; }
+      .home .content .featured-video .right .details {
+        background: #eceae7;
+        padding: 15px 20px; }
+        .home .content .featured-video .right .details h4 {
+          color: #b22015;
+          font: 22px/1.2 "Sorts Mill Goudy", georgia, serif;
+          margin: 0; }
+        .home .content .featured-video .right .details h5 {
+          color: #393d3e;
+          font: 16px/1.2 "Sorts Mill Goudy", georgia, serif;
+          margin: 0 0 15px 0; }
+        .home .content .featured-video .right .details p {
+          color: #8a8586;
+          font: italic 14px/1.5 "Sorts Mill Goudy", georgia, serif;
+          margin: 0; }
+      .home .content .featured-video .right .description {
+        padding: 15px 20px; }
+      .home .content .featured-video .right .see-all {
+        color: #888;
+        display: block;
+        float: left;
+        font: 100 16px/1.2 "Sorts Mill Goudy", georgia, serif;
+        text-indent: 20px; }
+        .home .content .featured-video .right .see-all:hover {
+          text-decoration: underline; }
+  .home .content .calls-to-action {
+    background: #d8d7d7;
+    border-bottom: 0; }
+    .home .content .calls-to-action .center {
+      background: #e6e5e5; }
+    .home .content .calls-to-action .active h2,
+    .home .content .calls-to-action .active h2:hover {
+      background: #e6e5e5;
+      color: #ad1e19; }
+    .home .content .calls-to-action .active .more {
+      display: block; }
+    .home .content .calls-to-action h2 {
+      background: #d8d7d7;
+      color: #333;
+      cursor: pointer;
+      height: 70px;
+      font: normal 20px/70px "Sorts Mill Goudy", georgia, serif;
+      letter-spacing: 0px;
+      margin: 0;
+      text-align: center;
+      text-transform: none;
+      width: 24%; }
+      .home .content .calls-to-action h2:hover {
+        color: #ad1e19; }
+    .home .content .calls-to-action .more {
+      color: #888;
+      display: none;
+      font: 16px/1.5 "Sorts Mill Goudy", georgia, serif;
+      padding: 30px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 70%; }
+      .home .content .calls-to-action .more .copy {
+        float: right;
+        width: 75%; }
+      .home .content .calls-to-action .more img {
+        float: left;
+        max-width: 23%; }
+      .home .content .calls-to-action .more a {
+        color: #333;
+        font: 16px/1.4 "Sorts Mill Goudy", georgia, serif; }
+        .home .content .calls-to-action .more a:after {
+          content: " »"; }
+        .home .content .calls-to-action .more a:hover {
+          text-decoration: underline; }
+  .home .content .contact {
+    border-top: 0; }
+
+@media (max-height: 650px) {
+  .home .content .too-short {
+    display: block; } }
+#products .content .brochures,
+#products .content .latin-flavors {
+  color: #333333;
+  font-size: 130%;
+  font-weight: bold;
+  text-decoration: underline;
+  clear: both; }
+#products .content .landing .buttons {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  list-style: none outside none;
+  padding: 0; }
+  #products .content .landing .buttons li {
+    float: left;
+    margin: 0 30px 30px 30px; }
+  #products .content .landing .buttons a {
+    background: url(../img/button-grey.png);
+    border: 0;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 167px; }
+    #products .content .landing .buttons a.lengthy {
+      height: 40px;
+      padding: 5px 10px; }
+#products .content .copy {
+  margin: 45px 0 0 0; }
+  #products .content .copy img {
+    float: left;
+    margin: 0 30px 100px 0; }
+#products .content .products-list {
+  clear: both;
+  margin: 45px 0; }
+  #products .content .products-list h2 {
+    margin-bottom: 0; }
+  #products .content .products-list ul {
+    list-style: none outside none;
+    margin: 15px 0 0 0;
+    padding: 0; }
+    #products .content .products-list ul li {
+      background: #f7f1e1 url(../img/plus.png) no-repeat 15px 5px; }
+      #products .content .products-list ul li.even {
+        background-color: white; }
+      #products .content .products-list ul li.expanded {
+        background-image: url(../img/minus.png); }
+      #products .content .products-list ul li h4,
+      #products .content .products-list ul li .details {
+        padding: 5px 20px 5px 60px; }
+      #products .content .products-list ul li h4 {
+        border-bottom: 1px solid #ddd;
+        color: #666;
+        cursor: pointer;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin: 0;
+        text-transform: uppercase; }
+        #products .content .products-list ul li h4 .new {
+          font-weight: bold;
+          letter-spacing: 0;
+          margin: 0 0 0 15px; }
+      #products .content .products-list ul li .details {
+        border-bottom: 1px solid #ddd;
+        display: none;
+        overflow: hidden; }
+        #products .content .products-list ul li .details:after {
+          content: " ";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0; }
+        #products .content .products-list ul li .details a {
+          font-size: 13px;
+          text-decoration: underline; }
+          #products .content .products-list ul li .details a:after {
+            content: " ›"; }
+        #products .content .products-list ul li .details p {
+          margin: 5px 0; }
+        #products .content .products-list ul li .details .size {
+          clear: left;
+          float: left; }
+        #products .content .products-list ul li .details .url {
+          clear: right;
+          float: right; }
+#products .content .back {
+  margin-bottom: 15px;
+  margin-top: 15px; }
+  #products .content .back a {
+    font-size: 14px; }
+#products .content .sidebar > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  #products .content .sidebar > ul .active > a {
+    color: #af1e1a; }
+  #products .content .sidebar > ul > li {
+    margin: 0 0 15px 0; }
+    #products .content .sidebar > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    #products .content .sidebar > ul > li.expanded ul {
+      display: block; }
+    #products .content .sidebar > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    #products .content .sidebar > ul > li.no-children a {
+      background-image: none; }
+    #products .content .sidebar > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      #products .content .sidebar > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        #products .content .sidebar > ul > li ul li:before {
+          content: "–"; }
+        #products .content .sidebar > ul > li ul li a {
+          color: #bbb; }
+#products .content .sidebar h2 {
+  font-weight: bold; }
+#products .content .sidebar .no-children a,
+#products .content .sidebar .no-children.active a,
+#products .content .sidebar .no-children.expanded a {
+  background: none; }
+#products .content .sidebar .featured {
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 40px; }
+  #products .content .sidebar .featured h3 {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 40px; }
+  #products .content .sidebar .featured ul {
+    list-style: none outside none;
+    margin: 0.5em 0; }
+  #products .content .sidebar .featured li {
+    line-height: 2em; }
+#products .content .sidebar .sample {
+  color: #b32017;
+  display: block;
+  margin: 1em 0 0 40px; }
+
+#latin-flavors .content {
+  width: auto; }
+  #latin-flavors .content h1 {
+    margin-bottom: 48px; }
+  #latin-flavors .content > h1,
+  #latin-flavors .content > section {
+    padding: 20px 7.8125%; }
+  #latin-flavors .content > .left img {
+    margin-top: -28px;
+    width: 95%; }
+  #latin-flavors .content > .sidebar {
+    line-height: 16px; }
+    #latin-flavors .content > .sidebar ul {
+      list-style: none outside none; }
+    #latin-flavors .content > .sidebar li {
+      margin: 0 0 10px 0;
+      width: 80%; }
+    #latin-flavors .content > .sidebar a {
+      color: #333;
+      font-size: 16px; }
+      #latin-flavors .content > .sidebar a:after {
+        content: " »"; }
+  #latin-flavors .content .flavor-is-essential {
+    background: #f9f8f8;
+    clear: both; }
+    #latin-flavors .content .flavor-is-essential:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #latin-flavors .content .flavor-is-essential img {
+      float: left;
+      margin: 0 50px 0 0; }
+    #latin-flavors .content .flavor-is-essential p {
+      color: #666;
+      font: italic 20px/1.5 "Sorts Mill Goudy", georgia, serif;
+      margin: 0;
+      padding: 50px 0; }
+  #latin-flavors .content .steps {
+    font-family: trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+    font-weight: normal;
+    margin-top: 30px;
+    text-align: center; }
+  #latin-flavors .content .step {
+    clear: both;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    overflow: hidden;
+    text-transform: uppercase; }
+    #latin-flavors .content .step:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #latin-flavors .content .step p {
+      background-position: left 8px;
+      background-repeat: no-repeat;
+      float: left;
+      line-height: 40px;
+      margin-bottom: 0;
+      padding-left: 80px;
+      width: 50%; }
+    #latin-flavors .content .step select {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      display: block;
+      float: left;
+      font-size: 14px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 0 0 80px;
+      padding: 0;
+      width: 250px; }
+  #latin-flavors .content .step1 {
+    border-bottom: 1px solid #e5e5e5; }
+    #latin-flavors .content .step1 p {
+      background-image: url(../img/circle1.png); }
+  #latin-flavors .content .step2 {
+    border-bottom: 1px solid #e5e5e5; }
+    #latin-flavors .content .step2 p {
+      background-image: url(../img/circle2.png); }
+  #latin-flavors .content .step3 p {
+    background-image: url(../img/circle3.png); }
+  #latin-flavors .content .product-info,
+  #latin-flavors .content .categories,
+  #latin-flavors .content .recipes {
+    display: none; }
+  #latin-flavors .content .product-info {
+    background: #f8f4e4;
+    clear: both; }
+    #latin-flavors .content .product-info > div {
+      display: none; }
+      #latin-flavors .content .product-info > div:after {
+        content: " ";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0; }
+      #latin-flavors .content .product-info > div.active {
+        display: block; }
+      #latin-flavors .content .product-info > div img {
+        float: left;
+        margin: 0 100px 0 0; }
+      #latin-flavors .content .product-info > div h2 {
+        color: #666;
+        margin: 0 0 15px 0; }
+      #latin-flavors .content .product-info > div p {
+        color: #666;
+        font: 20px/1.3 "Sorts Mill Goudy", georgia, serif; }
+  #latin-flavors .content .product-info .hint,
+  #latin-flavors .content .recipes .hint {
+    color: #999;
+    font: italic 16px/1.5 "Sorts Mill Goudy", georgia, serif; }
+  #latin-flavors .content .categories,
+  #latin-flavors .content .recipes {
+    background: #f9f8f8; }
+  #latin-flavors .content .categories {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 0;
+    overflow: hidden;
+    padding-bottom: 0; }
+    #latin-flavors .content .categories ul {
+      list-style: none outside none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0; }
+    #latin-flavors .content .categories li {
+      display: none;
+      float: left;
+      margin: 0 10px 10px 0; }
+      #latin-flavors .content .categories li:hover a {
+        background: #fff; }
+      #latin-flavors .content .categories li.available {
+        display: block; }
+      #latin-flavors .content .categories li.active a {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: white;
+        border: 1px solid #af1e1a; }
+    #latin-flavors .content .categories a {
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      -moz-box-shadow: 0 1px 1px #ccc, inset 0 1px 1px #fff;
+      -webkit-box-shadow: 0 1px 1px #ccc, inset 0 1px 1px #fff;
+      box-shadow: 0 1px 1px #ccc, inset 0 1px 1px #fff;
+      background: #f6f6f6;
+      border: 1px solid #aaa;
+      color: #555;
+      display: block;
+      padding: 5px; }
+  #latin-flavors .content .recipes > div {
+    padding: 0 0 30px 0; }
+    #latin-flavors .content .recipes > div:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+  #latin-flavors .content .recipes .left,
+  #latin-flavors .content .recipes .right {
+    width: 48%; }
+  #latin-flavors .content .recipes .left {
+    float: left;
+    padding-left: 2%; }
+  #latin-flavors .content .recipes .right {
+    float: right;
+    padding-right: 2%; }
+  #latin-flavors .content .recipes .hidden {
+    display: none; }
+  #latin-flavors .content .recipes .recipe {
+    padding-top: 30px;
+    margin: 0 30px 15px 0; }
+    #latin-flavors .content .recipes .recipe img {
+      border: 1px solid #ddd;
+      float: left;
+      margin: 0 15px 15px 0;
+      width: 100%; }
+  #latin-flavors .content .recipes h3 {
+    margin: 0; }
+  #latin-flavors .content .recipes h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0; }
+  #latin-flavors .content .recipes .recipe-url,
+  #latin-flavors .content .recipes .menu-concept-url {
+    font: 16px/1 "Sorts Mill Goudy", georgia, serif;
+    margin: 0; }
+    #latin-flavors .content .recipes .recipe-url a:after,
+    #latin-flavors .content .recipes .menu-concept-url a:after {
+      content: " »";
+      font-size: 150%; }
+  #latin-flavors .content .recipes .vegetarian,
+  #latin-flavors .content .recipes .gluten-free {
+    font-size: 12px; }
+  #latin-flavors .content .plus-ones {
+    clear: both;
+    color: #444;
+    font: 18px/1.6 "Sorts Mill Goudy", georgia, serif;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center; }
+    #latin-flavors .content .plus-ones a {
+      color: #444;
+      font-style: italic;
+      margin-left: 30px;
+      text-decoration: underline; }
+  #latin-flavors .content .facts {
+    border-top: 1px solid #e5e5e5; }
+    #latin-flavors .content .facts:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #latin-flavors .content .facts .takes-them-away {
+      background: url(../img/peppers.png) no-repeat -10px 15px;
+      float: left;
+      margin: 30px 0 30px 30px;
+      padding-left: 70px;
+      width: 40%; }
+      #latin-flavors .content .facts .takes-them-away h2 {
+        font: 18px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+        text-transform: uppercase; }
+    #latin-flavors .content .facts .satisfy {
+      background: #dfdfdf;
+      float: right;
+      padding: 15px 30px;
+      width: 42%; }
+      #latin-flavors .content .facts .satisfy h2 {
+        font: italic normal 20px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif; }
+      #latin-flavors .content .facts .satisfy ul {
+        padding: 0 0 0 15px; }
+      #latin-flavors .content .facts .satisfy sup {
+        font-size: 50%;
+        top: -0.8em; }
+    #latin-flavors .content .facts .footnotes {
+      clear: both;
+      font-size: 9px; }
+      #latin-flavors .content .facts .footnotes p {
+        margin: 0 0 5px; }
+  #latin-flavors .content .endless-possibilities {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    padding-bottom: 30px; }
+    #latin-flavors .content .endless-possibilities:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #latin-flavors .content .endless-possibilities h2 {
+      font: 20px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+      text-transform: uppercase; }
+    #latin-flavors .content .endless-possibilities .points {
+      height: 130px;
+      margin: 0 auto;
+      width: 850px; }
+      #latin-flavors .content .endless-possibilities .points > div {
+        border-left: 1px solid black;
+        height: 100%;
+        float: left;
+        padding: 5px 15px;
+        width: 180px; }
+        #latin-flavors .content .endless-possibilities .points > div.first {
+          border-left: 0; }
+        #latin-flavors .content .endless-possibilities .points > div h3 {
+          color: #c10e0e;
+          font: italic normal 18px/1.4 "Sorts Mill Goudy", georgia, serif;
+          margin: 0; }
+        #latin-flavors .content .endless-possibilities .points > div p {
+          font: italic 16px/1.4 "Sorts Mill Goudy", georgia, serif;
+          margin: 0; }
+  #latin-flavors .content .flavors h2 {
+    font: 20px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+    margin: 0;
+    text-transform: uppercase; }
+  #latin-flavors .content .flavors table {
+    margin: 30px 0;
+    width: 100%; }
+    #latin-flavors .content .flavors table th,
+    #latin-flavors .content .flavors table td {
+      border-right: 1px solid #bbb;
+      font: 16px/1.4 "Sorts Mill Goudy", georgia, serif;
+      padding: 15px; }
+    #latin-flavors .content .flavors table th {
+      background: #efe7ca;
+      font-family: trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+      font-weight: bold;
+      text-transform: uppercase; }
+      #latin-flavors .content .flavors table th.image {
+        background: none; }
+    #latin-flavors .content .flavors table img {
+      height: 75px; }
+    #latin-flavors .content .flavors table .image,
+    #latin-flavors .content .flavors table .extra,
+    #latin-flavors .content .flavors table .description,
+    #latin-flavors .content .flavors table .empty {
+      border-right: 0; }
+    #latin-flavors .content .flavors table .name {
+      text-align: left; }
+    #latin-flavors .content .flavors table .upc,
+    #latin-flavors .content .flavors table .size,
+    #latin-flavors .content .flavors table .allergens,
+    #latin-flavors .content .flavors table .extra {
+      text-align: center; }
+    #latin-flavors .content .flavors table td.upc,
+    #latin-flavors .content .flavors table td.size {
+      font-family: 'times', serif; }
+    #latin-flavors .content .flavors table .description {
+      background: #f8f4e4;
+      color: #666;
+      font-size: 18px;
+      padding: 5px 15px; }
+      #latin-flavors .content .flavors table .description p {
+        margin: 0;
+        font-style: italic; }
+    #latin-flavors .content .flavors table .empty {
+      font-size: 1px;
+      padding: 0; }
+    #latin-flavors .content .flavors table .image {
+      padding: 0 10px 0 0; }
+    #latin-flavors .content .flavors table .extra span {
+      display: block; }
+  #latin-flavors .content .contact {
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 1080px; }
+
+#gluten-free .content {
+  width: auto; }
+  #gluten-free .content h1 {
+    margin-bottom: 0; }
+  #gluten-free .content > h1,
+  #gluten-free .content > section {
+    padding: 20px 7.8125%; }
+  #gluten-free .content > .left,
+  #gluten-free .content > .sidebar {
+    margin-bottom: 30px; }
+  #gluten-free .content > .left {
+    padding-bottom: 0;
+    padding-left: 7.8125%;
+    width: 61.6%; }
+    #gluten-free .content > .left img {
+      width: 95%; }
+    #gluten-free .content > .left .caption {
+      margin-bottom: 10px; }
+  #gluten-free .content > .sidebar {
+    margin-top: -35px;
+    width: 30%; }
+    #gluten-free .content > .sidebar ul {
+      list-style: none outside none; }
+    #gluten-free .content > .sidebar li {
+      line-height: 1.4;
+      margin: 0;
+      width: 80%; }
+    #gluten-free .content > .sidebar a {
+      color: #333;
+      display: inline-block;
+      font-size: 16px;
+      padding: 15px; }
+    #gluten-free .content > .sidebar .recipes-link a {
+      -moz-border-radius: 7px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid #ddd; }
+      #gluten-free .content > .sidebar .recipes-link a:hover {
+        border: 1px solid #aaa; }
+  #gluten-free .content .intro {
+    background: #f9f8f8;
+    clear: both; }
+    #gluten-free .content .intro:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #gluten-free .content .intro img {
+      float: left;
+      width: 18%; }
+    #gluten-free .content .intro h3,
+    #gluten-free .content .intro p {
+      float: right;
+      padding-right: 10%;
+      width: 70%; }
+    #gluten-free .content .intro h3 {
+      font-size: 18px;
+      font-weight: normal;
+      margin: 0 0 0 0; }
+    #gluten-free .content .intro p {
+      color: #888;
+      font: italic 20px/1.4 "Sorts Mill Goudy", georgia, serif;
+      margin: 0 0 15px 0; }
+    #gluten-free .content .intro .footnote {
+      font-size: 13px; }
+  #gluten-free .content .bullets > div > div {
+    font-size: 13px;
+    margin-bottom: 30px;
+    width: 45%; }
+  #gluten-free .content .bullets h2 {
+    font: 18px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+    text-transform: uppercase; }
+  #gluten-free .content .bullets img {
+    float: left;
+    width: 10%; }
+  #gluten-free .content .bullets h3 {
+    font-size: 18px; }
+  #gluten-free .content .bullets h3,
+  #gluten-free .content .bullets ul {
+    float: right;
+    margin: 0;
+    width: 85%; }
+  #gluten-free .content .bullets ul {
+    font-size: 16px;
+    list-style: disc inside none;
+    padding: 0; }
+  #gluten-free .content .bullets .natural,
+  #gluten-free .content .bullets .callout {
+    clear: left;
+    float: left; }
+  #gluten-free .content .bullets .low-sodium,
+  #gluten-free .content .bullets .other {
+    clear: right;
+    float: right; }
+  #gluten-free .content .bullets .callout h3 {
+    background: #ddd;
+    float: none;
+    font-weight: normal;
+    padding: 15px 10px;
+    width: auto; }
+  #gluten-free .content .bullets .callout .footnote {
+    font-size: 9px;
+    padding: 15px; }
+  #gluten-free .content .step {
+    clear: both;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    overflow: hidden;
+    text-transform: uppercase; }
+    #gluten-free .content .step:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #gluten-free .content .step label {
+      background-position: left 8px;
+      background-repeat: no-repeat;
+      display: block;
+      float: left;
+      line-height: 40px;
+      margin-bottom: 0;
+      padding-left: 80px;
+      width: 50%; }
+    #gluten-free .content .step select {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      display: block;
+      float: right;
+      font-size: 14px;
+      height: 40px;
+      line-height: 40px;
+      margin: 0 0 0 80px;
+      padding: 0;
+      width: 25%; }
+  #gluten-free .content .step.first {
+    border-bottom: 1px solid #e5e5e5; }
+    #gluten-free .content .step.first label {
+      background-image: url(../img/circle1.png); }
+  #gluten-free .content .step.second {
+    border-bottom: 1px solid #e5e5e5; }
+    #gluten-free .content .step.second label {
+      background-image: url(../img/circle2.png); }
+  #gluten-free .content .product-info {
+    background: #f8f4e4;
+    clear: both; }
+    #gluten-free .content .product-info > div {
+      display: none; }
+      #gluten-free .content .product-info > div:after {
+        content: " ";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0; }
+      #gluten-free .content .product-info > div.active {
+        display: block; }
+      #gluten-free .content .product-info > div img {
+        float: left;
+        margin: 0 100px 0 0; }
+      #gluten-free .content .product-info > div h2 {
+        color: #666;
+        margin: 0 0 15px 0; }
+      #gluten-free .content .product-info > div p {
+        color: #666;
+        font: 20px/1.3 "Sorts Mill Goudy", georgia, serif; }
+  #gluten-free .content .recipes {
+    background: #f9f8f8;
+    overflow: hidden; }
+    #gluten-free .content .recipes > div {
+      padding: 0 0 30px 0; }
+      #gluten-free .content .recipes > div:after {
+        content: " ";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0; }
+    #gluten-free .content .recipes .left,
+    #gluten-free .content .recipes .right {
+      width: 48%; }
+    #gluten-free .content .recipes .left {
+      float: left;
+      padding-left: 2%; }
+    #gluten-free .content .recipes .right {
+      float: right;
+      padding-right: 2%; }
+    #gluten-free .content .recipes .hidden {
+      display: none; }
+    #gluten-free .content .recipes .recipe {
+      padding-top: 30px;
+      margin: 0 30px 15px 0; }
+      #gluten-free .content .recipes .recipe img {
+        border: 1px solid #ddd;
+        float: left;
+        margin: 0 15px 15px 0;
+        width: 100%; }
+    #gluten-free .content .recipes h3 {
+      -webkit-font-smoothing: antialiased;
+      color: #444;
+      font: bold 16px/1.5 helvetica, arial, sans-serif;
+      margin: 0; }
+    #gluten-free .content .recipes a {
+      display: block;
+      font: 16px/1 "Sorts Mill Goudy", georgia, serif;
+      margin: 0; }
+      #gluten-free .content .recipes a:after {
+        content: " »";
+        font-size: 150%; }
+  #gluten-free .content .trusted-celiac {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 7.8125%; }
+    #gluten-free .content .trusted-celiac:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #gluten-free .content .trusted-celiac .trusted {
+      float: left;
+      width: 57%; }
+      #gluten-free .content .trusted-celiac .trusted img {
+        float: left;
+        width: 28%; }
+      #gluten-free .content .trusted-celiac .trusted h2 {
+        font: 18px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+        margin: 0 0 10px 0;
+        text-transform: uppercase; }
+      #gluten-free .content .trusted-celiac .trusted h2,
+      #gluten-free .content .trusted-celiac .trusted p {
+        float: right;
+        width: 68%; }
+    #gluten-free .content .trusted-celiac .celiac-disease {
+      background: #dfdfdf;
+      float: right;
+      padding: 30px 15px;
+      width: 38%; }
+      #gluten-free .content .trusted-celiac .celiac-disease img {
+        float: left;
+        width: 37%; }
+      #gluten-free .content .trusted-celiac .celiac-disease p {
+        float: right;
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 25px;
+        width: 60%; }
+  #gluten-free .content .facts {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    padding-bottom: 30px; }
+    #gluten-free .content .facts:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    #gluten-free .content .facts h2 {
+      font: 20px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+      text-transform: uppercase; }
+    #gluten-free .content .facts > div {
+      height: 100%;
+      float: left;
+      margin-left: 5%;
+      width: 20%; }
+      #gluten-free .content .facts > div.first {
+        margin-left: 18%; }
+      #gluten-free .content .facts > div h3 {
+        color: #c10e0e;
+        font: italic bold 14px/1.4 "Sorts Mill Goudy", georgia, serif;
+        letter-spacing: 0;
+        margin: 0; }
+      #gluten-free .content .facts > div p {
+        font: italic 14px/1.4 "Sorts Mill Goudy", georgia, serif;
+        margin: 0; }
+  #gluten-free .content .all-products h2 {
+    font: 20px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+    margin: 0;
+    text-transform: uppercase; }
+  #gluten-free .content .all-products table {
+    margin: 30px 0 45px;
+    width: 100%; }
+    #gluten-free .content .all-products table th,
+    #gluten-free .content .all-products table td {
+      border-right: 1px solid #bbb;
+      font: 16px/1.2 "Sorts Mill Goudy", georgia, serif;
+      padding: 5px; }
+    #gluten-free .content .all-products table th {
+      background: #efe7ca;
+      font-family: trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+      font-weight: bold;
+      text-align: left; }
+    #gluten-free .content .all-products table .allergens {
+      border-right: 0; }
+    #gluten-free .content .all-products table .alt {
+      background: #efe7ca; }
+    #gluten-free .content .all-products table .upc {
+      width: 17%; }
+    #gluten-free .content .all-products table .pack-size {
+      width: 14%; }
+    #gluten-free .content .all-products table .allergens {
+      width: 30%; }
+    #gluten-free .content .all-products table td.upc,
+    #gluten-free .content .all-products table td.pack-size {
+      font-family: 'times', 'times new roman', 'georgia', serif; }
+  #gluten-free .content .all-products .lol-ie9 {
+    display: none; }
+  #gluten-free .content .contact {
+    padding: 30px 0;
+    margin: 0 auto;
+    width: 1080px; }
+.gluten-free-form .form {
+  background: #dfdfdf;
+  color: #636363;
+  margin: 30px 0;
+  padding: 3.851%;
+  width: auto; }
+  .gluten-free-form .form h2 {
+    background: url(../img/red-streak3.png) no-repeat left center;
+    color: white;
+    line-height: 61px;
+    font-weight: normal;
+    margin: 0 0 0 -30px;
+    text-indent: 30px; }
+  .gluten-free-form .form h3 {
+    font-size: 18px; }
+  .gluten-free-form .form small {
+    clear: both;
+    display: block;
+    font-size: 8px;
+    margin: 15px 0; }
+	.gluten-free-form .form textarea {
+	overflow: auto;
+	vertical-align: top;
+	height: 200px !important;
+	width: 100% !important;	
+	}
+  .gluten-free-form .form input[type=text],
+  .gluten-free-form .form input[type=email],
+  .gluten-free-form .form input[type=tel],
+  .gluten-free-form .form textarea,
+  .gluten-free-form .form select {
+    background: white;
+    border: 1px solid #a1a1a1;
+    display: block;
+    height: 15px;
+    padding: 5px; }
+  .gluten-free-form .form input[type=checkbox],
+  .gluten-free-form .form input[type=radio] {
+    display: inline;
+    margin-right: 5px; }
+  .gluten-free-form .form select {
+    height: 27px; }
+  .gluten-free-form .form label {
+    display: block;
+    font-size: 12px;
+    margin: 0 0 10px 0; }
+  .gluten-free-form .form .checkbox,
+  .gluten-free-form .form .radio {
+    float: left;
+    margin-right: 50px; }
+  .gluten-free-form .form .hint {
+    clear: both;
+    color: #999;
+    display: block;
+    font-size: 9px;
+    font-style: italic;
+    text-align: right; }
+	
+	.any-other-specific-needs-minors-can-help-with {
+    clear: both;
+	width:100%;
+}
+.gluten-free-form form input[type="submit"] {
+    background: none repeat scroll 0 0 #b32317;
+    border-radius: 5px;
+    box-sizing: content-box;
+    color: #fff;
+    font: 18px/24px "Sorts Mill Goudy",georgia,serif;
+    height: 20px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+.name-operation {
+    clear: both;
+    width: 100%;
+}
+.name-operation > input {
+    width: 50%;
+}
+  .gluten-free-form .form .address {
+    clear: both; }
+  .gluten-free-form .form .first-name,
+  .gluten-free-form .form .last-name,
+  .gluten-free-form .form .business-name,
+  .gluten-free-form .form .city,
+  .gluten-free-form .form .state,
+  .gluten-free-form .form .zip,
+  .gluten-free-form .form .type,
+  .gluten-free-form .form .type-other,
+  .gluten-free-form .form .job-title,
+  .gluten-free-form .form .phone-number,
+  .gluten-free-form .form .email-address,
+  .gluten-free-form .form .preferred,
+  .gluten-free-form .form .name-operation,
+  .gluten-free-form .form .type-of-operation,
+  .gluten-free-form .form .number-of-meals-served-every-day,
+  .gluten-free-form .form .current-distributor,
+  .gluten-free-form .form .any-other-specific-needs-minors-can-help-with  
+   {
+    float: left; }
+ .gluten-free-form .form .first-name,
+  .gluten-free-form .form .last-name,
+  .gluten-free-form .form .business-name,
+  .gluten-free-form .form .city,
+  .gluten-free-form .form .state,
+  .gluten-free-form .form .zip,
+  .gluten-free-form .form .type,
+  .gluten-free-form .form .type-other,
+  .gluten-free-form .form .job-title,
+  .gluten-free-form .form .phone-number,
+  .gluten-free-form .form .email-address,
+  .gluten-free-form .form .preferred,
+  .gluten-free-form .form .name-operation,
+  .gluten-free-form .form .type-of-operation,
+  .gluten-free-form .form .number-of-meals-served-every-day,
+  .gluten-free-form .form .current-distributor  {
+    margin-right: 12px; }
+  .gluten-free-form .form .name input,
+  .gluten-free-form .form .preferred-method-of-contact input,
+  .gluten-free-form .form .email-address input,
+  .gluten-free-form .form .phone-number input,
+  .gluten-free-form .form .type-of-operation input {
+    width: 210px; }
+  .gluten-free-form .form .business-name input,
+  .gluten-free-form .form .type-other input,
+  .gluten-free-form .form .email input {
+    width: 239px; }
+  .gluten-free-form .form .address input {
+    width: 707px; }
+  .gluten-free-form .form .city input,
+  .gluten-free-form .form .type input {
+    width: 444px; }
+  .gluten-free-form .form .state select {
+    width: 60px; }
+  .gluten-free-form .form .zip input {
+    width: 167px; }
+  .gluten-free-form .form .type select {
+    width: 456px; }
+  .gluten-free-form .form .agreed-to-rules {
+    margin: 15px 0;
+    width: 600px; }
+    .gluten-free-form .form .agreed-to-rules a {
+      text-decoration: underline; }
+.brochures .content .buttons {
+  list-style: none outside none;
+  margin: 50px 0 0 0;
+  padding: 0; }
+  .brochures .content .buttons li {
+    float: left;
+    margin: 0 0 40px 100px; }
+  .brochures .content .buttons a {
+    background: url(../img/button-grey.png);
+    border: 0;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 167px; }
+    .brochures .content .buttons a.lengthy {
+      height: 40px;
+      padding: 5px 10px; }
+.brochures .content .brochures {
+  margin: 50px 0 0 0; }
+.brochures .content .brochure {
+  float: right;
+  margin-bottom: 40px;
+  width: 50%; }
+  .brochures .content .brochure.odd {
+    clear: left;
+    float: left; }
+  .brochures .content .brochure .image {
+    border: 1px solid #a5a5a5;
+    display: block;
+    float: left;
+    width: 30%; }
+    .brochures .content .brochure .image img {
+      width: 100%; }
+  .brochures .content .brochure .right {
+    float: left;
+    padding: 50px 0 0 20px;
+    width: 60%; }
+    .brochures .content .brochure .right h2,
+    .brochures .content .brochure .right h3 {
+      font: 18px/1.2 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+      margin: 0; }
+    .brochures .content .brochure .right h2 a {
+      color: #333; }
+    .brochures .content .brochure .right h3 a {
+      color: #bbb;
+      font-size: 14px;
+      text-decoration: underline; }
+.brochures .content .sidebar > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  .brochures .content .sidebar > ul .active > a {
+    color: #af1e1a; }
+  .brochures .content .sidebar > ul > li {
+    margin: 0 0 15px 0; }
+    .brochures .content .sidebar > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    .brochures .content .sidebar > ul > li.expanded ul {
+      display: block; }
+    .brochures .content .sidebar > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    .brochures .content .sidebar > ul > li.no-children a {
+      background-image: none; }
+    .brochures .content .sidebar > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      .brochures .content .sidebar > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        .brochures .content .sidebar > ul > li ul li:before {
+          content: "–"; }
+        .brochures .content .sidebar > ul > li ul li a {
+          color: #bbb; }
+
+.blog .sidebar,
+.menu-concepts .sidebar {
+  margin-bottom: 30px; }
+  .blog .sidebar > ul,
+  .menu-concepts .sidebar > ul {
+    list-style: none outside none;
+    padding-left: 15px; }
+    .blog .sidebar > ul .active > a,
+    .menu-concepts .sidebar > ul .active > a {
+      color: #af1e1a; }
+    .blog .sidebar > ul > li,
+    .menu-concepts .sidebar > ul > li {
+      margin: 0 0 15px 0; }
+      .blog .sidebar > ul > li.expanded > a,
+      .menu-concepts .sidebar > ul > li.expanded > a {
+        background-image: url(../img/minus.png); }
+      .blog .sidebar > ul > li.expanded ul,
+      .menu-concepts .sidebar > ul > li.expanded ul {
+        display: block; }
+      .blog .sidebar > ul > li > a,
+      .menu-concepts .sidebar > ul > li > a {
+        background: url(../img/plus.png) no-repeat left 4px;
+        color: #333;
+        display: block;
+        padding: 0 0 0 25px; }
+      .blog .sidebar > ul > li.no-children a,
+      .menu-concepts .sidebar > ul > li.no-children a {
+        background-image: none; }
+      .blog .sidebar > ul > li ul,
+      .menu-concepts .sidebar > ul > li ul {
+        display: none;
+        list-style: none outside none;
+        padding: 0 0 0 60px; }
+        .blog .sidebar > ul > li ul li,
+        .menu-concepts .sidebar > ul > li ul li {
+          color: #bbb;
+          font-size: 16px;
+          margin: 0 0 10px 0;
+          text-indent: -15px; }
+          .blog .sidebar > ul > li ul li:before,
+          .menu-concepts .sidebar > ul > li ul li:before {
+            content: "–"; }
+          .blog .sidebar > ul > li ul li a,
+          .menu-concepts .sidebar > ul > li ul li a {
+            color: #bbb; }
+  .blog .sidebar .headline,
+  .menu-concepts .sidebar .headline {
+    color: #333; }
+.blog .left > img,
+.menu-concepts .left > img {
+  margin-bottom: 15px; }
+.blog .summary h1,
+.blog .summary h2,
+.blog .single h1,
+.blog .single h2,
+.menu-concepts .summary h1,
+.menu-concepts .summary h2,
+.menu-concepts .single h1,
+.menu-concepts .single h2 {
+  font: 20px/1.2 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+  margin: 10px 0;
+  text-transform: uppercase; }
+.blog .summary h3,
+.blog .single h3,
+.menu-concepts .summary h3,
+.menu-concepts .single h3 {
+  font: italic normal 13px/1.5 helvetica, sans-serif;
+  margin: 0; }
+.blog .summary .copy,
+.blog .single .copy,
+.menu-concepts .summary .copy,
+.menu-concepts .single .copy {
+  margin: 15px 0 0 0; }
+.blog .summary .details,
+.blog .single .details,
+.menu-concepts .summary .details,
+.menu-concepts .single .details {
+  float: right;
+  width: 70%; }
+.blog .summary .image,
+.blog .single .image,
+.menu-concepts .summary .image,
+.menu-concepts .single .image {
+  float: left;
+  overflow: hidden;
+  width: 25%; }
+  .blog .summary .image a,
+  .blog .single .image a,
+  .menu-concepts .summary .image a,
+  .menu-concepts .single .image a {
+    display: block; }
+  .blog .summary .image img,
+  .blog .single .image img,
+  .menu-concepts .summary .image img,
+  .menu-concepts .single .image img {
+    display: block;
+    width: 100%; }
+.blog .summary,
+.menu-concepts .summary {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30px 0; }
+  .blog .summary:after,
+  .menu-concepts .summary:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .blog .summary:last-child,
+  .menu-concepts .summary:last-child {
+    border-bottom: 0; }
+  .blog .summary p,
+  .menu-concepts .summary p {
+    height: 60px;
+    margin: 0;
+    overflow: hidden; }
+  .blog .summary .continue,
+  .menu-concepts .summary .continue {
+    font-weight: bold;
+    height: auto;
+    margin: 15px 0 0 0; }
+    .blog .summary .continue a,
+    .menu-concepts .summary .continue a {
+      color: #555;
+      text-decoration: underline; }
+.blog .featured .summary,
+.menu-concepts .featured .summary {
+  border-bottom: 1px solid #e5e5e5; }
+.blog .single,
+.menu-concepts .single {
+  margin-bottom: 30px; }
+  .blog .single:after,
+  .menu-concepts .single:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .blog .single .copy a,
+  .menu-concepts .single .copy a {
+    font-style: italic;
+    text-decoration: underline; }
+  .blog .single .social,
+  .menu-concepts .single .social {
+    background: #eee;
+    clear: both;
+    color: #666;
+    font: italic 18px/32px "Sorts Mill Goudy", georgia, serif;
+    padding: 15px; }
+    .blog .single .social:after,
+    .menu-concepts .single .social:after {
+      content: " ";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0; }
+    .blog .single .social p,
+    .menu-concepts .single .social p {
+      float: left;
+      margin: 0 0 0 15px; }
+      .blog .single .social p sup,
+      .menu-concepts .single .social p sup {
+        line-height: 0.5em; }
+    .blog .single .social ul,
+    .menu-concepts .single .social ul {
+      float: right;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0; }
+    .blog .single .social li,
+    .menu-concepts .single .social li {
+      margin-left: 10px;
+      float: left; }
+    .blog .single .social a,
+    .menu-concepts .single .social a {
+      background-color: transprent;
+      border: 0;
+      color: transparent;
+      display: block;
+      font: 0/0 a;
+      text-shadow: none;
+      float: left;
+      height: 32px;
+      width: 31px; }
+    .blog .single .social .twitter a,
+    .menu-concepts .single .social .twitter a {
+      background: url(../img/twitter.png);
+      width: 32px; }
+    .blog .single .social .facebook a,
+    .menu-concepts .single .social .facebook a {
+      background: url(../img/facebook.png); }
+    .blog .single .social .email a,
+    .menu-concepts .single .social .email a {
+      background: url(../img/email.png); }
+  .blog .single .older,
+  .blog .single .newer,
+  .menu-concepts .single .older,
+  .menu-concepts .single .newer {
+    padding: 15px 0 30px; }
+    .blog .single .older a,
+    .blog .single .newer a,
+    .menu-concepts .single .older a,
+    .menu-concepts .single .newer a {
+      color: #555;
+      font-weight: bold; }
+  .blog .single .newer,
+  .menu-concepts .single .newer {
+    border-left: 1px solid #e5e5e5;
+    float: right;
+    padding-left: 1%;
+    text-align: right;
+    width: 48%; }
+    .blog .single .newer a:after,
+    .menu-concepts .single .newer a:after {
+      content: " »"; }
+  .blog .single .older,
+  .menu-concepts .single .older {
+    float: left;
+    padding-right: 1%;
+    width: 48%; }
+    .blog .single .older a:before,
+    .menu-concepts .single .older a:before {
+      content: "« "; }
+
+.meet-the-chefs .content .chefs {
+  overflow: hidden;
+  width: 101.7%; }
+  .meet-the-chefs .content .chefs > div {
+    float: left;
+    margin: 0 48px 48px 0; }
+    .meet-the-chefs .content .chefs > div p {
+      margin: 5px 0 0 0; }
+    .meet-the-chefs .content .chefs > div .image {
+      height: 150px;
+      overflow: hidden;
+      position: relative;
+      width: 150px; }
+      .meet-the-chefs .content .chefs > div .image img {
+        width: 100%; }
+      .meet-the-chefs .content .chefs > div .image a {
+        display: block;
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%; }
+        .meet-the-chefs .content .chefs > div .image a:hover > span {
+          -moz-transition: opacity 250ms;
+          -o-transition: opacity 250ms;
+          -ms-transition: opacity 250ms;
+          -webkit-transition: opacity 250ms;
+          transition: opacity 250ms;
+          opacity: 1; }
+        .meet-the-chefs .content .chefs > div .image a > span {
+          background: url(../img/red-50.png);
+          color: white;
+          cursor: pointer;
+          display: block;
+          font: italic bold 18px/1.4 "Sorts Mill Goudy", georgia, serif;
+          height: 50px;
+          left: 0px;
+          opacity: 0;
+          padding: 50px 10px;
+          position: absolute;
+          text-align: center;
+          top: 0px;
+          width: 130px; }
+          .meet-the-chefs .content .chefs > div .image a > span .name {
+            font-weight: normal; }
+.meet-the-chefs .content .single-chef h1 {
+  clear: both; }
+.meet-the-chefs .content .single-chef .image {
+  height: 250px;
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .meet-the-chefs .content .single-chef .image img {
+    width: 100%; }
+  .meet-the-chefs .content .single-chef .image.headshot {
+    float: left;
+    width: 35%; }
+  .meet-the-chefs .content .single-chef .image.action {
+    float: right;
+    width: 64%; }
+.meet-the-chefs .content .single-chef .about {
+  border-top: 1px solid #e5e5e5;
+  margin: 30px 0;
+  padding: 30px 0; }
+  .meet-the-chefs .content .single-chef .about h2 {
+    font: 18px/1.4 "Sorts Mill Goudy", georgia, serif;
+    margin: 0 0 10px 0;
+    text-transform: uppercase; }
+  .meet-the-chefs .content .single-chef .about ul {
+    margin: 10px 0 30px 0;
+    padding: 0 0 0 15px;
+    list-style: none outside none; }
+    .meet-the-chefs .content .single-chef .about ul li {
+      margin: 0 0 8px 0; }
+      .meet-the-chefs .content .single-chef .about ul li:before {
+        content: "- ";
+        margin-left: -8px; }
+.meet-the-chefs .content .sidebar.all-chefs > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  .meet-the-chefs .content .sidebar.all-chefs > ul .active > a {
+    color: #af1e1a; }
+  .meet-the-chefs .content .sidebar.all-chefs > ul > li {
+    margin: 0 0 15px 0; }
+    .meet-the-chefs .content .sidebar.all-chefs > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    .meet-the-chefs .content .sidebar.all-chefs > ul > li.expanded ul {
+      display: block; }
+    .meet-the-chefs .content .sidebar.all-chefs > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    .meet-the-chefs .content .sidebar.all-chefs > ul > li.no-children a {
+      background-image: none; }
+    .meet-the-chefs .content .sidebar.all-chefs > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      .meet-the-chefs .content .sidebar.all-chefs > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        .meet-the-chefs .content .sidebar.all-chefs > ul > li ul li:before {
+          content: "–"; }
+        .meet-the-chefs .content .sidebar.all-chefs > ul > li ul li a {
+          color: #bbb; }
+.meet-the-chefs .content .sidebar.all-chefs .headline {
+  color: #666; }
+
+.videos .content .sidebar > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  .videos .content .sidebar > ul .active > a {
+    color: #af1e1a; }
+  .videos .content .sidebar > ul > li {
+    margin: 0 0 15px 0; }
+    .videos .content .sidebar > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    .videos .content .sidebar > ul > li.expanded ul {
+      display: block; }
+    .videos .content .sidebar > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    .videos .content .sidebar > ul > li.no-children a {
+      background-image: none; }
+    .videos .content .sidebar > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      .videos .content .sidebar > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        .videos .content .sidebar > ul > li ul li:before {
+          content: "–"; }
+        .videos .content .sidebar > ul > li ul li a {
+          color: #bbb; }
+.videos .content article {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30px 0; }
+  .videos .content article:last-child {
+    border-bottom: 0; }
+  .videos .content article h1 {
+    margin-bottom: 0; }
+  .videos .content article .byline {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 15px; }
+  .videos .content article p {
+    margin-bottom: 0; }
+
+.offers .form {
+  background: #dfdfdf;
+  color: #636363;
+  margin: 30px 0;
+  padding: 3.851%;
+  width: auto; }
+  .offers .form h2 {
+    background: url(../img/red-streak3.png) no-repeat left center;
+    color: white;
+    line-height: 61px;
+    font-weight: normal;
+    margin: 0 0 0 -30px;
+    text-indent: 30px; }
+  .offers .form h3 {
+    font-size: 18px; }
+  .offers .form small {
+    clear: both;
+    display: block;
+    font-size: 8px;
+    margin: 15px 0; }
+  .offers .form input[type=text],
+  .offers .form input[type=email],
+  .offers .form input[type=tel],
+  .offers .form textarea,
+  .offers .form select {
+    background: white;
+    border: 1px solid #a1a1a1;
+    display: block;
+    height: 15px;
+    padding: 5px; }
+  .offers .form input[type=checkbox],
+  .offers .form input[type=radio] {
+    display: inline;
+    margin-right: 5px; }
+  .offers .form select {
+    height: 27px; }
+  .offers .form label {
+    display: block;
+    font-size: 12px;
+    margin: 0 0 10px 0; }
+  .offers .form .checkbox,
+  .offers .form .radio {
+    float: left;
+    margin-right: 50px; }
+  .offers .form .hint {
+    clear: both;
+    color: #999;
+    display: block;
+    font-size: 9px;
+    font-style: italic;
+    text-align: right; }
+  .offers .form .address {
+    clear: both; }
+  .offers .form .first-name,
+  .offers .form .last-name,
+  .offers .form .business-name,
+  .offers .form .city,
+  .offers .form .state,
+  .offers .form .zip,
+  .offers .form .type,
+  .offers .form .type-other,
+  .offers .form .job-title,
+  .offers .form .phone,
+  .offers .form .email {
+    float: left; }
+  .offers .form .first-name,
+  .offers .form .last-name,
+  .offers .form .city,
+  .offers .form .state,
+  .offers .form .type,
+  .offers .form .job-title,
+  .offers .form .phone {
+    margin-right: 12px; }
+  .offers .form .first-name input,
+  .offers .form .last-name input,
+  .offers .form .job-title input,
+  .offers .form .phone input {
+    width: 210px; }
+  .offers .form .business-name input,
+  .offers .form .type-other input,
+  .offers .form .email input {
+    width: 239px; }
+  .offers .form .address input {
+    width: 707px; }
+  .offers .form .city input,
+  .offers .form .type input {
+    width: 444px; }
+  .offers .form .state select {
+    width: 60px; }
+  .offers .form .zip input {
+    width: 167px; }
+  .offers .form .type select {
+    width: 456px; }
+  .offers .form .agreed-to-rules {
+    margin: 15px 0;
+    width: 600px; }
+    .offers .form .agreed-to-rules a {
+      text-decoration: underline; }
+
+#request-a-sample .content .primary-distributor,
+#request-a-sample .content .meals-per-day {
+  clear: both;
+  float: none; }
+#request-a-sample .content .form .samples {
+  margin: 0 0 30px 0; }
+  #request-a-sample .content .form .samples img {
+    height: 50px;
+    margin: 0 15px 0 0;
+    vertical-align: middle; }
+  #request-a-sample .content .form .samples label {
+    line-height: 50px;
+    margin: 0 0 15px 0; }
+#request-a-sample .content .form .primary-buyer {
+  margin-bottom: 5px; }
+  #request-a-sample .content .form .primary-buyer:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  #request-a-sample .content .form .primary-buyer p {
+    font-size: 12px;
+    margin-bottom: 5px; }
+#request-a-sample .content .form .primary-distributor input,
+#request-a-sample .content .form .meals-per-day input {
+  width: 400px; }
+#request-a-sample .content .form .email-opt-in {
+  width: 400px; }
+#request-a-sample .content .form input[type=submit] {
+  background-color: transprent;
+  border: 0;
+  color: transparent;
+  display: block;
+  font: 0/0 a;
+  text-shadow: none;
+  background: url(../img/submit-buttons/get-samples.png) no-repeat center center;
+  height: 68px;
+  margin: 0 auto;
+  width: 433px; }
+#request-a-sample .content .sidebar > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  #request-a-sample .content .sidebar > ul .active > a {
+    color: #af1e1a; }
+  #request-a-sample .content .sidebar > ul > li {
+    margin: 0 0 15px 0; }
+    #request-a-sample .content .sidebar > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    #request-a-sample .content .sidebar > ul > li.expanded ul {
+      display: block; }
+    #request-a-sample .content .sidebar > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    #request-a-sample .content .sidebar > ul > li.no-children a {
+      background-image: none; }
+    #request-a-sample .content .sidebar > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      #request-a-sample .content .sidebar > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        #request-a-sample .content .sidebar > ul > li ul li:before {
+          content: "–"; }
+        #request-a-sample .content .sidebar > ul > li ul li a {
+          color: #bbb; }
+#request-a-sample .window .continue {
+  margin: 0 auto; }
+
+#flavor-expedition .content .left > img {
+  margin-bottom: 30px; }
+#flavor-expedition .content .form .referral:after {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+#flavor-expedition .content .form .referral label {
+  float: left; }
+#flavor-expedition .content .form .referral .referral-name {
+  margin-right: 2%; }
+#flavor-expedition .content .form .current-customer {
+  clear: both;
+  margin-bottom: 15px; }
+  #flavor-expedition .content .form .current-customer:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  #flavor-expedition .content .form .current-customer p {
+    margin-bottom: 0; }
+  #flavor-expedition .content .form .current-customer label {
+    float: left;
+    width: 20%; }
+#flavor-expedition .content .form .comments {
+  clear: both;
+  overflow: hidden; }
+  #flavor-expedition .content .form .comments span {
+    display: block;
+    float: left;
+    width: 250px; }
+  #flavor-expedition .content .form .comments textarea {
+    display: block;
+    float: right;
+    height: 50px;
+    width: 400px; }
+#flavor-expedition .content .form input[type=submit] {
+  background-color: transprent;
+  border: 0;
+  color: transparent;
+  display: block;
+  font: 0/0 a;
+  text-shadow: none;
+  background: url(../img/submit-buttons/recipes-and-videos.png) no-repeat center center;
+  height: 68px;
+  margin: 0 auto;
+  width: 435px; }
+#flavor-expedition .content .sidebar > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  #flavor-expedition .content .sidebar > ul .active > a {
+    color: #af1e1a; }
+  #flavor-expedition .content .sidebar > ul > li {
+    margin: 0 0 15px 0; }
+    #flavor-expedition .content .sidebar > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    #flavor-expedition .content .sidebar > ul > li.expanded ul {
+      display: block; }
+    #flavor-expedition .content .sidebar > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    #flavor-expedition .content .sidebar > ul > li.no-children a {
+      background-image: none; }
+    #flavor-expedition .content .sidebar > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      #flavor-expedition .content .sidebar > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        #flavor-expedition .content .sidebar > ul > li ul li:before {
+          content: "–"; }
+        #flavor-expedition .content .sidebar > ul > li ul li a {
+          color: #bbb; }
+
+#worlds-of-flavor .content .form .job-title {
+  margin-right: 0; }
+  #worlds-of-flavor .content .form .job-title input {
+    width: 222px; }
+#worlds-of-flavor .content .form .email {
+  margin-right: 12px; }
+  #worlds-of-flavor .content .form .email input {
+    width: 210px; }
+#worlds-of-flavor .content .form .example {
+  clear: both; }
+  #worlds-of-flavor .content .form .example textarea {
+    height: 150px;
+    width: 456px; }
+#worlds-of-flavor .content .form input[type=submit] {
+  background-color: transprent;
+  border: 0;
+  color: transparent;
+  display: block;
+  font: 0/0 a;
+  text-shadow: none;
+  background: url(../img/submit-buttons/enter-sweepstakes.png) no-repeat center center;
+  height: 68px;
+  margin: 0 auto;
+  width: 433px; }
+#worlds-of-flavor .sidebar > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  #worlds-of-flavor .sidebar > ul .active > a {
+    color: #af1e1a; }
+  #worlds-of-flavor .sidebar > ul > li {
+    margin: 0 0 15px 0; }
+    #worlds-of-flavor .sidebar > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    #worlds-of-flavor .sidebar > ul > li.expanded ul {
+      display: block; }
+    #worlds-of-flavor .sidebar > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    #worlds-of-flavor .sidebar > ul > li.no-children a {
+      background-image: none; }
+    #worlds-of-flavor .sidebar > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      #worlds-of-flavor .sidebar > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        #worlds-of-flavor .sidebar > ul > li ul li:before {
+          content: "–"; }
+        #worlds-of-flavor .sidebar > ul > li ul li a {
+          color: #bbb; }
+
+.offers#rules .sidebar > ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+  .offers#rules .sidebar > ul .active > a {
+    color: #af1e1a; }
+  .offers#rules .sidebar > ul > li {
+    margin: 0 0 15px 0; }
+    .offers#rules .sidebar > ul > li.expanded > a {
+      background-image: url(../img/minus.png); }
+    .offers#rules .sidebar > ul > li.expanded ul {
+      display: block; }
+    .offers#rules .sidebar > ul > li > a {
+      background: url(../img/plus.png) no-repeat left 4px;
+      color: #333;
+      display: block;
+      padding: 0 0 0 25px; }
+    .offers#rules .sidebar > ul > li.no-children a {
+      background-image: none; }
+    .offers#rules .sidebar > ul > li ul {
+      display: none;
+      list-style: none outside none;
+      padding: 0 0 0 60px; }
+      .offers#rules .sidebar > ul > li ul li {
+        color: #bbb;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+        text-indent: -15px; }
+        .offers#rules .sidebar > ul > li ul li:before {
+          content: "–"; }
+        .offers#rules .sidebar > ul > li ul li a {
+          color: #bbb; }
+
+.powerofflavor .content .narrow {
+  margin: 0 auto;
+  width: 76%; }
+  .powerofflavor .content .narrow img {
+    margin-bottom: 30px; }
+  .powerofflavor .content .narrow blockquote {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0; }
+    .powerofflavor .content .narrow blockquote p {
+      margin-bottom: 10px; }
+  .powerofflavor .content .narrow cite {
+    color: black;
+    font-style: normal; }
+  .powerofflavor .content .narrow > div {
+    clear: both;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    padding: 30px 20px 0; }
+  .powerofflavor .content .narrow .soup {
+    width: 100%; }
+  .powerofflavor .content .narrow .power-of-flavor p,
+  .powerofflavor .content .narrow .food-cost img,
+  .powerofflavor .content .narrow .quote {
+    float: left; }
+  .powerofflavor .content .narrow .power-of-flavor img,
+  .powerofflavor .content .narrow .food-cost > *,
+  .powerofflavor .content .narrow .profit {
+    float: right; }
+  .powerofflavor .content .narrow .power-of-flavor {
+    padding-top: 0; }
+    .powerofflavor .content .narrow .power-of-flavor p {
+      width: 60%; }
+    .powerofflavor .content .narrow .power-of-flavor sup {
+      font-size: 6px;
+      position: relative;
+      top: 0px; }
+  .powerofflavor .content .narrow .food-cost > * {
+    width: 55%; }
+  .powerofflavor .content .narrow .food-cost img {
+    width: auto; }
+  .powerofflavor .content .narrow .food-cost .mobile-only {
+    display: none; }
+  .powerofflavor .content .narrow .quote-profit {
+    padding-bottom: 20px; }
+  .powerofflavor .content .narrow .quote {
+    border-right: 1px solid #e5e5e5;
+    padding: 0 20px;
+    width: 270px; }
+    .powerofflavor .content .narrow .quote p {
+      margin-bottom: 10px; }
+  .powerofflavor .content .narrow .profit {
+    width: 380px; }
+    .powerofflavor .content .narrow .profit img {
+      display: block;
+      margin: 0 auto 15px; }
+    .powerofflavor .content .narrow .profit .mobile-only {
+      display: none; }
+  .powerofflavor .content .narrow .learn-more {
+    border-bottom: none;
+    margin-bottom: 40px;
+    text-align: center; }
+    .powerofflavor .content .narrow .learn-more a {
+      border-bottom: 2px solid #aaa; }
+  .powerofflavor .content .narrow .footnotes {
+    border-bottom: none;
+    color: #999;
+    font-size: 8px;
+    line-height: 1.4; }
+
+.heritage .content .left .chicken-base {
+  float: right;
+  margin: 0 0 15px 15px; }
+.heritage .content .left .plaque {
+  float: left;
+  margin: 0 15px 15px 0; }
+.heritage .content .left .caption {
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.2; }
+.heritage .content .history {
+  font: 13px/1.4 helvetica, sans-serif;
+  padding: 0 15px; }
+  .heritage .content .history strong {
+    color: #b32017; }
+
+.contact .content h3 {
+  color: #777;
+  font: italic 22px/1.5 "Sorts Mill Goudy", georgia, serif;
+  margin: 0; }
+.contact .content dl {
+  background: #fbfaf8;
+  margin: 0;
+  overflow: hidden;
+  padding: 20px 0; }
+  .contact .content dl dt,
+  .contact .content dl dd {
+    line-height: 33px;
+    margin: 0 0 10px 0; }
+  .contact .content dl dt {
+    clear: left;
+    color: #888;
+    font: italic 22px/33px "Sorts Mill Goudy", georgia, serif;
+    float: left;
+    text-align: center;
+    width: 150px; }
+  .contact .content dl dd {
+    color: #b32017;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 380px; }
+    .contact .content dl dd a {
+      color: #b32017;
+      display: block;
+      text-decoration: underline; }
+
+.recipes .content .left .links {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0; }
+  .recipes .content .left .links li {
+    margin-bottom: 10px; }
+  .recipes .content .left .links a {
+    color: #333333;
+    font-size: 130%;
+    font-weight: bold;
+    text-decoration: underline; }
+    .recipes .content .left .links a:after {
+      content: " ›"; }
+.recipes .content .left .tags {
+  margin: 60px 0;
+  text-transform: capitalize; }
+  .recipes .content .left .tags ul {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0; }
+  .recipes .content .left .tags li {
+    border-bottom: 1px solid #ccc; }
+  .recipes .content .left .tags a {
+    background: url(../img/arrow-right-grey.png) no-repeat right center;
+    color: #555;
+    display: block;
+    font-weight: bold;
+    margin-right: 40px;
+    padding: 10px 40px; }
+
+.offers#videos .content h1 {
+  margin-bottom: 0; }
+.offers#videos .content .left .experience {
+  font: 18px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+  text-transform: uppercase;
+  width: 650px; }
+  .offers#videos .content .left .experience sup {
+    line-height: 0.3em; }
+.offers#videos .content .left iframe {
+  height: 440px;
+  margin-bottom: 30px;
+  width: 100%; }
+.offers#videos .content .left .video h2 {
+  border-top: 1px solid #e5e5e5;
+  color: #555;
+  padding: 30px 0 0 0; }
+.offers#videos .content .left .video .description {
+  border-bottom: 1px solid #e5e5e5; }
+  .offers#videos .content .left .video .description:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .offers#videos .content .left .video .description img {
+    float: right;
+    margin: 0 0 0 30px; }
+  .offers#videos .content .left .video .description .download a {
+    text-decoration: underline; }
+  .offers#videos .content .left .video .description .download a:after {
+    content: " ›"; }
+.offers#videos .content .left .callout {
+  font: bold 20px/1.4 sans-serif;
+  margin-top: 60px;
+  text-transform: none; }
+.offers#videos .content .left .referral h2 {
+  color: #444;
+  margin-bottom: 5px;
+  text-transform: none; }
+.offers#videos .content .left .referral p {
+  margin-bottom: 15px; }
+.offers#videos .content .sidebar {
+  font-size: 18px; }
+  .offers#videos .content .sidebar ul {
+    list-style: none outside none; }
+  .offers#videos .content .sidebar li {
+    margin-bottom: 10px; }
+  .offers#videos .content .sidebar a {
+    color: #555; }
+  .offers#videos .content .sidebar li.active a {
+    color: #af1e1a; }
+.offers#videos .lightbox .copy {
+  float: left;
+  width: 60%; }
+  .offers#videos .lightbox .copy h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 5px 0; }
+  .offers#videos .lightbox .copy a {
+    font-size: 22px;
+    font-weight: normal; }
+.offers#videos .lightbox .buttons button {
+  background: url(../img/button-grey.png);
+  border: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  padding: 15px 10px;
+  text-align: center;
+  width: 167px;
+  float: right;
+  margin: 15px 0; }
+  .offers#videos .lightbox .buttons button.lengthy {
+    height: 40px;
+    padding: 5px 10px; }
+
+.flavor-means-business .left iframe {
+  width: 95%;
+  height: 440px; }
+.flavor-means-business .left img {
+  float: right;
+  margin: 0 0 15px 15px; }
+
+.search .content .results-count {
+  border: 1px solid #d5d1c6;
+  background: #f7f1e1;
+  color: #555;
+  margin-right: 5%;
+  padding: 5px 15px 5px 5%;
+  width: auto; }
+.search .content .result {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+  .search .content .result > * {
+    margin-left: 5%; }
+  .search .content .result h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 0; }
+    .search .content .result h2 a {
+      color: #555;
+      text-decoration: underline; }
+  .search .content .result h3 {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0; }
+  .search .content .result p {
+    height: 40px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    overflow: hidden; }
+  .search .content .result .photo {
+    border: 1px solid #e5e5e5;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 18%; }
+    .search .content .result .photo img {
+      display: block;
+      width: 100%; }
+  .search .content .result .copy {
+    width: 70%; }
+
+.ie8 #home .featured .image span, .ie7 #home .featured .image span {
+  background: url(../img/black-50.png);
+  display: none; }
+.ie8 #home .featured .image:hover span, .ie7 #home .featured .image:hover span {
+  display: block; }
+.ie8 #home .chefs .chef .left a, .ie7 #home .chefs .chef .left a {
+  display: none; }
+.ie8 #home .chefs .chef .left:hover a, .ie7 #home .chefs .chef .left:hover a {
+  display: block; }
+.ie8 #blog .summary,
+.ie8 #menu-concepts .summary,
+.ie8 .blog#tags .summary,
+.ie8 .menu-concepts#tags .summary, .ie7 #blog .summary,
+.ie7 #menu-concepts .summary,
+.ie7 .blog#tags .summary,
+.ie7 .menu-concepts#tags .summary {
+  overflow: hidden; }
+  .ie8 #blog .summary img,
+  .ie8 #menu-concepts .summary img,
+  .ie8 .blog#tags .summary img,
+  .ie8 .menu-concepts#tags .summary img, .ie7 #blog .summary img,
+  .ie7 #menu-concepts .summary img,
+  .ie7 .blog#tags .summary img,
+  .ie7 .menu-concepts#tags .summary img {
+    top: auto; }
+.ie8 #blog .social,
+.ie8 #menu-concepts .social,
+.ie8 .blog#tags .social,
+.ie8 .menu-concepts#tags .social, .ie7 #blog .social,
+.ie7 #menu-concepts .social,
+.ie7 .blog#tags .social,
+.ie7 .menu-concepts#tags .social {
+  font-size: 16px;
+  margin-bottom: 30px;
+  overflow: hidden; }
+.ie8 #latin-flavors .content .top .sidebar ul, .ie7 #latin-flavors .content .top .sidebar ul {
+  list-style: none outside none;
+  padding-left: 15px; }
+.ie8 #latin-flavors .content .top .sidebar li, .ie7 #latin-flavors .content .top .sidebar li {
+  background: url(../img/arrow-red-right.png) no-repeat left 7px;
+  padding-left: 25px; }
+.ie8 #meet-the-chefs .content .chefs, .ie7 #meet-the-chefs .content .chefs {
+  margin-left: 0;
+  width: 825px; }
+  .ie8 #meet-the-chefs .content .chefs > div, .ie7 #meet-the-chefs .content .chefs > div {
+    margin: 0 45px 45px 0; }
+    .ie8 #meet-the-chefs .content .chefs > div .image a > span, .ie7 #meet-the-chefs .content .chefs > div .image a > span {
+      display: none; }
+    .ie8 #meet-the-chefs .content .chefs > div .image:hover a > span, .ie7 #meet-the-chefs .content .chefs > div .image:hover a > span {
+      display: block; }
+.ie8 #powerofflavor .left > div, .ie7 #powerofflavor .left > div {
+  overflow: hidden;
+  padding-bottom: 30px; }
+.ie8 .featured.sidebar .image span, .ie7 .featured.sidebar .image span {
+  display: none !important; }
+
+.ie8 .offers .content .left .form .first-name,
+.ie8 .offers .content .left .form .last-name,
+.ie8 .offers .content .left .form .job-title,
+.ie8 .offers .content .left .form .phone,
+.ie8 .offers .content .left .form .type,
+.ie8 .offers .content .left .form .city,
+.ie9 .offers .content .left .form .first-name,
+.ie9 .offers .content .left .form .last-name,
+.ie9 .offers .content .left .form .job-title,
+.ie9 .offers .content .left .form .phone,
+.ie9 .offers .content .left .form .type,
+.ie9 .offers .content .left .form .city {
+  margin-right: 11px; }
+.ie8 .offers .content .left .form .comments,
+.ie9 .offers .content .left .form .comments {
+  overflow: hidden; }
+
+.ie7 .site-search input {
+  height: 30px !important; }
+.ie7 .site-search input[type=submit] {
+  height: 32px !important; }
+.ie7 .offers .content .left .form .first-name,
+.ie7 .offers .content .left .form .last-name,
+.ie7 .offers .content .left .form .job-title,
+.ie7 .offers .content .left .form .phone,
+.ie7 .offers .content .left .form .type,
+.ie7 .offers .content .left .form .city {
+  margin-right: 6px; }
+.ie7 .offers .content .left .form .comments {
+  overflow: hidden; }
+
+@media (max-width: 920px) {
+  .ie9 #gluten-free .content .all-products table .upc,
+  .ie9 #gluten-free .content .all-products table .pack-size,
+  .ie9 #gluten-free .content .all-products table .allergens {
+    display: none !important; }
+  .ie9 #gluten-free .content .all-products table .lol-ie9 {
+    display: block !important; }
+	 }
+	
+@media (max-width: 1279px) {
+  .container {
+    width: auto; }
+
+  .home .content {
+    padding-top: 0; }
+	
+ }
+@media (max-width: 1079px) {
+	
+
+	
+  .site-search {
+    margin: 0 3%;
+    width: auto; }
+
+  header .center {
+    width: auto; }
+  header .logo {
+    margin-left: 30px; }
+  header .primary {
+    margin-right: 30px;
+    font-size: 20px; }
+
+  footer {
+    padding: 0 30px; }
+    footer .primary {
+      font-size: 20px; }
+    footer li {
+      display: inline-block; }
+      footer li:before {
+        display: none; }
+
+  .content {
+    width: auto; }
+    .content > .left > * {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 96%; }
+
+  .home .content {
+    padding-top: 0; }
+    .home .content .products-cta > div {
+      height: 150px; }
+    .home .content .products-cta h1 {
+      font-size: 26px; }
+    .home .content .products-cta h2 {
+      font-size: 16px; }
+    .home .content .products-cta a {
+      font-size: 14px;
+      line-height: 36px; }
+    .home .content .center,
+    .home .content .contact {
+      width: 96%; }
+
+  #powerofflavor .content .narrow {
+    width: auto; }
+    #powerofflavor .content .narrow > div {
+      width: 96%; }
+
+  .content .contact {
+    margin: 0 auto;
+    width: 96%; }
+
+  #latin-flavors .content > h1,
+  #latin-flavors .content > section,
+  #gluten-free .content > h1,
+  #gluten-free .content > section {
+    padding: 30px 2%;
+    width: auto; }
+  #latin-flavors .content .recipes,
+  #gluten-free .content .recipes {
+    padding-top: 0; }
+  #latin-flavors .content .contact,
+  #gluten-free .content .contact {
+    width: 96%; }
+  #latin-flavors .content .trusted-celiac .celiac-disease p,
+  #gluten-free .content .trusted-celiac .celiac-disease p {
+    margin-top: 10px; }
+
+  #meet-the-chefs .content .chefs {
+    width: 96%; }
+    #meet-the-chefs .content .chefs > div {
+      margin: 0 27px 27px 0; }
+
+  .offers .content .form {
+    margin: 0 auto;
+    padding: 10px;
+    width: 720px; }
+    .offers .content .form h2 {
+      margin-left: -10px; }
+
+  .offers#videos .content h1,
+  .offers#videos .content .left .experience {
+    margin: 0 auto;
+    width: 96%; }
+
+  .brochures .content h1 {
+    margin: 0 auto;
+    width: 96%; } 
+
+}
+@media (max-width: 1024px) {
+  .home .content .chefs .clone,
+  .home .content .chefs .filmstrip {
+    display: none; }
+  .home .content .chefs .mobile-nav {
+    display: block; }
+
+  .blog .single .social p,
+  .menu-concepts .single .social p {
+    font-size: 16px; }
+	
+	
+	 }
+
+@media (max-width: 1023px) {
+  .mobile-only {
+    display: block; }
+	.desktop-only{display:none;}
+  header {
+    height: auto;
+    overflow: hidden;
+    padding-top: 3%;
+    position: static;
+    z-index: 100; }
+    header .logo {
+      margin-bottom: 3%; }
+      header .logo img {
+        height: 50px; }
+    header .show-nav {
+      background-color: transprent;
+      border: 0;
+      color: transparent;
+      display: block;
+      font: 0/0 a;
+      text-shadow: none;
+      border: 0;
+      background: url(../img/mobile/hamburger.png);
+      background-size: cover;
+      float: right;
+      height: 40px;
+      margin: 2% 3%;
+      width: 44px; }
+    header .primary {
+      background: #b32017;
+      clear: both;
+      float: none;
+      font-size: 1.2em;
+      overflow: hidden;
+      padding: 2% 2% 0 0;
+      margin: 0; }
+      header .primary li {
+        height: auto;
+        padding: 0;
+        margin: 0 0 2% 2%;
+        width: 31.3%; }
+        header .primary li.active a {
+          background: none; }
+      header .primary a {
+        border: 1px solid white;
+        color: white;
+        line-height: 2em;
+        padding: 0;
+        text-align: center; }
+      header .primary .search {
+        display: block;
+        width: 64.6%; }
+      header .primary form input {
+        height: 25px; }
+      header .primary form input[type=search] {
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        float: left;
+        width: 80%; }
+      header .primary form input[type=submit] {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        float: right;
+        margin: 0;
+        padding: 5px 0;
+        width: 15%; }
+    header .primary,
+    header .secondary {
+      display: none; }
+    header .nav.mobile-only {
+      background: #444;
+      display: none;
+      padding: 10px;
+      position: absolute;
+      right: -400px;
+      top: 0px;
+      z-index: 2000; }
+      header .nav.mobile-only ul {
+        clear: both;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        header .nav.mobile-only ul li {
+          margin-bottom: 4%; }
+        header .nav.mobile-only ul a {
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          border: 1px solid #ddd;
+          color: #ddd;
+          display: block;
+          font: 18px/2 helvetica, sans-serif;
+          text-align: center; }
+        header .nav.mobile-only ul .search {
+          display: none; }
+      header .nav.mobile-only form {
+        float: right;
+        width: 80%; }
+        header .nav.mobile-only form input[type=submit] {
+          display: none; }
+        header .nav.mobile-only form input[type=search] {
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          margin-bottom: 8%;
+          height: 25px;
+          padding: 5px 2px;
+          width: 95%; }
+      header .nav.mobile-only .close {
+        background-color: transprent;
+        border: 0;
+        color: transparent;
+        display: block;
+        font: 0/0 a;
+        text-shadow: none;
+        background: url(../img/mobile/hamburger.png);
+        background-size: 100% 100%;
+        border: 0;
+        float: left;
+        height: 35px;
+        margin-bottom: 8%;
+        width: 35px; }
+
+  footer {
+    height: auto;
+    padding-top: 30px; }
+    footer small {
+      clear: both;
+      font-size: 14px; }
+    footer .primary,
+    footer .secondary {
+      display: none;
+      margin: 0 0 0 -5%;
+      overflow: hidden;
+      width: 110%; }
+      footer .primary ul,
+      footer .secondary ul {
+        margin: 0; }
+      footer .primary li,
+      footer .secondary li {
+        display: block;
+        float: left;
+        padding: 0;
+        margin: 2%;
+        width: 46%; }
+        footer .primary li:before,
+        footer .secondary li:before {
+          display: none; }
+        footer .primary li a,
+        footer .secondary li a {
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          border: 1px solid white;
+          display: block;
+          font: 16px/2.5 "Sorts Mill Goudy", georgia, serif;
+          margin: 0;
+          width: auto; }
+    footer .top {
+      display: block;
+      text-align: center; }
+      footer .top a {
+        background: url(../img/mobile/arrow-up.png) no-repeat right center;
+        background-size: contain;
+        line-height: 1.5em;
+        padding: 5px 35px 5px 0; }
+
+  .content {
+    padding: 0;
+    position: relative; }
+    .content > .left {
+      border: 0;
+      float: none;
+      width: auto; }
+      .content > .left > * {
+        margin: 0 auto;
+        width: 96%; }
+    .content .sidebar {
+      display: none; }
+
+  .home .content .products-cta {
+    height: 355px; }
+    .home .content .products-cta > div {
+      height: 120px; }
+    .home .content .products-cta h2 {
+      margin-top: 20px; }
+  .home .content .featured section h3 {
+    font-size: 18px; }
+  .home .content .featured section .image span {
+    display: none !important; }
+  .home .content .featured section .image:hover img {
+    opacity: 1.0 !important; }
+  .home .content .calls-to-action h2 {
+    font-size: 16px; }
+  .home .content .calls-to-action .more .copy {
+    font-size: 13px;
+    width: 72%; }
+
+  .blog h1.mobile-only,
+  .menu-concepts h1.mobile-only,
+  #tags h1.mobile-only {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 50px 0;
+    text-indent: 30px; }
+  .blog .featured-image,
+  .menu-concepts .featured-image,
+  #tags .featured-image {
+    margin-top: 80px; }
+  .blog .sidebar,
+  .menu-concepts .sidebar,
+  #tags .sidebar {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 60px;
+    width: 100%; }
+    .blog .sidebar h2,
+    .menu-concepts .sidebar h2,
+    #tags .sidebar h2 {
+      display: none; }
+    .blog .sidebar > ul,
+    .menu-concepts .sidebar > ul,
+    #tags .sidebar > ul {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: auto; }
+      .blog .sidebar > ul > li,
+      .menu-concepts .sidebar > ul > li,
+      #tags .sidebar > ul > li {
+        float: left;
+        margin-right: 1%;
+        width: 33%; }
+        .blog .sidebar > ul > li.tags,
+        .menu-concepts .sidebar > ul > li.tags,
+        #tags .sidebar > ul > li.tags {
+          margin-right: 0;
+          width: 32%; }
+        .blog .sidebar > ul > li.active ul, .blog .sidebar > ul > li.expanded ul,
+        .menu-concepts .sidebar > ul > li.active ul,
+        .menu-concepts .sidebar > ul > li.expanded ul,
+        #tags .sidebar > ul > li.active ul,
+        #tags .sidebar > ul > li.expanded ul {
+          display: none; }
+        .blog .sidebar > ul > li.active a, .blog .sidebar > ul > li.expanded a,
+        .menu-concepts .sidebar > ul > li.active a,
+        .menu-concepts .sidebar > ul > li.expanded a,
+        #tags .sidebar > ul > li.active a,
+        #tags .sidebar > ul > li.expanded a {
+          background: #b32017;
+          color: white; }
+        .blog .sidebar > ul > li.tags.active ul,
+        .menu-concepts .sidebar > ul > li.tags.active ul,
+        #tags .sidebar > ul > li.tags.active ul {
+          border-top: 1px solid #ddd;
+          display: block;
+          left: 0px;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 40px;
+          width: 100%; }
+          .blog .sidebar > ul > li.tags.active ul li,
+          .menu-concepts .sidebar > ul > li.tags.active ul li,
+          #tags .sidebar > ul > li.tags.active ul li {
+            margin: 0;
+            text-indent: 0; }
+            .blog .sidebar > ul > li.tags.active ul li:before,
+            .menu-concepts .sidebar > ul > li.tags.active ul li:before,
+            #tags .sidebar > ul > li.tags.active ul li:before {
+              display: none; }
+          .blog .sidebar > ul > li.tags.active ul a,
+          .menu-concepts .sidebar > ul > li.tags.active ul a,
+          #tags .sidebar > ul > li.tags.active ul a {
+            background: #eeeeee url(../img/mobile/plus.png) no-repeat 95% center;
+            border-bottom: 1px solid #ddd;
+            color: #555;
+            display: block;
+            font: 16px/40px helvetica, sans-serif;
+            text-indent: 40px; }
+        .blog .sidebar > ul > li > a,
+        .menu-concepts .sidebar > ul > li > a,
+        #tags .sidebar > ul > li > a {
+          background: #ddd;
+          display: block;
+          font: bold 16px/40px helvetica, sans-serif;
+          padding: 0;
+          text-align: center; }
+  .blog .photo,
+  .menu-concepts .photo,
+  #tags .photo {
+    margin: 0 auto;
+    padding-top: 30px; }
+  .blog .single,
+  .menu-concepts .single,
+  #tags .single {
+    padding-top: 30px; }
+
+  .offers .content .mobile-only .sidebar {
+    display: block;
+    float: none;
+    width: auto; }
+    .offers .content .mobile-only .sidebar h2 {
+      display: none; }
+    .offers .content .mobile-only .sidebar > ul {
+      border-top: 1px solid #e5e5e5; }
+      .offers .content .mobile-only .sidebar > ul > li {
+        margin: 0 !important; }
+        .offers .content .mobile-only .sidebar > ul > li > ul {
+          display: none !important; }
+        .offers .content .mobile-only .sidebar > ul > li > a {
+          background: none !important;
+          border-bottom: 1px solid #e5e5e5;
+          display: block;
+          font: 18px/2.5 helvetica, sans-serif; }
+  .offers .content .form {
+    padding: 20px; }
+
+  .offers#videos h1 {
+    margin: 0 2%; }
+  .offers#videos .experience {
+    margin: 0 2%; }
+
+  .heritage .content .left .copy img {
+    display: none; }
+  .heritage .content .left .images {
+    text-align: center; }
+    .heritage .content .left .images img {
+      float: none;
+      margin: 0 5% 30px !important;
+      max-height: 150px;
+      max-width: 40%; }
+  .heritage .content .left .caption {
+    clear: both; }
+  .heritage .content .sidebar {
+    display: block;
+    float: none;
+    width: auto; }
+  .heritage .content .story p:first-of-type {
+    margin: 0; }
+
+  .meet-the-chefs .content .chefs > div a > span {
+    display: none !important; }
+  .meet-the-chefs .content .sidebar.single-view {
+    border-top: 1px solid #e5e5e5;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 90%; }
+    .meet-the-chefs .content .sidebar.single-view h2 {
+      border-bottom: 0;
+      font-family: helvetica, sans-serif;
+      font-weight: bold;
+      text-indent: 0;
+      text-transform: uppercase; }
+    .meet-the-chefs .content .sidebar.single-view > ul > li > ul {
+      margin: 0;
+      padding: 0 5%; }
+      .meet-the-chefs .content .sidebar.single-view > ul > li > ul a {
+        font: bold 14px/1.4 helvetica, sans-serif; }
+    .meet-the-chefs .content .sidebar.single-view > ul > li > a {
+      display: none; }
+    .meet-the-chefs .content .sidebar.single-view li {
+      display: none; }
+    .meet-the-chefs .content .sidebar.single-view .active {
+      display: block; }
+
+  .search .content .results-count {
+    width: 89.5%; }
+
+  .contact img {
+    margin-bottom: 30px; }
+  .contact dd {
+    font-size: 14px; }
+
+  .products .mobile-only .sidebar {
+    display: block;
+    float: none;
+    width: auto; }
+    .products .mobile-only .sidebar h2 {
+      display: none; }
+    .products .mobile-only .sidebar > ul {
+      border-top: 1px solid #e5e5e5; }
+      .products .mobile-only .sidebar > ul > li {
+        margin: 0 !important; }
+        .products .mobile-only .sidebar > ul > li > ul {
+          display: none !important; }
+        .products .mobile-only .sidebar > ul > li > a {
+          background: none !important;
+          border-bottom: 1px solid #e5e5e5;
+          display: block;
+          font: 18px/2.5 helvetica, sans-serif; }
+      .products .mobile-only .sidebar > ul .get-a-sample a {
+        color: #b32017 !important; }
+
+  #gluten-free .content .left {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%; }
+  #gluten-free .content .trusted-celiac .celiac-disease p {
+    font-size: 13px;
+    margin-top: 0; }
+  #gluten-free .content .all-products table td {
+    font-size: 14px; }
+  #gluten-free .content .all-products table td.upc {
+    width: 20%; }
+
+  #gluten-free .mobile-only,
+  #latin-flavors .mobile-only {
+    display: block; }
+    #gluten-free .mobile-only .sidebar,
+    #latin-flavors .mobile-only .sidebar {
+      display: block;
+      float: none;
+      width: auto; }
+      #gluten-free .mobile-only .sidebar h2,
+      #latin-flavors .mobile-only .sidebar h2 {
+        display: none; }
+      #gluten-free .mobile-only .sidebar ul,
+      #latin-flavors .mobile-only .sidebar ul {
+        border-top: 1px solid #e5e5e5;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0; }
+      #gluten-free .mobile-only .sidebar li,
+      #latin-flavors .mobile-only .sidebar li {
+        margin: 0 !important; }
+      #gluten-free .mobile-only .sidebar a,
+      #latin-flavors .mobile-only .sidebar a {
+        background: none !important;
+        border-bottom: 1px solid #e5e5e5;
+        display: block;
+        font: 18px/2.5 helvetica, sans-serif;
+        padding-left: 5%; } }
+@media (max-width: 920px) {
+  
+
+  .home .content .products-cta > div {
+    height: 120px; }
+  .home .content .products-cta img {
+    top: -10px;
+    width: 40%; }
+  .home .content .products-cta h2,
+  .home .content .products-cta a {
+    width: 55%; }
+  .home .content .products-cta h2 {
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .home .content .products-cta a {
+    line-height: 30px;
+    font-size: 12px; }
+    .home .content .products-cta a:after {
+      font-size: 20px; }
+
+  #gluten-free .content table,
+  #gluten-free .content thead,
+  #gluten-free .content tbody,
+  #gluten-free .content tr,
+  #gluten-free .content th {
+    display: block; }
+  #gluten-free .content table thead .upc,
+  #gluten-free .content table thead .pack-size,
+  #gluten-free .content table thead .allergens {
+    display: none; }
+  #gluten-free .content table tbody td {
+    border: 0;
+    padding: 0; }
+  #gluten-free .content table tbody tr {
+    padding: 10px; }
+  #gluten-free .content table tbody .name {
+    display: block;
+    font-size: 16px; }
+    #gluten-free .content table tbody .name a {
+      text-decoration: underline; }
+  #gluten-free .content table tbody .upc,
+  #gluten-free .content table tbody .pack-size,
+  #gluten-free .content table tbody .allergens {
+    display: inline;
+    width: auto; }
+  #gluten-free .content table tbody .upc:before {
+    content: "UPC: "; }
+  #gluten-free .content table tbody .pack-size:before {
+    content: "Pack Size: "; }
+  #gluten-free .content table tbody .allergens:before {
+    content: "Allergens: "; }
+  #gluten-free .content table tbody .upc:after,
+  #gluten-free .content table tbody .pack-size:after {
+    content: ", "; }
+  #gluten-free .content .site-search form {
+    display: none; } }
+@media (max-width: 767px) {
+  .content {
+    padding-bottom: 0;
+    top: auto; }
+    .content .contact img {
+      margin: 0 auto;
+      position: static;
+      width: 90%; }
+    .content .contact h2 {
+      font-size: 20px;
+      text-align: center; }
+    .content .contact h3 {
+      font-size: 20px;
+      text-align: center; }
+    .content .contact p {
+      font-size: 16px;
+      margin: 20px auto;
+      text-align: center;
+      width: 80%; }
+    .content .contact dl {
+      padding: 10px 0; }
+      .content .contact dl dt {
+        font-size: 18px;
+        width: 25%; }
+      .content .contact dl dd {
+        font-size: 14px;
+        width: 70%; }
+    .content .contact .left {
+      float: none;
+      width: auto; }
+
+  .home .content .products-cta {
+    height: 300px; }
+    .home .content .products-cta > div {
+      height: 100px; }
+    .home .content .products-cta h1 {
+      font-size: 19px;
+      top: 20px; }
+    .home .content .products-cta h2 {
+      margin-top: 10px; }
+    .home .content .products-cta a {
+      line-height: 24px; }
+  .home .content .too-short {
+    display: none; }
+  .home .content .chefs,
+  .home .content .calls-to-action {
+    display: none; }
+  .home .content .featured section .image {
+    height: 150px; }
+
+  .blog .content .featured-image,
+  .menu-concepts .content .featured-image {
+    width: 96%; }
+  .blog .content .single .image,
+  .menu-concepts .content .single .image {
+    display: none; }
+  .blog .content .single .details,
+  .menu-concepts .content .single .details {
+    float: none;
+    width: auto; }
+    .blog .content .single .details a,
+    .menu-concepts .content .single .details a {
+      text-decoration: underline; }
+  .blog .content .single .social,
+  .menu-concepts .content .single .social {
+    margin-bottom: 30px; }
+  .blog .content .single .older,
+  .blog .content .single .newer,
+  .menu-concepts .content .single .older,
+  .menu-concepts .content .single .newer {
+    border-left: 0;
+    padding: 0;
+    width: 48%; }
+    .blog .content .single .older a,
+    .blog .content .single .newer a,
+    .menu-concepts .content .single .older a,
+    .menu-concepts .content .single .newer a {
+      background-color: transprent;
+      border: 0;
+      color: transparent;
+      display: block;
+      font: 0/0 a;
+      text-shadow: none;
+      background: #b32017;
+      height: 35px;
+      position: relative; }
+      .blog .content .single .older a:after,
+      .blog .content .single .newer a:after,
+      .menu-concepts .content .single .older a:after,
+      .menu-concepts .content .single .newer a:after {
+        color: white;
+        display: block;
+        font: 16px/35px helvetica, sans-serif;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        text-align: center;
+        width: 100%; }
+  .blog .content .single .older a:after,
+  .menu-concepts .content .single .older a:after {
+    content: "< Older"; }
+  .blog .content .single .newer a:after,
+  .menu-concepts .content .single .newer a:after {
+    content: "Newer >"; }
+
+  #products .content .landing .buttons li {
+    margin: 0 0 30px 55px; }
+
+  #latin-flavors .content h1 {
+    font-size: 1.3em; }
+  #latin-flavors .content > * {
+    margin: 0 auto;
+    width: 96%; }
+  #latin-flavors .content .flavor-is-essential {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 15px; }
+    #latin-flavors .content .flavor-is-essential img {
+      display: none; }
+    #latin-flavors .content .flavor-is-essential p {
+      padding: 30px 0; }
+  #latin-flavors .content .step {
+    padding-right: 0; }
+    #latin-flavors .content .step p,
+    #latin-flavors .content .step select {
+      float: none !important;
+      margin: 0 0 15px 0;
+      width: auto; }
+    #latin-flavors .content .step p {
+      padding-left: 40px; }
+    #latin-flavors .content .step select {
+      margin: 0 auto 15px;
+      width: 90%; }
+  #latin-flavors .content .facts,
+  #latin-flavors .content .endless-possibilities {
+    display: none; }
+  #latin-flavors .content .categories {
+    width: auto; }
+  #latin-flavors .content .recipes {
+    width: auto; }
+    #latin-flavors .content .recipes .left,
+    #latin-flavors .content .recipes .right {
+      float: none;
+      width: auto; }
+  #latin-flavors .content .flavors {
+    border-top: 1px solid #e5e5e5; }
+    #latin-flavors .content .flavors h2 {
+      font-size: 16px; }
+    #latin-flavors .content .flavors table thead {
+      display: none; }
+    #latin-flavors .content .flavors table tr,
+    #latin-flavors .content .flavors table td {
+      border: 0;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0; }
+    #latin-flavors .content .flavors table .product-facts,
+    #latin-flavors .content .flavors table .desc-row {
+      float: none; }
+    #latin-flavors .content .flavors table .upc,
+    #latin-flavors .content .flavors table .size,
+    #latin-flavors .content .flavors table .allergens,
+    #latin-flavors .content .flavors table .extra {
+      display: none; }
+    #latin-flavors .content .flavors table .image {
+      clear: left;
+      width: 20%; }
+      #latin-flavors .content .flavors table .image img {
+        height: auto;
+        width: 100%; }
+    #latin-flavors .content .flavors table .description {
+      background: none;
+      font-size: 14px;
+      margin: -20% 0 0 19%;
+      width: 73%; }
+      #latin-flavors .content .flavors table .description p {
+        font-style: normal; }
+
+  #gluten-free .content h1 {
+    font-size: 1.3em; }
+  #gluten-free .content > * {
+    margin: 0 auto;
+    width: 96%; }
+  #gluten-free .content .intro {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 30px 15px; }
+    #gluten-free .content .intro img {
+      display: none; }
+    #gluten-free .content .intro p {
+      float: none;
+      font-size: 15px;
+      padding: 0;
+      width: auto; }
+  #gluten-free .content .bullets > div > div {
+    float: none;
+    width: auto; }
+  #gluten-free .content .bullets .footnote {
+    margin-bottom: 0; }
+  #gluten-free .content .step {
+    padding-right: 0; }
+    #gluten-free .content .step label,
+    #gluten-free .content .step select {
+      float: none !important;
+      margin: 0 0 15px 0;
+      width: auto; }
+    #gluten-free .content .step label {
+      padding-left: 40px; }
+    #gluten-free .content .step select {
+      margin: 0 auto 15px;
+      width: 90%; }
+  #gluten-free .content .recipes {
+    width: auto; }
+    #gluten-free .content .recipes .left,
+    #gluten-free .content .recipes .right {
+      float: none;
+      width: auto; }
+  #gluten-free .content .trusted-celiac,
+  #gluten-free .content .facts {
+    display: none; }
+
+  #gluten-free .content .sidebar a,
+  #latin-flavors .content .sidebar a {
+    font-size: 13px; }
+  #gluten-free .content .product-info,
+  #latin-flavors .content .product-info {
+    border: none;
+    width: auto; }
+    #gluten-free .content .product-info .product p,
+    #latin-flavors .content .product-info .product p {
+      font-size: 14px;
+      float: left;
+      width: 60%; }
+    #gluten-free .content .product-info .product img,
+    #latin-flavors .content .product-info .product img {
+      margin: 0 15px 0 0;
+      width: 25%; }
+    #gluten-free .content .product-info .product h2,
+    #latin-flavors .content .product-info .product h2 {
+      clear: right;
+      float: left;
+      font-size: 18px;
+      line-height: 1.2em;
+      margin-top: 20px;
+      width: 60%; }
+
+  .offers .content .form {
+    background: none;
+    padding: 10px;
+    width: auto; }
+    .offers .content .form h2 {
+      display: none; }
+    .offers .content .form form {
+      width: auto; }
+      .offers .content .form form label {
+        float: none;
+        margin: 0 0 10px 0;
+        width: auto !important; }
+      .offers .content .form form input[type=text],
+      .offers .content .form form input[type=email],
+      .offers .content .form form input[type=tel],
+      .offers .content .form form textarea {
+        padding: 4px 2% !important;
+        width: 95% !important; }
+      .offers .content .form form select {
+        width: 100% !important; }
+      .offers .content .form form input[type=submit] {
+        background: #b32017 !important;
+        color: white !important;
+        font: 18px/40px helvetica, sans-serif !important;
+        height: auto !important;
+        padding: 0 !important;
+        text-transform: none;
+        width: 96% !important; }
+
+  #powerofflavor .content .narrow {
+    width: auto; }
+    #powerofflavor .content .narrow > img {
+      margin-bottom: 0;
+      width: 100%; }
+    #powerofflavor .content .narrow h1 {
+      font-size: 24px;
+      margin-top: 0; }
+    #powerofflavor .content .narrow > div {
+      width: auto;
+      float: none;
+      margin: 0 auto;
+      overflow: visible;
+      padding: 30px 0;
+      width: 96%; }
+      #powerofflavor .content .narrow > div p,
+      #powerofflavor .content .narrow > div img,
+      #powerofflavor .content .narrow > div blockquote,
+      #powerofflavor .content .narrow > div div {
+        float: none;
+        width: auto; }
+      #powerofflavor .content .narrow > div img {
+        display: block;
+        margin: 0 auto; }
+      #powerofflavor .content .narrow > div blockquote {
+        background: #fbfaf7;
+        font: italic 18px/1.5 "Sorts Mill Goudy", georgia, serif;
+        margin: 0 0 0 -2%;
+        padding: 30px 2% 15px;
+        width: 100%; }
+        #powerofflavor .content .narrow > div blockquote p {
+          margin-bottom: 0; }
+      #powerofflavor .content .narrow > div cite {
+        background: #fbfaf7;
+        display: block;
+        padding: 5px 0 15px; }
+    #powerofflavor .content .narrow .power-of-flavor {
+      padding-top: 0; }
+    #powerofflavor .content .narrow .food-cost img {
+      display: none; }
+    #powerofflavor .content .narrow .food-cost .mobile-only {
+      display: block; }
+    #powerofflavor .content .narrow .quote {
+      padding: 0; }
+    #powerofflavor .content .narrow .profit img {
+      display: none;
+      margin: 30px auto; }
+    #powerofflavor .content .narrow .profit .mobile-only {
+      display: block; }
+    #powerofflavor .content .narrow .learn-more,
+    #powerofflavor .content .narrow .footnotes {
+      display: none; }
+
+  .offers#flavor-expedition .content .form .comments span,
+  .offers#flavor-expedition .content .form .comments textarea {
+    float: none; }
+  .offers#flavor-expedition .content .form .comments span {
+    width: auto; } }
+@media (max-width: 640px) {
+  header .primary {
+    padding: 5% 5% 0 0; }
+    header .primary li {
+      margin: 0 0 5% 5%;
+      width: 45%; }
+    header .primary .search {
+      width: 95%; }
+
+  .site-search {
+    height: auto; }
+    .site-search .see-how-fmb {
+      float: none;
+      margin: 0;
+      text-align: center; }
+    .site-search form {
+      display: none; }
+
+  .home .content .products-cta {
+    height: 150px; }
+    .home .content .products-cta div {
+      height: auto; }
+    .home .content .products-cta h1,
+    .home .content .products-cta img,
+    .home .content .products-cta a {
+      display: none; }
+    .home .content .products-cta h2 {
+      color: black;
+      float: none;
+      font: bold 14px/1.2 "Sorts Mill Goudy", georgia, serif;
+      letter-spacing: 0;
+      padding: 10px 0;
+      text-align: center;
+      text-transform: none;
+      width: auto; }
+      .home .content .products-cta h2:after {
+        content: " »"; }
+  .home .content .featured {
+    padding: 0; }
+    .home .content .featured .blog, .home .content .featured .offer {
+      margin: 0; }
+    .home .content .featured section {
+      clear: both;
+      float: none;
+      margin: 10px 0;
+      overflow: hidden;
+      padding: 20px;
+      width: auto; }
+      .home .content .featured section .image {
+        float: left;
+        height: auto;
+        width: 40%; }
+        .home .content .featured section .image img {
+          height: auto;
+          width: 100%; }
+        .home .content .featured section .image:hover img {
+          left: auto;
+          top: auto;
+          width: 100%; }
+        .home .content .featured section .image:hover:after {
+          display: none; }
+      .home .content .featured section h2 {
+        font-size: 24px; }
+      .home .content .featured section h3,
+      .home .content .featured section h4 {
+        float: right;
+        margin: 0 0 10px 0;
+        width: 55%; }
+      .home .content .featured section h3 {
+        font-size: 16px;
+        line-height: 1.2; }
+      .home .content .featured section h4 {
+        font-size: 12px; }
+    .home .content .featured .offer h4 {
+      display: none; }
+
+  .contact .chat {
+    display: none; }
+
+  .blog .content .single .social,
+  .menu-concepts .content .single .social {
+    display: none; }
+
+  .offers#videos .content .left .experience {
+    width: auto; }
+  .offers#videos .content .left .iframe {
+    height: 300px; }
+  .offers#videos .content .left .description img {
+    display: none; }
+  .offers#videos .lightbox .copy {
+    float: none;
+    width: auto; }
+    .offers#videos .lightbox .copy h3,
+    .offers#videos .lightbox .copy a {
+      font-size: 16px; }
+    .offers#videos .lightbox .copy p {
+      line-height: 1.4; }
+  .offers#videos .lightbox .buttons button {
+    float: none;
+    margin: 0 auto; }
+
+  .lightbox .window {
+    width: 80%;
+    margin-top: 20px; }
+    .lightbox .window h2 {
+      font-size: 20px; }
+    .lightbox .window h3 {
+      font-size: 16px; }
+    .lightbox .window p {
+      line-height: 1.4;
+      margin-bottom: 10px; }
+
+  #brochures .content h1 {
+    font-size: 1.7em;
+    margin: 0 auto;
+    width: 96%; }
+  #brochures .content .buttons {
+    border-top: 1px solid #ccc;
+    left: -2%;
+    width: 104%; }
+    #brochures .content .buttons li {
+      float: none;
+      margin: 0; }
+    #brochures .content .buttons a {
+      background: #eeeeee url(../img/mobile/plus.png) no-repeat 92% center;
+      border-bottom: 1px solid #ccc;
+      color: #555;
+      font-size: 14px;
+      height: auto !important;
+      padding: 15px 10px !important;
+      text-align: left;
+      text-indent: 30px;
+      width: auto; }
+  #brochures .content .brochures {
+    margin: 50px auto 0;
+    width: 96%; }
+    #brochures .content .brochures .brochure {
+      float: none;
+      overflow: hidden;
+      width: auto; }
+      #brochures .content .brochures .brochure.odd {
+        float: none; } }
+@media (max-width: 480px) {
+  .main {
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-bottom: 0; }
+
+  #home .content .slideshow {
+    height: 200px; }
+    #home .content .slideshow .cta a {
+      font-size: 16px;
+      line-height: 25px; }
+    #home .content .slideshow .controls .next,
+    #home .content .slideshow .controls .prev {
+      top: -120px; }
+  #home .content .featured-video dd,
+  #home .content .contact dd {
+    font-size: 12px; }
+  #home .content .featured-video h2,
+  #home .content .contact h2 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    text-align: center; }
+  #home .content .featured-video {
+    padding: 20px 0; }
+    #home .content .featured-video iframe {
+      display: block;
+      height: 200px;
+      margin: 0 auto;
+      width: 90%; }
+    #home .content .featured-video .left {
+      float: none;
+      width: auto; }
+    #home .content .featured-video .right {
+      display: none; }
+
+  .blog .content,
+  .menu-concepts .content {
+            /*
+            .summary {
+                img { width: 100%; }
+
+                h2 { margin: 5px 0 0; }
+
+                .image,
+                .details {
+                    float: none;
+                    margin: 0;
+                    width: auto;
+                }
+
+                .image { margin-bottom: 15px; }
+            }
+            */ }
+
+  #products .content .caption {
+    display: none; }
+  #products .content h1 {
+    font-size: 1.5em; }
+  #products .content .landing .buttons {
+    border-top: 1px solid #ccc;
+    margin-left: -2%;
+    width: 104%; }
+    #products .content .landing .buttons li {
+      float: none;
+      margin: 0; }
+    #products .content .landing .buttons a {
+      background: #eeeeee url(../img/mobile/plus.png) no-repeat 92% center;
+      border-bottom: 1px solid #ccc;
+      color: #555;
+      font-size: 14px;
+      height: auto !important;
+      padding: 15px 10px !important;
+      text-align: left;
+      text-indent: 30px;
+      width: auto; }
+  #products .content .landing .brochures {
+    display: none; }
+  #products .content .main-image {
+    margin-bottom: 30px; }
+  #products .content .copy {
+    margin: 0 auto; }
+    #products .content .copy img {
+      margin: 0 10px 30px 0;
+      width: 35%; }
+    #products .content .copy h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      position: relative;
+      top: 15px; }
+    #products .content .copy p {
+      clear: both; }
+  #products .content .products-list {
+    margin: 0 auto; }
+    #products .content .products-list h2 {
+      font-size: 16px; }
+  #products .content .latin-flavors {
+    margin-top: 15px; }
+
+  #meet-the-chefs .content h1 {
+    font-size: 1.5em; }
+  #meet-the-chefs .content .chefs {
+    width: auto; }
+    #meet-the-chefs .content .chefs > div {
+      height: auto;
+      width: 45%;
+      margin: 0 0 3% 3%; }
+      #meet-the-chefs .content .chefs > div .image {
+        height: auto;
+        width: auto; }
+  #meet-the-chefs .content .single-chef .headshot {
+    display: none; }
+  #meet-the-chefs .content .single-chef .action {
+    float: none;
+    height: auto;
+    width: auto; }
+  #meet-the-chefs .content .single-chef .about {
+    margin: 0 auto;
+    width: 96%; }
+
+  #videos .content iframe {
+    margin: 0 auto;
+    width: 100%; }
+
+  .offers .content .left h1 {
+    font-size: 1.5em; }
+
+  #flavor-means-business .content iframe {
+    height: 240px;
+    width: 100%; }
+  #flavor-means-business .content h1 {
+    font-size: 1.5em; }
+    #flavor-means-business .content h1 br {
+      display: none; }
+  #flavor-means-business .content img {
+    float: none;
+    display: block;
+    margin: 30px auto; }
+
+  #contact .content {
+    width: auto !important; }
+    #contact .content img {
+      margin: 0 auto 30px;
+      position: static;
+      width: 100%; }
+    #contact .content h1 {
+      font-size: 1.5em; }
+    #contact .content h3 {
+      font-size: 20px; }
+    #contact .content p {
+      font-size: 16px;
+      margin: 20px auto; }
+    #contact .content dl {
+      padding: 10px 0; }
+      #contact .content dl dt {
+        font-size: 18px;
+        width: 25%; }
+      #contact .content dl dd {
+        font-size: 12px;
+        width: 70%; }
+    #contact .content .left {
+      float: none;
+      width: auto; } }
+	  
+ /******** Latin Recipes ***********/
+ 
+ .visible-tablet,.visible-mobile {
+ display:none;
+ }
+ h2.latin-recipe-title {
+  color: #888;
+  text-transform: none;
+  line-height: 1;
+  font-weight:100;
+}
+.download-button {
+  border: 1px solid #000;
+  border-radius: 4px;
+  max-width: 135px;
+  height: 20px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 10px;
+  transition: all .1s ease-in-out;
+}
+.download-button:hover {
+	border:1px solid #AE1105;
+    transition: all .1s ease-in-out;
+}
+.download-button > p {
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    transition: all .1s ease-in-out;
+    font-family: "Sorts Mill Goudy",georgia,serif;
+}
+.download-button:hover > p {
+	color:#AE1105;
+    transition: all .1s ease-in-out;
+}
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.featured-latin {
+min-height:400px;
+}
+ .featured-latin-right {
+	float:left;
+	max-width:45%;
+}
+.featured-latin .image {
+	margin:10px 15px 5%;
+	float:left;
+	width:50%;
+	height:50%;
+	overflow:hidden;
+}
+.latin-flavor-image .image {
+	overflow:hidden;
+	
+}
+.latin-flavor-image .image img:hover,.featured-latin .image img:hover {
+-webkit-transform:scale(1.3);
+transform:scale(1.3);
+}
+.latin-flavor-image .image img,.featured-latin .image img {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+@media (max-width: 900px) and (min-width: 500px) {
+.visible-tablet {
+display:block !important;
+}
+.visible-desktop {
+display: none;
+}
+.featured-latin .image {
+	margin:10px 15px 5%;
+	float:left;
+	max-width:100% !important;
+}
+ .featured-latin-right {
+	float:left;
+	max-width:100% !important;
+	padding:0 10px;
+}
+}
+@media (max-width: 499px) {
+.visible-mobile {
+    display: block !important;
+    max-width: 320px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.visible-desktop {
+display: none;
+}
+.featured-latin .image {
+	margin:10px 15px 5%;
+	float:left;
+	max-width:100% !important;
+}
+ .featured-latin-right {
+	float:left;
+	max-width:100% !important;
+	padding:0 10px;
+}
+.see-more {
+  padding: 20% 0 5%;
+}
+
+}
+@media (min-width: 640px) and (max-width: 826px) {
+.site-search form {
+display:none !important;	
+}
+}
+ 
+ 
+ 
+ 
+ 
+ 

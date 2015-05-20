@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:import href="../utilities/masterfull.xsl" />
+<xsl:import href="../utilities/featured-sidebar.xsl" />
+
+
+<xsl:template match="/data"><link rel="stylesheet" href="{$workspace}/css/custom.css" />
+
+
+   <!--Desktop Layout -->
+   <div class="desktop-only">
+   
+   <div class="battle-for-bocuse">
+   <h1>Battle for bocuse d'or with chef steve</h1>
+   <img class="floatleft" src="{$workspace}/img/battle-for-bocuse.jpg" />
+   <div class="floatleft bocuse-right"><p>Who are the finalists?<br /><span style="color:#555555; font-style: normal; margin-top:5px;position:absolute;font-size:14px; font-weight:lighter;">See for yourself 10/1/14</span></p>
+   <ul>
+   <a href="#details"><li>Contest Details</li></a>
+   <a href="#details"><li>Prize Overview</li></a>
+   <a href="#enter"><li>Soup Categories</li></a>
+   <a target="_blank" href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf"><li>Official Rules</li></a>
+   </ul>
+  
+   </div>
+   </div>
+   <div class="thebattle"><img src="{$workspace}/img/thebattle.jpg" />
+   <h1 class="textcenter"><span style="font-size:22px;">The battle continues!</span><span style="font-size:22px;text-transform:uppercase; color:#B73129;">Vote for your Favorite finalist starting</span><span style="font-weight:bold; font-size:22px;text-transform:uppercase; color:#B73129;"> 10/1/14.</span></h1>
+   <img src="{$workspace}/img/thebattle.jpg" />
+   </div>
+   <div class="challengerprofile"><img class="floatleft" src="{$workspace}/img/chef-steve.jpg" />
+   <div style="max-width:100%;"><h2>Finalist Selection - The MINOR'S&#174; Soup Recipe Contest</h2>
+   <p>Thank you for your creative soup submissions. The MINOR’S judging panel is currently determining which recipes will be chosen for the final battle.</p>
+   <p>One finalist will be chosen for each soup category. These challengers will be featured on flavormeansbusiness.com/battleforbocuse from 10/1/14 through 10/31/14 for open voting. The finalist with the most votes will win  <a style="color:#B32122;" href="#details">the grand prize.</a></p></div>
+   </div>
+   <div class="contest-pieces">
+   <a name="enter"></a>
+   <div class="letsbattle">
+   <p>The entry period is now closed. Who do you think should win the battle?<br />Come back 10/1/14 through 10/31/14 to vote for your favorite recipe.</p>
+   <p>Until then, download the delicious MINOR'S Soup Recipe Contest creations Chef Steve challenged participants with.<br /><span style="font-size:13px;">Click recipe images below to download Chef Steve's recipes.</span>
+   </p>
+   </div>
+   <div class="row1">
+   <div id="chicken-noodle">
+    <div id="enter"><a href="/bocuse-recipes/Chicken-Ramen.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+  </div>
+   <div id="chowder">
+   <div id="enter"><a href="/bocuse-recipes/Chorizo-Corn-Chowder.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+   </div>
+   </div>
+   <div class="row2">
+   <div id="clam-chowder">
+   <div id="enter"><a href="/bocuse-recipes/Clam-Chowder-with-Miso.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+  </div>
+   <div id="french-onion">
+   <div id="enter"><a href="/bocuse-recipes/Bourbon-Street-French-Onion.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+   </div>   
+   </div>
+   <div class="row3">
+   <div id="minestrone">
+   <div id="enter"><a href="/bocuse-recipes/Roasted-Garlic-and-Sundried-Tomato-Minestrone.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+   </div>
+ <div id="potato-soup">
+ <div id="enter"><a href="/bocuse-recipes/Truffled-Potato-Soup.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+   </div>
+   </div>
+   <div class="row4">
+     <div id="seafood-bisque">
+     <div id="enter"><a href="/bocuse-recipes/Thai-Style-Lobster-Bisque.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+   </div>
+   <div id="tortilla-soup">
+   <div id="enter"><a href="/bocuse-recipes/Three-Chile-Tortilla-Soup.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+  </div>
+   </div>
+   <div class="row5">
+   <div id="vegetable-bisque">
+   <div id="enter"><a href="/bocuse-recipes/Butternut-Squash-Bisque.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+   </div>
+   <div id="vegetable-soup">
+   <div id="enter"><a href="/bocuse-recipes/Super-Food-Vegetable-Soup.pdf" target="_blank"><img class="enter-now" src="{$workspace}/img/new-enter-now.png" /></a></div>
+   </div>
+   </div>
+   </div>
+   <div class="celebrate"><img src="{$workspace}/img/chef-celebrate.jpg" />
+   </div>
+   <a name="details"></a>
+   <h1 class="textcenter souprecipe">The MINOR’S&#174; Soup Recipe Contest</h1>
+    <!-- Tabrules start -->
+  <div class="tabrules">
+  <div class="howtoenter"><img class="floatleft" src="{$workspace}/img/how-to-enter.png" />
+  <h2>Contest Status</h2>
+  <p>Thank you for submitting your wonderful recipes. These are currently being reviewed by the MINOR’S panel of judges and will be considered based on combination of flavor, creativity and operational efficiency. In each category one soup will be selected as the category finalist.</p>
+   </div>
+   <div class="voting"><img class="floatleft" src="{$workspace}/img/voting.png" />
+   <h2>Voting and Winner Selection</h2>
+  <p>The ten category finalists’ names and recipes will be posted to flavormeansbusiness.com/bocuse-recipes from 10/1/14 through 10/31/14 for a voting session open to the general public. The category finalist with the most votes will be designated the grand prize winner.</p>
+   </div>
+   <div class="prizes"><img class="floatleft" src="{$workspace}/img/prizes.png" />
+   <h2>Prizes</h2>
+  <p>Category Finalists</p> 
+<p>Each of the ten category finalists will receive a professionally styled and photographed canvas print of their submitted recipe.
+</p>
+   </div>
+   <div class="grandprize"><img class="floatleft" src="{$workspace}/img/grandprize.png" />
+   <h2>Grand Prize Winner</h2>
+  <p>The grand prize winner will receive a four-night trip for two (2) to watch the Bocuse d’Or culinary competition in Lyon, France, January 2015. Prize includes economy airfare for two, a four-night hotel stay, tickets to the Bocuse d’Or competition and a $400 gift card for expenses.</p>
+<p>For complete contest rules, <a href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf">click here.</a></p>
+   </div>
+</div>
+<!-- End Tabrules -->
+   </div>
+  <!-- End Desktop Layout -->
+  
+  <!--Mobile Layout -->
+  <div class="mobile-only">
+   <ul>
+   <a href="#mobiledetails"><li>Contest Details</li></a>
+   <a href="#mobiledetails"><li>Prize Overview</li></a>
+   <a href="#mobileenter"><li>Soup Categories</li></a>
+   <a target="_blank" href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf"><li>Official Rules</li></a>
+   <a href="#mobileenter"><li style="border-bottom: 1px solid #e5e5e5;">Enter Now</li></a>
+   </ul>
+    
+   <!--Start Mobile Battle for Bocuse -->
+   <div class="mobile-battleforbocuse">
+   <h1>Battle for bocuse d'or with chef steve</h1>
+   <img src="{$workspace}/img/battle-for-bocuse.jpg" />
+  </div>
+  <!--End Mobile Battle for Bocuse -->
+  <div class="mobile-trip">
+  <p>Who are the finalists?<br /><span class="mobile-entries">See for yourself 10/1/14</span></p>
+ </div>
+ <div class="thebattle"><img src="{$workspace}/img/thebattle.jpg" />
+   <h1 class="textcenter"><span style="font-size:19px;">The battle continues!</span><br /><span style="padding:0 3px;font-size:18px;text-transform:uppercase; color:#B73129;"> Vote for your Favorite finalist starting</span><span style="font-weight:bold; padding:0 3px;font-size:18px;text-transform:uppercase; color:#B73129;">10/1/14.</span></h1>
+   <img src="{$workspace}/img/thebattle.jpg" />
+   </div>
+   <div class="challengerprofile tablet-only"><img src="{$workspace}/img/chef-steve.jpg" /><h2>Finalist Selection - The MINOR'S Soup Recipe Contest</h2>
+   <p>Thank you for your creative soup submissions. The MINOR’S judging panel is currently determining which recipes will be chosen for the final battle.</p>
+   <p>One finalist will be chosen for each soup category. These challengers will be featured on flavormeansbusiness.com/battleforbocuse from 10/1/14 through 10/31/14 for open voting. The finalist with the most votes will win <a href="#mobiledetails">the grand prize.</a></p></div>
+   <div class="challengerprofile hidden-tablet"><img src="{$workspace}/img/chef-steve-prof-bio.png" />
+   <h2>Finalist Selection - The MINOR'S Soup Recipe Contest</h2>
+   <p>Thank you for your creative soup submissions. The MINOR’S judging panel is currently determining which recipes will be chosen for the final battle.</p>
+   <p>One finalist will be chosen for each soup category. These challengers will be featured on flavormeansbusiness.com/battleforbocuse from 10/1/14 through 10/31/14 for open voting. The finalist with the most votes will win <a href="#mobiledetails">the grand prize.</a></p></div>
+   <a name="mobileenter"></a>
+   <div class="letsbattle">
+   <p>The entry period is now closed. Who do you think should win the battle?<br />Come back 10/1/14 through 10/31/14 to vote for your favorite recipe.</p>
+   <p>Until then, download the delicious MINOR'S Soup Recipe Contest creations Chef Steve challenged participants with.</p>
+   <p><a target="_blank" href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf" style="color:#B32317; text-decoration:underline;">See Official Rules.</a><br /><span style="font-size:13px;">Click recipe images below to download Chef Steve's recipes.</span>
+   </p>
+   </div>
+<div class="contest-pieces">
+<!--Chicken Noodle -->
+<div class="mobile-chicken-noodle">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Chicken-Ramen.pdf"><img src="{$workspace}/img/chicken-noodle.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Chicken-Ramen.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Chowder -->
+<div class="mobile-chowder">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Chorizo-Corn-Chowder.pdf"><img src="{$workspace}/img/chowder.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Chorizo-Corn-Chowder.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Clam Chowder -->
+<div class="mobile-clam-chowder">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Clam-Chowder-with-Miso.pdf"><img src="{$workspace}/img/clam-chowder.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Clam-Chowder-with-Miso.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- French Onion -->
+<div class="mobile-french-onion">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Bourbon-Street-French-Onion.pdf"><img src="{$workspace}/img/french-onion.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Bourbon-Street-French-Onion.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Minestrone -->
+<div class="mobile-minestrone">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Roasted-Garlic-and-Sundried-Tomato-Minestrone.pdf"><img src="{$workspace}/img/minestrone.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Roasted-Garlic-and-Sundried-Tomato-Minestrone.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Potato Soup -->
+<div class="mobile-potato-soup">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Truffled-Potato-Soup.pdf"><img src="{$workspace}/img/potato-soup.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Truffled-Potato-Soup.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Seafood Bisque -->
+<div class="mobile-seafood-bisque">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/TThai-Style-Lobster-Bisque.pdf"><img src="{$workspace}/img/seafood-bisque.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/TThai-Style-Lobster-Bisque.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Tortilla Soup -->
+<div class="mobile-tortilla-soup">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Three-Chile-Tortilla-Soup.pdf"><img src="{$workspace}/img/tortilla-soup.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Three-Chile-Tortilla-Soup.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Vegetable Bisque -->
+<div class="mobile-vegetable-bisque"> 
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Butternut-Squash-Bisque.pdf"><img src="{$workspace}/img/vegetable-bisque.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Butternut-Squash-Bisque.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+<!-- Vegetable Soup -->
+<div class="mobile-vegetable-soup">
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Super-Food-Vegetable-Soup.pdf"><img src="{$workspace}/img/vegetable-soup.png" /></a>
+<a href="http://www.flavormeansbusiness.com/bocuse-recipes/Super-Food-Vegetable-Soup.pdf"><img src="{$workspace}/img/new-enter-now-mobile.png" /></a>
+</div>
+</div>
+  <!-- Tabrules start -->
+  <a name="mobiledetails"></a>
+  <h1 class="textcenter souprecipe">The MINOR’S&#174; Soup Recipe Contest</h1>
+  <div class="tabrules">
+  <div class="howtoenter">
+  <h2>Contest Status</h2>
+  <p>Thank you for submitting your wonderful recipes. These are currently being reviewed by the MINOR’S panel of judges and will be considered based on combination of flavor, creativity and operational efficiency. In each category one soup will be selected as the category finalist.</p>
+   </div>
+   <div class="voting">
+   <h2>Voting and Winner Selection</h2>
+  <p>The ten category finalists’ names and recipes will be posted to flavormeansbusiness.com/bocuse-recipes from 10/1/14 through 10/31/14 for a voting session open to the general public. The category finalist with the most votes will be designated the grand prize winner.</p>
+   </div>
+   <div class="prizes">
+   <h2>Prizes</h2>
+  <p>Category Finalists</p> 
+<p>Each of the ten category finalists will receive a professionally styled and photographed canvas print of their submitted recipe.
+</p>
+   </div>
+   <div class="grandprize">
+   <h2>Grand Prize Winner</h2>
+  <p>The grand prize winner will receive a four-night trip for two (2) to watch the Bocuse d’Or culinary competition in Lyon, France, January 2015. Prize includes economy airfare for two, a four-night hotel stay, tickets to the Bocuse d’Or competition and a $400 gift card for expenses.</p>
+<p>For complete contest rules, <a href="/bocuse-recipes/Battle-For-Bocuse-Official-Rules.pdf" style="text-decoration:underline;">click here.</a></p>
+   </div>
+</div>
+<!-- End Tabrules -->
+ <!-- End Mobile Layout -->
+  </div>
+</xsl:template>
+
+</xsl:stylesheet>

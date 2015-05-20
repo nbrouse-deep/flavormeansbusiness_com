@@ -1,0 +1,152 @@
+#products {
+    .content {
+        .brochures,
+        .latin-flavors {
+            @include loud-link;
+            clear: both; 
+        }
+
+
+        // landing page (no category selected)
+        .landing {
+            .buttons {
+                @include box-sizing(content-box);
+                list-style: none outside none;
+                padding: 0;
+
+                li {
+                    float: left;
+                    margin: 0 30px 30px 30px;
+                }
+
+                a { @include button; }
+            }
+
+        }
+
+        .copy {
+            margin: 45px 0 0 0;
+
+            img {
+                float: left;
+                margin: 0 30px 100px 0;
+            }
+        }
+
+
+        .products-list {
+            clear: both;
+            margin: 45px 0;
+
+            h2 { margin-bottom: 0; }
+
+            ul {
+                list-style: none outside none;
+                margin: 15px 0 0 0;
+                padding: 0;
+
+                li {
+                    background: #f7f1e1 url(../img/plus.png) no-repeat 15px 5px;
+
+                    &.even { background-color: white; }
+
+                    &.expanded { background-image: url(../img/minus.png); }
+
+                    h4,
+                    .details { padding: 5px 20px 5px 60px; }
+
+
+                    h4 {
+                        border-bottom: 1px solid #ddd;
+                        color: #666;
+                        cursor: pointer;
+                        font-weight: normal;
+                        letter-spacing: 1px;
+                        margin: 0;
+                        text-transform: uppercase;
+
+                        .new {
+                            font-weight: bold;
+                            letter-spacing: 0;
+                            margin: 0 0 0 15px;
+                        }
+                    }
+
+                    .details {
+                        @include clearfix;
+                        border-bottom: 1px solid #ddd;
+                        display: none;
+                        overflow: hidden;
+
+                        a {
+                            font-size: 13px;
+                            text-decoration: underline;
+
+                            &:after { content: " ›"; }
+                        }
+
+                        p { margin: 5px 0; }
+
+                        .size { 
+                            clear: left;
+                            float: left; 
+                        }
+
+                        .url { 
+                            clear: right;
+                            float: right; 
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .back { 
+            margin-bottom: 15px;
+            margin-top: 15px; 
+
+            a { font-size: 14px; }
+        }
+
+
+        .sidebar {
+            @include sidebar-tree;
+
+            h2 { font-weight: bold; }
+
+            .no-children,
+            .no-children.active,
+            .no-children.expanded {
+                a { background: none; }
+            }
+
+            .featured {
+                border-bottom: 1px solid #e5e5e5;
+                margin-top: 40px;
+
+                h3 {
+                    border-bottom: 1px solid #e5e5e5;
+                    font-size: 1em;
+                    padding-bottom: 0.5em;
+                    padding-left: 40px;
+                }
+
+                ul {
+                    list-style: none outside none;
+                    margin: 0.5em 0;
+                }
+
+                li {
+                    line-height: 2em;
+                }
+            }
+
+            .sample {
+                color: $color-accent;
+                display: block;
+                margin: 1em 0 0 40px;
+            }
+        }
+    }
+}

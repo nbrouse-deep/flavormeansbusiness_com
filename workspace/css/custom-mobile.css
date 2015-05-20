@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+<!--
+Custom CSS -------------
+-->
+ .content-modified p {
+ font-family:"Sorts Mill Goudy", georgia, serif;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.auto {
+	width: auto;
+}
+.desktop-only img {
+	max-width: 100%;
+}
+/* Contest Pieces 
+********************************************************************/
+.contest-pieces {
+	background-image: url("../img/blurred-kitchen.jpg");
+	height: 865px;
+}
+.contest-pieces img {
+	padding: 5px 10px;
+}
+.row1, .row2, .row3, .row4, .row5 {
+	margin-left: 100px;
+}
+.contest-pieces {
+	background-image: url("../img/blurred-kitchen.jpg");
+	min-height: 1160px;
+	padding: 20px;
+}
+
+.french-onion, .vegetable-bisque, .chicken-noodle, .chowder, .clam-chowder, .minestrone, .vegetable-soup, .seafood-bisque, .tortilla-soup, .potato-soup {
+    float: left;
+    margin-right: 25px;
+    position: relative;
+    width: 500px;
+	
+}
+
+.enter-now{position: absolute; bottom:29px; right:32px;}
+.enter-now:hover{opacity:.7;}
+
+/* End Contest Pieces
+**********************************************************************/
+
+.thebattle {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.textcenter {
+	text-align: center;
+}
+.bocuse-right {
+	width: 250px;
+	color: #555555;
+	font-family: 'myriad pro';
+}
+.bocuse-right p {
+	font-size: 32px;
+	line-height: 1.3;
+	font-family: 'Sorts Mill Goudy', georgia, serif; 
+	font-style:italic;
+	color:#b32317;
+}
+.bocuse-right ul {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+.bocuse-right ul li {
+	list-style: none;
+	text-decoration: underline;
+	line-height: 3;
+}
+.bocuse-right ul a:hover{
+color:#B32317;	
+}
+
+.bocuse-right .enternow p {
+    color: #555555;
+    font-size: 17px;
+    margin: 0;
+	border: 1px solid #555555;
+	border-radius: 3px;
+	margin: 40px 0 20px 0;
+	padding: 10px;
+	text-align: center;
+	width: 105px;
+}
+.bocuse-right .enternow p:hover {
+    color: #B32330;
+	border: 1px solid #B32330;
+}
+
+.challengerprofile {
+    background-color: #fbfaf8;
+    min-height: 335px;
+    padding: 20px 115px 20px 70px;
+	font-family: 'Helvetica';
+}
+.challengerprofile img{
+	margin:0 30px;
+}
+.challengerprofile h2 {
+    text-transform: none;
+	color: #636363;
+}
+.challengerprofile p {
+    color: #636363;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.challengerprofile a p{
+	color:#AF2018;
+	text-decoration:underline;
+}
+.letsbattle {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.souprecipe {
+    color: #8e8e8f;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+.tabrules {
+	background-color: #E6E4E5;
+	min-height: 975px;
+	padding: 40px 100px;
+}
+.tabrules h2 {
+    color: #b22425;
+    font-family: 'Helvetica';
+    font-size: 22px;
+    font-weight: normal;
+    margin: 5px 0;
+    text-transform: none;
+}
+.tabrules p {
+	font-family: 'Helvetica';
+	 color: #8a8788;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.howtoenter {
+	height: 240px;
+	margin-top: 20px;
+}
+.howtoenter img {
+	margin-right: 50px;
+}
+.voting {
+	height: 240px;
+}
+.voting img {
+	margin-right: 50px;
+}
+.prizes {
+	height: 240px;
+}
+.prizes img {
+	margin-right: 50px;
+}
+.grandprize {
+	height: 240px;
+}
+.grandprize img {
+	margin-right: 50px;
+}
+.battleforbocuse {
+	padding: 0 100px;
+}
+
+/* Content Modified
+************************************************/
+.content-modified {
+	margin: 0 auto;
+	padding: 30px 0;
+	z-index: 100;
+	width: 1280px;
+}
+.content-modified:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.content-modified > .left {
+	border-right: 1px solid #e5e5e5;
+	float: left;
+	padding-bottom: 30px;
+	width: 72.12963%;
+}
+.content-modified > .left > * {
+	width: 96.5%;
+}
+.content-modified > .left > img {
+	display: block;
+	width: 100%;
+}
+.content-modified .contact {
+	border-top: 1px solid #e5e5e5;
+	clear: both;
+	overflow: hidden;
+	padding: 30px 60px;
+	position: relative;
+	width: 1080px;
+}
+.content-modified .contact h2 {
+	color: #888;
+	font: normal 26px/1.4 trajan-pro-3, "Sorts Mill Goudy", georgia, serif;
+	margin: 0 0 30px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.content-modified .contact .left {
+	float: left;
+	width: 50%;
+}
+.content-modified .contact h3 {
+	color: #777;
+	font: italic 22px/1.5 "Sorts Mill Goudy", georgia, serif;
+	margin: 5px 0 0 0;
+}
+.content-modified .contact img {
+	bottom: 30px;
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 48%;
+}
+.content-modified .contact dl {
+	background: #fbfaf8;
+	margin: 0;
+	overflow: hidden;
+	padding: 20px 0;
+	width: 100%;
+}
+.content-modified .contact dl dt,  .content-modified .contact dl dd {
+	line-height: 33px;
+	margin: 0 0 10px 0;
+}
+.content-modified .contact dl dt {
+	clear: left;
+	color: #888;
+	font: italic 22px/33px "Sorts Mill Goudy", georgia, serif;
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+.content-modified .contact dl dd {
+	color: #b32017;
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+	width: 70%;
+}
+.content-modified .contact dl dd a {
+	color: #b32017;
+}

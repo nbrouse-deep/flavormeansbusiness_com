@@ -1,0 +1,668 @@
+@media (max-width: 1024px) {
+    .home .content {
+        .chefs {
+            .clone,
+            .filmstrip { display: none; }
+
+            .mobile-nav { display: block; }
+        }
+    }
+
+    .blog,
+    .menu-concepts {
+        .single .social p { font-size: 16px; }
+    }
+}
+
+
+
+
+
+@media (max-width: 1023px) {
+    header {
+        height: auto;
+        overflow: hidden;
+        padding-top: 3%;
+        position: static; // NEWNAV
+        z-index: 100;
+
+        .logo {
+            margin-bottom: 3%;
+
+            img { height: 50px; }
+        }
+
+        .show-nav {
+            @include hidetext;
+            border: 0;
+            background: url(../img/mobile/hamburger.png);
+            background-size: cover;
+            float: right;
+            height: 40px;
+            margin: 2% 3%;
+            width: 44px;
+        }
+
+        .primary {
+            background: $color-accent;
+            clear: both;
+            float: none;
+            font-size: 1.2em;
+            overflow: hidden;
+            padding: 2% 2% 0 0;
+            margin: 0;
+
+            li {
+                height: auto;
+                padding: 0;
+                margin: 0 0 2% 2%;
+                width: 31.3%;
+
+                &.active a { background: none; }
+            }
+
+            a { 
+                border: 1px solid white;
+                color: white; 
+                line-height: 2em;
+                padding: 0;
+                text-align: center;
+            }
+
+            .search { 
+                display: block; 
+                width: 64.6%; 
+            }
+
+            form {
+                input { height: 25px; }
+
+                input[type=search] { 
+                    @include border-radius(4px);
+                    float: left; 
+                    width: 80%;
+                }
+
+                input[type=submit] { 
+                    -moz-box-sizing: content-box; 
+                    -webkit-box-sizing: content-box; 
+                    box-sizing: content-box;
+                    float: right;
+                    margin: 0;
+                    padding: 5px 0;
+                    width: 15%;
+                }
+            }
+        }
+
+        .primary,
+        .secondary { display: none; }
+
+
+        .nav.mobile-only {
+            background: #444;
+            display: none;
+            padding: 10px;
+            position: absolute;
+            right: -400px;
+            top: 0px;
+            z-index: 2000;
+
+            ul {
+                clear: both;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-bottom: 4%;
+                }
+
+                a {
+                    @include border-radius(5px);
+                    border: 1px solid #ddd;
+                    color: #ddd;
+                    display: block;
+                    font: 18px/2 helvetica, sans-serif;
+                    text-align: center;
+                }
+
+                .search { display: none; }
+            }
+
+            form {
+                float: right;
+                width: 80%;
+
+                input[type=submit] { display: none; }
+
+                input[type=search] { 
+                    @include border-radius(5px); 
+                    margin-bottom: 8%;
+                    height: 25px;
+                    padding: 5px 2px;
+                    width: 95%;
+                }
+            }
+
+            .close {
+                @include hidetext;
+                // background: url(../img/mobile/grey-arrow-right.png);
+                background: url(../img/mobile/hamburger.png);
+                background-size: 100% 100%;
+                border: 0;
+                float: left;
+                height: 35px;
+                margin-bottom: 8%;
+                width: 35px;
+            }
+        }
+    }
+
+
+
+    footer {
+        height: auto;
+        padding-top: 30px;
+
+        small { 
+            clear: both; 
+            font-size: 14px;
+        }
+
+        .primary,
+        .secondary {
+            display: none;
+            margin: 0 0 0 -5%;
+            overflow: hidden;
+            width: 110%;
+
+            ul { margin: 0; }
+
+            li {
+                display: block;
+                float: left;
+                padding: 0;
+                margin: 2%;
+                width: 46%;
+
+                &:before { display: none; }
+
+                a {
+                    @include border-radius(10px);
+                    border: 1px solid white;
+                    display: block;
+                    font: 16px/2.5 $serif;
+                    margin: 0;
+                    width: auto;
+                }
+            }
+        }
+
+        .top { 
+            display: block;
+            text-align: center;
+
+            a {
+                background: url(../img/mobile/arrow-up.png) no-repeat right center;
+                background-size: contain;
+                line-height: 1.5em;
+                padding: 5px 35px 5px 0;
+            }
+        }
+    }
+
+
+    .content {
+        padding: 0;
+        position: relative;
+
+        > .left { 
+            border: 0;
+            float: none;
+            width: auto; 
+
+            > * {
+                margin: 0 auto;
+                width: 96%;
+            }
+        }
+
+        .sidebar { display: none; }
+    }
+
+
+    .home .content {
+        .products-cta {
+            height: 355px;
+
+            > div { height: 120px; }
+
+            h2 { margin-top: 20px; }
+        }
+
+
+        .featured {
+            section {
+                h3 { font-size: 18px; }
+
+                .image {
+                    span { display: none !important; }
+
+                    &:hover {
+                        img { opacity: 1.0 !important; }
+                    }
+                }
+            }
+        }
+
+        .calls-to-action {
+            h2 { font-size: 16px; }
+
+            .more .copy { 
+                font-size: 13px;
+                width: 72%; 
+            }
+        }
+    }
+
+
+    .blog,
+    .menu-concepts,
+    #tags {
+        h1.mobile-only { 
+            border-bottom: 1px solid #e5e5e5; 
+            margin: 0 0 50px 0;
+            text-indent: 30px;
+        }
+
+
+        .featured-image {
+            margin-top: 80px;
+        }
+
+        .sidebar {
+            display: block;
+            left: 0;
+            position: absolute;
+            top: 60px;
+            width: 100%;
+
+            h2 { display: none; }
+
+            > ul {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                width: auto;
+                
+                > li { 
+                    float: left; 
+                    margin-right: 1%;
+                    width: 33%;
+
+                    &.tags {
+                        margin-right: 0;
+                        width: 32%;
+                    }
+
+                    &.active,
+                    &.expanded {
+                        ul { display: none; }
+
+                        a { 
+                            background: $color-accent;
+                            color: white;
+                        }
+                    }
+
+                    &.tags.active {
+                        ul { 
+                            border-top: 1px solid #ddd;
+                            display: block; 
+                            left: 0px;
+                            margin: 0;
+                            padding: 0;
+                            position: absolute;
+                            top: 40px;
+                            width: 100%;
+
+                            li {
+                                margin: 0;
+                                text-indent: 0;
+
+                                &:before { display: none; }
+                            }
+
+                            a {
+                                background: #eee url(../img/mobile/plus.png) no-repeat 95% center;
+                                border-bottom: 1px solid #ddd;
+                                color: #555;
+                                display: block;
+                                font: 16px/40px helvetica, sans-serif;
+                                text-indent: 40px;
+                            }
+                        }
+                    }
+
+                    > a { 
+                        background: #ddd;
+                        display: block;
+                        font: bold 16px/40px helvetica, sans-serif;
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+        .photo { 
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+
+        .single {
+            padding-top: 30px; 
+        }
+    }
+
+
+    .offers .content {
+        .mobile-only .sidebar {
+            display: block;
+            float: none;
+            width: auto;
+
+            h2 { display: none; }
+
+            > ul {
+                border-top: 1px solid #e5e5e5;
+
+                > li {
+                    margin: 0 !important;
+
+                    > ul { display: none !important; }
+
+                    > a { 
+                        background: none !important; 
+                        border-bottom: 1px solid #e5e5e5;
+                        display: block;
+                        font: 18px/2.5 helvetica, sans-serif;
+                    }
+                }
+            }
+        }
+
+
+        .form { padding: 20px; }
+    }
+
+
+    .offers#videos {
+        h1 { margin: 0 2%; }
+        .experience { margin: 0 2%; }
+    }
+
+
+
+    .heritage .content {
+        .left {
+            .copy img { display: none; }
+
+            .images {
+                text-align: center;
+
+                img {
+                    float: none;
+                    margin: 0 5% 30px !important;
+                    max-height: 150px;
+                    max-width: 40%;
+                }
+            }
+
+            .caption { clear: both; }
+        }
+
+        .sidebar {
+            display: block;
+            float: none;
+            width: auto;
+        }
+
+        .story p:first-of-type { margin: 0; }
+    }
+
+
+    .meet-the-chefs .content {
+        .chefs > div { 
+            a > span { display: none !important; }
+        }
+
+
+        .sidebar.single-view {
+            border-top: 1px solid #e5e5e5;
+            display: block;
+            float: none;
+            margin: 0 auto;
+            padding: 30px 0;
+            width: 90%;
+
+            h2 { 
+                border-bottom: 0; 
+                font-family: helvetica, sans-serif;
+                font-weight: bold;
+                text-indent: 0;
+                text-transform: uppercase;
+            }
+
+
+            > ul {
+                > li {
+                    > ul { 
+                        margin: 0;
+                        padding: 0 5%; 
+
+                        a { font: bold 14px/1.4 helvetica, sans-serif; }
+                    }
+
+                    > a { display: none; }
+                }
+            }
+
+            li { display: none; }
+
+            .active { display: block; }
+        }
+    }
+
+
+    .search .content {
+        .results-count { width: 89.5%; }
+    }
+
+
+    .contact {
+        img { margin-bottom: 30px; }
+
+        dd { font-size: 14px; }
+    }
+
+
+
+    .products {
+        .mobile-only .sidebar {
+            display: block;
+            float: none;
+            width: auto;
+
+            h2 { display: none; }
+
+            > ul {
+                border-top: 1px solid #e5e5e5;
+
+                > li {
+                    margin: 0 !important;
+
+                    > ul { display: none !important; }
+
+                    > a { 
+                        background: none !important; 
+                        border-bottom: 1px solid #e5e5e5;
+                        display: block;
+                        font: 18px/2.5 helvetica, sans-serif;
+                    }
+                }
+
+                .get-a-sample a { color: $color-accent !important; }
+            }
+        }
+    }
+
+
+
+    #gluten-free {
+        .content {
+            .left { 
+                padding: 0;
+                margin: 0 auto;
+                width: 80%;
+            }
+
+            .trusted-celiac .celiac-disease p {
+                font-size: 13px;
+                margin-top: 0;
+            }
+
+
+            .all-products {
+                table {
+                    td { font-size: 14px; }
+
+                    td.upc { width: 20%; }
+                }
+            }
+        }
+    }
+
+
+    #gluten-free,
+    #latin-flavors {
+        .mobile-only {
+            display: block;
+
+            .sidebar {
+                display: block;
+                float: none;
+                width: auto;
+
+                h2 { display: none; }
+
+                ul {
+                    border-top: 1px solid #e5e5e5;
+                    list-style: none outside none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li {
+                    margin: 0 !important;
+                }
+
+                a { 
+                    background: none !important; 
+                    border-bottom: 1px solid #e5e5e5;
+                    display: block;
+                    font: 18px/2.5 helvetica, sans-serif;
+                    padding-left: 5%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 920px) {
+    .mobile-only { display: block; }
+
+
+    .home .content .products-cta {
+        > div {
+            height: 120px;
+        }
+
+        img { 
+            top: -10px;
+            width: 40%; 
+        }
+
+        h2,
+        a { width: 55%; }
+
+        h2 { 
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        a { 
+            line-height: 30px;
+            font-size: 12px;
+
+            &:after { font-size: 20px; }
+        }
+    }
+
+
+    #gluten-free .content {
+        table,
+        thead,
+        tbody,
+        tr,
+        th { display: block; }
+
+        table {
+            thead {
+                .upc,
+                .pack-size,
+                .allergens { display: none; }
+            }
+
+            tbody {
+                td { 
+                    border: 0; 
+                    padding: 0;
+                }
+
+                tr { padding: 10px; }
+
+                .name {
+                    display: block;
+                    font-size: 16px;
+
+                    a { text-decoration: underline; }
+                }
+
+                .upc,
+                .pack-size,
+                .allergens { 
+                    display: inline;
+                    width: auto; 
+                }
+
+                .upc:before { content: "UPC: "; }
+
+                .pack-size:before { content: "Pack Size: "; }
+
+                .allergens:before { content: "Allergens: "; }
+
+                .upc:after,
+                .pack-size:after { content: ", "; }
+            }
+        }
+
+        .site-search form { display: none; }
+    }
+}

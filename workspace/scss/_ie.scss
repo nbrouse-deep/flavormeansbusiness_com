@@ -1,0 +1,146 @@
+.ie8, .ie7 {
+    #home {
+        .featured {
+            .image {
+                span { 
+                    background: url(../img/black-50.png);
+                    display: none; 
+                }
+
+                &:hover { 
+                    span { display: block; }
+                }
+            }
+        }
+
+        .chefs .chef {
+            .left {
+                a { display: none; }
+
+                &:hover a { display: block; }
+            }
+
+        }
+    }
+
+
+    #blog,
+    #menu-concepts,
+    .blog#tags,
+    .menu-concepts#tags {
+        .summary {
+            overflow: hidden;
+            
+            img { top: auto; }
+        }
+
+        .social { 
+            font-size: 16px;
+            margin-bottom: 30px;
+            overflow: hidden; 
+        }
+
+    }
+
+
+    #latin-flavors {
+        .content .top .sidebar {
+            ul { 
+                list-style: none outside none; 
+                padding-left: 15px;
+            }
+
+            li {
+                background: url(../img/arrow-red-right.png) no-repeat left 7px;
+                padding-left: 25px;
+            }
+        }
+    }
+
+
+    #meet-the-chefs {
+        .content {
+            .chefs {
+                margin-left: 0;
+                width: 825px;
+
+                > div {
+                    margin: 0 45px 45px 0;
+
+                    .image {
+                        a > span { display: none; }
+
+                        &:hover a > span { display: block; }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #powerofflavor {
+        .left > div { 
+            overflow: hidden; 
+            padding-bottom: 30px;
+        }
+    }
+
+    .featured.sidebar {
+        .image span { display: none !important; }
+    }
+}
+
+
+.ie8,
+.ie9 {
+    .offers .content .left .form {
+        .first-name,
+        .last-name,
+        .job-title,
+        .phone,
+        .type,
+        .city { 
+            margin-right: 11px; 
+        }
+
+        .comments { overflow: hidden; }
+    }
+}
+
+
+.ie7 {
+    .site-search {
+        input { height: 30px !important; }
+
+        input[type=submit] { height: 32px !important; }
+    }
+
+    .offers .content .left .form {
+        .first-name,
+        .last-name,
+        .job-title,
+        .phone,
+        .type,
+        .city { 
+            margin-right: 6px; 
+        }
+
+        .comments { overflow: hidden; }
+    }
+}
+
+
+
+@media (max-width: 920px) {
+    .ie9 {
+        #gluten-free .content {
+            .all-products table {
+                .upc,
+                .pack-size,
+                .allergens { display: none !important; }
+
+                .lol-ie9 { display: block !important; }
+            }
+        }
+    }
+}

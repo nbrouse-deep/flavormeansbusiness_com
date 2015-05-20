@@ -1,0 +1,233 @@
+@media (max-width: 640px) {
+    header {
+        .primary {
+            padding: 5% 5% 0 0;
+
+            li { 
+                margin: 0 0 5% 5%;
+                width: 45%; 
+            }
+
+            .search {
+                width: 95%;
+            }
+        }
+    }
+
+
+    .site-search {
+        height: auto;
+
+        .see-how-fmb { 
+            float: none;
+            margin: 0;
+            text-align: center;
+        }
+
+        form { display: none; }
+    }
+
+
+    //
+    // home
+    .home {
+        .content {
+            .products-cta {
+                height: 150px;
+
+                div { height: auto; }
+
+                h1,
+                img,
+                a { display: none; }
+
+                h2 { 
+                    color: black;
+                    float: none;
+                    font: bold 14px/1.2 $serif;
+                    letter-spacing: 0;
+                    padding: 10px 0;
+                    text-align: center;
+                    text-transform: none;
+                    width: auto;
+
+                    &:after { content: " »"; }
+                }
+            }
+
+            .featured {
+                padding: 0;
+
+                .blog, .offer { margin: 0; }
+
+                section {
+                    clear: both;
+                    float: none;
+                    margin: 10px 0;
+                    overflow: hidden;
+                    padding: 20px;
+                    width: auto;
+
+                    .image {
+                        float: left;
+                        height: auto;
+                        width: 40%;
+
+                        img { 
+                            height: auto;
+                            width: 100%; 
+                        }
+
+                        &:hover {
+                            img {
+                                left: auto;
+                                top: auto;
+                                width: 100%;
+                            }
+
+                            &:after { display: none; }
+                        }
+                    }
+
+                    h2 { font-size: 24px; }
+
+                    h3,
+                    h4 {
+                        float: right;
+                        margin: 0 0 10px 0;
+                        width: 55%;
+                    }
+
+                    h3 { 
+                        font-size: 16px; 
+                        line-height: 1.2;
+                    }
+
+                    h4 { font-size: 12px; }
+                }
+
+                .offer {
+                    h4 { display: none; }
+                }
+            }
+        }
+    }
+
+
+
+    .contact {
+        .chat { display: none; }
+    }
+
+
+
+    .blog,
+    .menu-concepts {
+        .content {
+            .single {
+                .social { display: none; }
+            }
+        }
+    }
+
+
+
+    //
+    // flavor expedition recipe videos
+    .offers#videos {
+        .content .left {
+            .experience { width: auto; }
+
+            .iframe { height: 300px; }
+
+            .description img { display: none; }
+        }
+
+        .lightbox {
+            .copy {
+                float: none;
+                width: auto;
+
+                h3,
+                a { font-size: 16px; }
+
+                p { line-height: 1.4; }
+            }
+
+            .buttons {
+                button { 
+                    float: none; 
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+
+
+
+    .lightbox {
+        .window {
+            width: 80%;
+            margin-top: 20px;
+
+            h2 { font-size: 20px; }
+
+            h3 { font-size: 16px; }
+
+            p { 
+                line-height: 1.4;
+                margin-bottom: 10px; 
+            }
+        }
+    }
+
+
+
+    //
+    // brochures
+    #brochures .content {
+        h1 {
+            font-size: 1.7em;
+            margin: 0 auto;
+            width: 96%;
+        }
+
+        .buttons {
+            border-top: 1px solid #ccc;
+            left: -2%;
+            width: 104%;
+
+            li { 
+                float: none;
+                margin: 0;
+            }
+
+            a {
+                background: #eee url(../img/mobile/plus.png) no-repeat 92% center;
+                border-bottom: 1px solid #ccc;
+                color: #555;
+                font-size: 14px;
+                height: auto !important;
+                padding: 15px 10px !important;
+                text-align: left;
+                text-indent: 30px;
+                width: auto;
+            }
+        }
+
+        .brochures {
+            margin: 50px auto 0;
+            width: 96%;
+
+            .brochure {
+                float: none;
+                overflow: hidden;
+                width: auto;
+
+                &.odd { float: none; }
+            }
+        }
+    }
+}
+

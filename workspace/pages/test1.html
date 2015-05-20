@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ColorBox demo</title>
+    <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
+    <link rel="stylesheet" href="override.css" />
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+    <script>
+      function openColorBox(){
+ $(".inline").colorbox({inline:true, width:"27%"});
+      }
+      
+      function countDown(){
+        seconds--
+        $("#seconds").text(seconds);
+        if (seconds === 0){
+          openColorBox();
+          clearInterval(i);
+        }
+      }
+
+     $(document).ready(function(){
+    setTimeout(function() {
+      $(".inline").colorbox({ href: "test2.html", width: "510px", height: "260px", opacity: 0.0, transition: "none", initialWidth: "500px", initialHeight: "270px", iframe: true, open: true})
+    }, 2000);
+
+});
+    </script>
+  </head>
+  <body>
+    <p><a style="display:none;" class='inline' href="#inline_content">Inline HTML</a></p>
+ <div style='display:none'>
+      <div class="inline" id='inline_content' style='background:#fff;'>
+      <a href="http://www.flavormeansbusiness.com/battleforbocuse" target="_blank" ><img id="class" src="theres-not-much-time.png" /></a>
+      </div>
+    </div>
+<body>
+</body>
+</html>

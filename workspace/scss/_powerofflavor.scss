@@ -1,0 +1,113 @@
+.powerofflavor {
+    .content {
+        .narrow {
+            margin: 0 auto;
+            width: 76%;
+
+            img { margin-bottom: 30px; }
+
+            blockquote {
+                font-size: 18px;
+                font-style: italic;
+                line-height: 1.7;
+                margin: 0;
+                
+                p { margin-bottom: 10px; }
+            }
+
+            cite {
+                color: black;
+                font-style: normal;
+            }
+
+            > div {
+                clear: both;
+                border-bottom: 1px solid #e5e5e5;
+                overflow: hidden;
+                padding: 30px 20px 0;
+            }
+
+
+            .soup { width: 100%; }
+
+
+            // float: left
+            .power-of-flavor p,
+            .food-cost img,
+            .quote { float: left; }
+            
+
+            // float: right
+            .power-of-flavor img,
+            .food-cost > *,
+            .profit { float: right; }
+
+
+            // 1st: power of flavor
+            .power-of-flavor {
+                padding-top: 0;
+
+                p { width: 60%; }
+
+                sup {
+                    font-size: 6px;
+                    position: relative;
+                    top: 0px;
+                }
+
+            }
+
+
+            // second: food cost
+            .food-cost {
+                > * { width: 55%; }
+
+                img { width: auto; }
+
+                .mobile-only { display: none; }
+            }
+
+
+            // third: kroger quote & profit per case
+            .quote-profit { padding-bottom: 20px; }
+
+
+            .quote {
+                border-right: 1px solid #e5e5e5;
+                padding: 0 20px;
+                width: 270px;
+
+                p { margin-bottom: 10px; }
+            }
+
+            .profit {
+                width: 380px;
+
+                img {
+                    display: block;
+                    margin: 0 auto 15px;
+                }
+
+                .mobile-only { display: none; }
+
+
+            }
+
+            .learn-more {
+                border-bottom: none;
+                margin-bottom: 40px;
+                text-align: center;
+
+                a { border-bottom: 2px solid #aaa; }
+            }
+
+
+            .footnotes {
+                border-bottom: none;
+                color: #999;
+                font-size: 8px;
+                line-height: 1.4;
+            }
+        }
+    }
+}

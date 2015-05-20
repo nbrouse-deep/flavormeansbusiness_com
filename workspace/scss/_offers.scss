@@ -1,0 +1,287 @@
+.offers {
+    .form {
+        background: #dfdfdf;
+        color: #636363;
+        margin: 30px 0;
+        padding: 3.851%;
+        width: auto;
+
+        h2 {
+            background: url(../img/red-streak3.png) no-repeat left center;
+            color: white;
+            line-height: 61px;
+            font-weight: normal;
+            margin: 0 0 0 -30px;
+            text-indent: 30px;
+        }
+
+
+        h3 { font-size: 18px; }
+
+        small { 
+            clear: both;
+            display: block; 
+            font-size: 8px;
+            margin: 15px 0;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        textarea,
+        select {
+            background: white;
+            border: 1px solid #a1a1a1;
+            display: block;
+            height: 15px;
+            padding: 5px;
+        }
+
+        input[type=checkbox],
+        input[type=radio] {
+            display: inline;
+            margin-right: 5px;
+        }
+
+        select { height: 27px; }
+
+        label {
+            display: block;
+            font-size: 12px;
+            margin: 0 0 10px 0;
+        }
+
+        .checkbox,
+        .radio {
+            float: left;
+            margin-right: 50px;
+        }
+
+        .hint {
+            clear: both;
+            color: #999;
+            display: block;
+            font-size: 9px;
+            font-style: italic;
+            text-align: right;
+        }
+
+        .address { clear: both; }
+
+        .first-name,
+        .last-name,
+        .business-name,
+        .city,
+        .state,
+        .zip,
+        .type,
+        .type-other,
+        .job-title,
+        .phone,
+        .email {
+            float: left;
+        }
+
+        .first-name,
+        .last-name,
+        .city,
+        .state,
+        .type,
+        .job-title,
+        .phone {
+            margin-right: 12px;
+        }
+
+
+        .first-name input,
+        .last-name input,
+        .job-title input,
+        .phone input { width: 210px; }
+
+        .business-name input,
+        .type-other input,
+        .email input { width: 239px; }
+
+        .address input { width: 707px; }
+
+        .city input,
+        .type input { width: 444px; }
+
+        .state select { width: 60px; }
+
+        .zip input { width: 167px; }
+
+        .type select { width: 456px; }
+
+        .agreed-to-rules { 
+            margin: 15px 0;
+            width: 600px; 
+
+            a { text-decoration: underline; }
+        }
+    }
+}
+
+
+
+#request-a-sample {
+    .content {
+        .primary-distributor,
+        .meals-per-day {
+            clear: both;
+            float: none;
+        }
+
+        .form {
+            .samples {
+                margin: 0 0 30px 0;
+
+                img {
+                    height: 50px;
+                    margin: 0 15px 0 0;
+                    vertical-align: middle;
+                }
+
+                label { 
+                    line-height: 50px; 
+                    margin: 0 0 15px 0;
+                }
+            }
+
+
+            .primary-buyer { 
+                @include clearfix;
+                margin-bottom: 5px;
+
+                p {
+                    font-size: 12px; 
+                    margin-bottom: 5px;
+                }
+            }
+
+            .primary-distributor,
+            .meals-per-day {
+                input { width: 400px; }
+            }
+
+            .email-opt-in { width: 400px; }
+
+            input[type=submit] {
+                @include hidetext;
+                background: url(../img/submit-buttons/get-samples.png) no-repeat center center;
+                height: 68px;
+                margin: 0 auto;
+                width: 433px;
+            }
+        }
+
+        .sidebar { @include sidebar-tree; }
+    }
+
+    .window {
+        .continue { margin: 0 auto; }
+    }
+}
+
+
+
+#flavor-expedition {
+    .content {
+        .left > img { margin-bottom: 30px; }
+
+
+        .form {
+            .referral {
+                @include clearfix;
+
+                label { float: left; }
+
+                .referral-name { margin-right: 2%; }
+            }
+
+            .current-customer {
+                @include clearfix;
+                clear: both;
+                margin-bottom: 15px;
+
+                p { margin-bottom: 0; }
+
+                label {
+                    float: left;
+                    width: 20%;
+                }
+            }
+            .comments {
+                clear: both;
+                overflow: hidden;
+
+                span { 
+                    display: block;
+                    float: left;
+                    width: 250px; 
+                }
+
+                textarea {
+                    display: block;
+                    float: right;
+                    height: 50px;
+                    width: 400px;
+                }
+            }
+
+
+            input[type=submit] {
+                @include hidetext;
+                background: url(../img/submit-buttons/recipes-and-videos.png) no-repeat center center;
+                height: 68px;
+                margin: 0 auto;
+                width: 435px;
+            }
+        }
+
+        .sidebar { @include sidebar-tree; }
+    }
+}
+
+
+#worlds-of-flavor {
+    .content {
+        .form {
+            .job-title {
+                margin-right: 0;
+
+                input { width: 222px; }
+            }
+
+            .email { 
+                margin-right: 12px; 
+
+                input { width: 210px; }
+            }
+
+            .example {
+                clear: both; 
+
+                textarea {
+                    height: 150px;
+                    width: 456px;
+                }
+            }
+
+            input[type=submit] {
+                @include hidetext;
+                background: url(../img/submit-buttons/enter-sweepstakes.png) no-repeat center center;
+                height: 68px;
+                margin: 0 auto;
+                width: 433px;
+            }
+        }
+    }
+
+    .sidebar { @include sidebar-tree; }
+}
+
+
+.offers#rules { 
+    .sidebar { @include sidebar-tree; }
+}

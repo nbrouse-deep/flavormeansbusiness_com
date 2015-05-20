@@ -1,0 +1,161 @@
+.blog,
+.menu-concepts {
+    .sidebar {
+        @include sidebar-tree;
+        margin-bottom: 30px;
+
+        .headline { color: #333; }
+    }
+
+
+    .left > img { margin-bottom: 15px; }
+
+    .summary,
+    .single {
+        h1,
+        h2 {
+            font: 20px/1.2 trajan-pro-3, $serif;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font: italic normal 13px/1.5 helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .copy { margin: 15px 0 0 0; }
+
+        .details {
+            float: right;
+            width: 70%
+        }
+
+        .image {
+            float: left;
+            // margin: 0 30px 0 0;
+            overflow: hidden;
+            width: 25%;
+
+            a { display: block; }
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .summary {
+        @include clearfix;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 30px 0;
+
+        &:last-child { border-bottom: 0; }
+
+        p { 
+            height: 60px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .continue {
+            font-weight: bold;
+            height: auto;
+            margin: 15px 0 0 0;
+
+            a { 
+                color: #555; 
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .featured .summary { border-bottom: 1px solid #e5e5e5; }
+
+    
+    .single {
+        @include clearfix;
+        margin-bottom: 30px;
+
+        
+        .copy {
+            a {
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+        .social {
+            @include clearfix;
+            background: #eee;
+            clear: both;
+            color: #666;
+            font: italic 18px/32px $serif;
+            padding: 15px;
+
+            p { 
+                float: left;
+                margin: 0 0 0 15px; 
+
+                sup { line-height: 0.5em; }
+            }
+
+            ul {
+                float: right;
+                list-style: none outside none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li { 
+                margin-left: 10px;
+                float: left; 
+            }
+
+            a {
+                @include hidetext;
+                float: left;
+                height: 32px;
+                width: 31px;
+            }
+
+            .twitter a { 
+                background: url(../img/twitter.png); 
+                width: 32px;
+            }
+
+            .facebook a { background: url(../img/facebook.png); }
+
+            .email a { background: url(../img/email.png); }
+        }
+
+
+        .older,
+        .newer {
+            padding: 15px 0 30px;
+
+            a {
+                color: #555;
+                font-weight: bold;
+            }
+        }
+
+        .newer {
+            border-left: 1px solid #e5e5e5;
+            float: right;
+            padding-left: 1%;
+            text-align: right;
+            width: 48%;
+
+            a:after { content: " »"; }
+        }
+
+        .older {
+            float: left;
+            padding-right: 1%;
+            width: 48%;
+
+            a:before { content: "« "; }
+        }
+    }
+}

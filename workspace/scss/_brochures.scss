@@ -1,0 +1,73 @@
+.brochures {
+    .content {
+        // 
+        // choose a category
+        .buttons {
+            list-style: none outside none;
+            margin: 50px 0 0 0;
+            padding: 0;
+
+            li {
+                float: left;
+                margin: 0 0 40px 100px;
+            }
+
+            a { @include button; }
+        }
+
+
+
+
+        //
+        // list of documents (per requested category)
+        .brochures { margin: 50px 0 0 0; }
+
+        .brochure {
+            float: right;
+            margin-bottom: 40px;
+            width: 50%;
+
+            &.odd {
+                clear: left;
+                float: left;
+            }
+
+            .image {
+                border: 1px solid #a5a5a5;
+                display: block;
+                float: left;
+                width: 30%;
+
+                img { width: 100%; }
+            }
+
+            .right {
+                float: left;
+                padding: 50px 0 0 20px;
+                width: 60%;
+
+                h2,
+                h3 {
+                    font: 18px/1.2 trajan-pro-3, $serif;
+                    margin: 0;
+                }
+
+                h2 a { color: #333; }
+
+                h3 a { 
+                    color: #bbb;
+                    font-size: 14px;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+
+        //
+        //
+        .sidebar {
+            @include sidebar-tree;
+        }
+    }
+}

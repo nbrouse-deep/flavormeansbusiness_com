@@ -1,0 +1,55 @@
+<?php
+
+	require_once(TOOLKIT . '/class.datasource.php');
+
+	Class datasourcegluten_free_product_details extends SectionDatasource{
+
+		public $dsParamROOTELEMENT = 'gluten-free-product-details';
+		public $dsParamORDER = 'asc';
+		public $dsParamGROUP = '238';
+		public $dsParamPAGINATERESULTS = 'no';
+		public $dsParamLIMIT = '20';
+		public $dsParamSTARTPAGE = '1';
+		public $dsParamREDIRECTONEMPTY = 'no';
+		public $dsParamSORT = 'order';
+		public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
+		
+
+		
+
+		public $dsParamINCLUDEDELEMENTS = array(
+				'name',
+				'upc',
+				'pack-size',
+				'allergens',
+				'category',
+				'url'
+		);
+		
+
+		public function __construct($env=NULL, $process_params=true){
+			parent::__construct($env, $process_params);
+			$this->_dependencies = array();
+		}
+
+		public function about(){
+			return array(
+				'name' => 'Gluten  Free Product Details',
+				'author' => array(
+					'name' => 'sugar design studio',
+					'website' => 'http://flavormeansbusiness.dev',
+					'email' => 'adam@sugards.com'),
+				'version' => 'Symphony 2.3',
+				'release-date' => '2014-02-28T14:40:59+00:00'
+			);
+		}
+
+		public function getSource(){
+			return '38';
+		}
+
+		public function allowEditorToParse(){
+			return true;
+		}
+
+	}

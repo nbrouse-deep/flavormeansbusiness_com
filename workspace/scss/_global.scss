@@ -1,0 +1,246 @@
+// sass mixins and variables
+
+// $serif: 'Times New Roman', 'Sorts Mill Goudy', georgia, serif;
+$color-text: #333;
+$color-accent: #b32017;
+$serif: 'Sorts Mill Goudy', georgia, serif;
+$sorts: 'Sorts Mill Goudy', georgia, serif;
+
+
+@mixin clearfix {
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+}
+
+
+@mixin hidetext {
+    background-color: transprent;
+    border: 0;
+    color: transparent;
+    display: block;
+    font: 0/0 a;
+    text-shadow: none;
+}
+
+
+@mixin button {
+    background: url(../img/button-grey.png);
+    border: 0;
+    -moz-box-sizing: content-box; 
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 167px;
+
+    &.lengthy { 
+        height: 40px;
+        padding: 5px 10px; 
+    }
+}
+
+
+@mixin loud-link {
+    color: $color-text;
+    font-size: 130%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+// @sidebar-tree defined in _sidebar.scss
+
+
+
+
+// base elements
+body, html { height: 100%; }
+
+body {
+    color: #333;
+    background: #231f20;
+    font: 14px/1.5 helvetica, arial, sans-serif;
+}
+
+
+a { 
+    color: #333;
+    text-decoration: none; 
+}
+
+p { margin: 0 0 30px 0; }
+
+sup,
+sub { 
+    bottom: auto;
+    font-size: 60%;
+    top: -0.6em;
+    vertical-align: text-bottom;
+}
+
+
+h1 {
+    color: #555;
+    font: normal 28px/1.5 'trajan-pro-3', serif;
+    text-transform: uppercase;
+
+    sup,
+    sub { top: -0.6em; }
+
+    a { color: #555; }
+}
+
+
+h2 {
+    color: #555;
+    font: bold 18px/1.5 helvetica, sans-serif;
+    text-transform: uppercase;
+    
+    a { color: #555; }
+}
+
+
+nav {
+    > ul { 
+        margin: 0; 
+        padding: 0; 
+    }
+}
+
+
+form {
+    input { 
+        border: 0;
+        display: block; 
+    }
+
+    input[type=search] {
+        height: 20px;
+        font: 16px/30px $serif;
+        padding: 5px;
+    }
+
+    input[type=submit] {
+        @include border-radius(5px);
+        background: #dfdfdf;
+        box-sizing: content-box;
+        font: 18px/24px $serif;
+        height: 20px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+    }
+
+    .missing,
+    .invalid {
+        color: #b00;
+        font-style: italic;
+    }
+}
+
+
+
+
+// helper classes
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+
+
+.lightbox {
+    background: url(../img/black-50.png);
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 5000;
+
+    .window {
+        @include border-radius(20px);
+        @include clearfix;
+        background: #b31b1d;
+        border: 6px solid white;
+        color: white;
+        margin: 300px auto 0;
+        padding: 30px;
+        position: relative;
+        width: 600px;
+
+        a { color: white; }
+
+        h2 {
+            color: white;
+            font-size: 28px;
+            font-weight: normal;
+            margin-top: 0;
+            line-height: 1;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .close {
+            border: 0;
+            background: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+}
+
+
+
+.caption {
+    color: #999;
+    display: block;
+    font: italic 14px/1.5 $serif;
+    margin: 5px 15px 30px 0;
+    text-align: right;
+}
+
+
+
+.error {
+    color: #b00;
+    color: #b00;
+    font-weight: bold;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+
+
+.button { @include button; }
+
+
+
+.mobile-only { display: none; }
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}

@@ -1,0 +1,10 @@
+recipe1=219648
+recipe2=334
+recipe3=9
+recipe4=52
+recipe5=1
+recipe6=9
+recipe7=30
+recipe8=184
+recipe9=251503
+recipe10=2029
