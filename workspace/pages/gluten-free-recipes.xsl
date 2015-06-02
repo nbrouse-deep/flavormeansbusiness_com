@@ -11,21 +11,20 @@
 
 <xsl:template match="/data">
 <h1 style="padding:0 15px;">Gluten Free Recipes</h1>
-	<div class="featured-latin" style="min-height:400px;"><xsl:apply-templates select="gluten-recipes-featured/entry"/></div>
+	<div class="featured-latin clearfix" style="min-height:400px;"><xsl:apply-templates select="gluten-recipes-featured/entry"/></div>
   <div class="visible-desktop"><xsl:apply-templates select="gluten-recipes/entry[position() mod 3 = 1]"/></div>
   <div class="visible-tablet"><xsl:apply-templates select="gluten-recipes/entry[position() mod 2 = 0]"/></div>
 <div class="visible-mobile"><xsl:apply-templates select="gluten-recipes/entry[position() mod 2 = 0]"/></div>
   <div class="see-more" style="text-align:center;">
-<p style="font-size:20px;">See more Fluten Free recipes <a style="text-decoration:underline;" href="
-http://flavormeansbusiness.com/products/latin-flavors/">here</a></p></div>
+<p style="font-size:20px;">See more Gluten Free recipes <a style="text-decoration:underline;" href="https://www.flavormeansbusiness.com/products/gluten-free/">here</a></p></div>
 
 </xsl:template>
 
 <xsl:template match="gluten-recipes-featured/entry">
- <div class="image" style="margin:10px 15px 5%;float:left;max-width:50%;">
-<a target="_blank" href="/workspace/{gluten-recipe-featured-pdf/@path}/{gluten-recipe-featured-pdf/filename}"><img style="width:100%;" src="/workspace/{gluten-recipe-featured-image/@path}/{gluten-recipe-featured-image/filename}" /></a>
-</div>
-<div class="featured-latin-right" style="float:left;max-width:45%;">
+<a target="_blank" href="/workspace/{gluten-recipe-featured-pdf/@path}/{gluten-recipe-featured-pdf/filename}"> <div class="image" style="margin:10px 15px 5%;float:left;max-width:50%;">
+<img style="width:100%;" src="/workspace/{gluten-recipe-featured-image/@path}/{gluten-recipe-featured-image/filename}" />
+</div></a>
+<div class="featured-latin-right clearfix" style="float:left;max-width:45%;">
 <h2 style="font-size:30px;" class="latin-recipe-title"><xsl:value-of select="gluten-recipe-featured-title"/></h2>
 <p><xsl:value-of select="gluten-recipe-featured-description"/></p>
 <a target="_blank" href="/workspace/{gluten-recipe-featured-pdf/@path}/{gluten-recipe-featured-pdf/filename}">
@@ -47,10 +46,11 @@ http://flavormeansbusiness.com/products/latin-flavors/">here</a></p></div>
 
 <xsl:template match="gluten-recipes/entry" mode="content">
     <div class="grid_4">
-        <div class="latin-recipes-image"><div class="visible-desktop" style="margin:10px 5px 5%;float:left;width:31.4815%;">
+        <div class="latin-flavor-image"><div class="visible-desktop" style="margin:10px 5px 5%;float:left;width:31.4815%;">
+<a target="_blank" href="/workspace/{gluten-recipe-pdf/@path}/{gluten-recipe-pdf/filename}">
 <div class="image">
-<a target="_blank" href="/workspace/{gluten-recipe-pdf/@path}/{gluten-recipe-pdf/filename}"><img style="width:340px; height:240px;" src="/workspace/{gluten-recipe-image/@path}/{gluten-recipe-image/filename}" /></a>
-</div>
+<img style="width:340px; height:240px;" src="/workspace/{gluten-recipe-image/@path}/{gluten-recipe-image/filename}" />
+</div></a>
 <h2 style="font-size:20px;" class="latin-recipe-title"><xsl:value-of select="gluten-recipe-title"/></h2>
 <a target="_blank" href="/workspace/{gluten-recipe-pdf/@path}/{gluten-recipe-pdf/filename}"><div class="download-button"><p>Download Recipe »</p></div></a>
 </div>

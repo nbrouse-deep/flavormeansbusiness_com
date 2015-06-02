@@ -10,7 +10,7 @@
 		public $dsParamLIMIT = '900';
 		public $dsParamSTARTPAGE = '1';
 		public $dsParamREDIRECTONEMPTY = 'no';
-		public $dsParamSORT = 'system:id';
+		public $dsParamSORT = 'gluten-recipe-title';
 		public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 		
 
@@ -36,7 +36,7 @@
 					'website' => 'https://stag1.flavormeansbusiness.com',
 					'email' => 'nathan@sugards.com'),
 				'version' => 'Symphony 2.3.1',
-				'release-date' => '2015-05-19T18:55:51+00:00'
+				'release-date' => '2015-05-20T16:48:09+00:00'
 			);
 		}
 
