@@ -57,7 +57,7 @@
 
 
         <small>All trademarks and other intellectual properties on this site are owned by Société des Produits Nestlé S.A., Vevey, Switzerland or are used with permission.</small>
-    </footer>
-   <img src="https://s.amazon-adsystem.com/iui3?d=3p-hbg&ex-src=www.flavormeansbusiness.com&ex-hargs=v%3D1.0%3Bc%3D9940702346028%3Bp%3D6c72a970-b4d3-0249-7bb8-4216b22b922d" width=1 height=1 border=0>
+<img src="https://s.amazon-adsystem.com/iui3?d=3p-hbg&amp;ex-src=www.flavormeansbusiness.com&amp;ex-hargs=v%3D1.0%3Bc%3D9940702346028%3Bp%3D6c72a970-b4d3-0249-7bb8-4216b22b922d" width="1" height="1" border="0" />
+</footer>
 </xsl:template>
 </xsl:stylesheet>
